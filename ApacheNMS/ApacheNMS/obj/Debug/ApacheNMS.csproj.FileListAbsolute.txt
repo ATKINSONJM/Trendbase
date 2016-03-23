@@ -1,0 +1,11 @@
+c:\users\chunk\documents\visual studio 2015\Projects\ApacheNMS\ApacheNMS\bin\Debug\ApacheNMS.exe.config
+c:\users\chunk\documents\visual studio 2015\Projects\ApacheNMS\ApacheNMS\bin\Debug\ApacheNMS.exe
+c:\users\chunk\documents\visual studio 2015\Projects\ApacheNMS\ApacheNMS\bin\Debug\ApacheNMS.pdb
+c:\users\chunk\documents\visual studio 2015\Projects\ApacheNMS\ApacheNMS\bin\Debug\Apache.NMS.dll
+c:\users\chunk\documents\visual studio 2015\Projects\ApacheNMS\ApacheNMS\bin\Debug\Apache.NMS.Stomp.dll
+c:\users\chunk\documents\visual studio 2015\Projects\ApacheNMS\ApacheNMS\bin\Debug\Apache.NMS.pdb
+c:\users\chunk\documents\visual studio 2015\Projects\ApacheNMS\ApacheNMS\bin\Debug\Apache.NMS.Stomp.pdb
+c:\users\chunk\documents\visual studio 2015\Projects\ApacheNMS\ApacheNMS\bin\Debug\Apache.NMS.Stomp.xml
+c:\users\chunk\documents\visual studio 2015\Projects\ApacheNMS\ApacheNMS\obj\Debug\ApacheNMS.csprojResolveAssemblyReference.cache
+c:\users\chunk\documents\visual studio 2015\Projects\ApacheNMS\ApacheNMS\obj\Debug\ApacheNMS.exe
+c:\users\chunk\documents\visual studio 2015\Projects\ApacheNMS\ApacheNMS\obj\Debug\ApacheNMS.pdb
