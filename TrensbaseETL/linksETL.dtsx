@@ -11,8 +11,8 @@
   DTS:LocaleID="2057"
   DTS:ObjectName="linksETL"
   DTS:PackageType="5"
-  DTS:VersionBuild="7"
-  DTS:VersionGUID="{605FD765-7171-49E5-A071-6F9DA340F881}">
+  DTS:VersionBuild="8"
+  DTS:VersionGUID="{D2DB5FD5-78D3-4906-8BAA-BD7D1B2E8E2F}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -1542,10 +1542,6 @@
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="155.2,41.6"
-          Id="Package\Basic ETL into Trendbase Database\Data Conversion"
-          TopLeft="344.571434439445,127.858825322584" />
-        <NodeLayout
           Size="170.4,41.6"
           Id="Package\Basic ETL into Trendbase Database\OLE DB Destination"
           TopLeft="142.285716708826,189.647061483258" />
@@ -1553,6 +1549,10 @@
           Size="150.4,41.6"
           Id="Package\Basic ETL into Trendbase Database\Flat File Source"
           TopLeft="155.428574075504,72.0000005834243" />
+        <NodeLayout
+          Size="155.2,41.6"
+          Id="Package\Basic ETL into Trendbase Database\Data Conversion"
+          TopLeft="344.571434439445,127.858825322584" />
         <EdgeLayout
           Id="Package\Basic ETL into Trendbase Database.Paths[Flat File Source Output]"
           TopLeft="305.828574075504,92.8000005834243">

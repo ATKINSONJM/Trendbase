@@ -7,8 +7,6 @@ Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "TrendbaseETL", "TrensbaseET
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApacheNMS", "ApacheNMS\ApacheNMS\ApacheNMS.csproj", "{6EDF462D-E07A-4E74-AA8C-C3B781DC8528}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAcquirer", "DataAcquirer\DataAcquirer.csproj", "{4EFA56AC-2335-4E69-A486-85BA219B6392}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -28,12 +26,6 @@ Global
 		{6EDF462D-E07A-4E74-AA8C-C3B781DC8528}.Development|Any CPU.Build.0 = Debug|Any CPU
 		{6EDF462D-E07A-4E74-AA8C-C3B781DC8528}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6EDF462D-E07A-4E74-AA8C-C3B781DC8528}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4EFA56AC-2335-4E69-A486-85BA219B6392}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4EFA56AC-2335-4E69-A486-85BA219B6392}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4EFA56AC-2335-4E69-A486-85BA219B6392}.Development|Any CPU.ActiveCfg = Debug|Any CPU
-		{4EFA56AC-2335-4E69-A486-85BA219B6392}.Development|Any CPU.Build.0 = Debug|Any CPU
-		{4EFA56AC-2335-4E69-A486-85BA219B6392}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4EFA56AC-2335-4E69-A486-85BA219B6392}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
