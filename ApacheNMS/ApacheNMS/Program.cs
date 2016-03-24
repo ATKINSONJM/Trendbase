@@ -39,10 +39,10 @@ namespace ApacheNMS
 
                 ITextMessage msg = (ITextMessage)message;
                 message.Acknowledge();
-                
 
 
-                /***if (globalColourValue == 0)
+
+                if (globalColourValue == 0)
                 {
                     Console.WriteLine("if (colourValue == 0) - Colour Value: " + globalColourValue.ToString());
                     Console.WriteLine(msg.Text);
@@ -58,8 +58,9 @@ namespace ApacheNMS
                     Console.ForegroundColor = ConsoleColor.White;
                     globalColourValue = 0;
                     Console.WriteLine("TRAINLINE NEW DATA FEED ENDED");
-                }**/
-                Console.WriteLine(msg.Text);
+                }
+                
+               Console.WriteLine(msg.Text);
 
             }
             catch (Exception ex)

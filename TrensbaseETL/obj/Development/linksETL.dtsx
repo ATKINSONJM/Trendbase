@@ -11,8 +11,8 @@
   DTS:LocaleID="2057"
   DTS:ObjectName="linksETL"
   DTS:PackageType="5"
-  DTS:VersionBuild="8"
-  DTS:VersionGUID="{D2DB5FD5-78D3-4906-8BAA-BD7D1B2E8E2F}">
+  DTS:VersionBuild="9"
+  DTS:VersionGUID="{98D217A8-91D5-4403-A4CD-D78231AA20A1}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -1548,37 +1548,37 @@
         <NodeLayout
           Size="150.4,41.6"
           Id="Package\Basic ETL into Trendbase Database\Flat File Source"
-          TopLeft="155.428574075504,72.0000005834243" />
+          TopLeft="156.000002656664,72.6117652978864" />
         <NodeLayout
           Size="155.2,41.6"
           Id="Package\Basic ETL into Trendbase Database\Data Conversion"
           TopLeft="344.571434439445,127.858825322584" />
         <EdgeLayout
           Id="Package\Basic ETL into Trendbase Database.Paths[Flat File Source Output]"
-          TopLeft="305.828574075504,92.8000005834243">
+          TopLeft="306.400002656664,93.4117652978864">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="38.7428603639406,50.2588247391592"
+              EndConnector="38.1714317827809,49.6470600246975"
               Start="0,0"
-              End="31.2428603639406,50.2588247391592">
+              End="30.6714317827809,49.6470600246975">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="18.3847637658324,0" />
+                    End="18.0546050300512,0" />
                   <mssgle:CubicBezierSegment
-                    Point1="18.3847637658324,0"
-                    Point2="22.3847637658324,0"
-                    Point3="22.3847637658324,4" />
+                    Point1="18.0546050300512,0"
+                    Point2="22.0546050300512,0"
+                    Point3="22.0546050300512,4" />
                   <mssgle:LineSegment
-                    End="22.3847637658324,46.2588247391592" />
+                    End="22.0546050300512,45.6470600246975" />
                   <mssgle:CubicBezierSegment
-                    Point1="22.3847637658324,46.2588247391592"
-                    Point2="22.3847637658324,50.2588247391592"
-                    Point3="26.3847637658324,50.2588247391592" />
+                    Point1="22.0546050300512,45.6470600246975"
+                    Point2="22.0546050300512,49.6470600246975"
+                    Point3="26.0546050300512,49.6470600246975" />
                   <mssgle:LineSegment
-                    End="31.2428603639406,50.2588247391592" />
+                    End="30.6714317827809,49.6470600246975" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>

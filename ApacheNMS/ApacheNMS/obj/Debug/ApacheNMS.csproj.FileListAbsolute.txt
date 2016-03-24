@@ -9,3 +9,14 @@ c:\users\chunk\documents\visual studio 2015\Projects\ApacheNMS\ApacheNMS\bin\Deb
 c:\users\chunk\documents\visual studio 2015\Projects\ApacheNMS\ApacheNMS\obj\Debug\ApacheNMS.csprojResolveAssemblyReference.cache
 c:\users\chunk\documents\visual studio 2015\Projects\ApacheNMS\ApacheNMS\obj\Debug\ApacheNMS.exe
 c:\users\chunk\documents\visual studio 2015\Projects\ApacheNMS\ApacheNMS\obj\Debug\ApacheNMS.pdb
+C:\Users\chunk\Source\Repos\Trendbase\ApacheNMS\ApacheNMS\bin\Debug\ApacheNMS.exe.config
+C:\Users\chunk\Source\Repos\Trendbase\ApacheNMS\ApacheNMS\obj\Debug\ApacheNMS.exe
+C:\Users\chunk\Source\Repos\Trendbase\ApacheNMS\ApacheNMS\obj\Debug\ApacheNMS.pdb
+C:\Users\chunk\Source\Repos\Trendbase\ApacheNMS\ApacheNMS\bin\Debug\ApacheNMS.exe
+C:\Users\chunk\Source\Repos\Trendbase\ApacheNMS\ApacheNMS\bin\Debug\ApacheNMS.pdb
+C:\Users\chunk\Source\Repos\Trendbase\ApacheNMS\ApacheNMS\bin\Debug\Apache.NMS.dll
+C:\Users\chunk\Source\Repos\Trendbase\ApacheNMS\ApacheNMS\bin\Debug\Apache.NMS.Stomp.dll
+C:\Users\chunk\Source\Repos\Trendbase\ApacheNMS\ApacheNMS\bin\Debug\Apache.NMS.pdb
+C:\Users\chunk\Source\Repos\Trendbase\ApacheNMS\ApacheNMS\bin\Debug\Apache.NMS.Stomp.pdb
+C:\Users\chunk\Source\Repos\Trendbase\ApacheNMS\ApacheNMS\bin\Debug\Apache.NMS.Stomp.xml
+C:\Users\chunk\Source\Repos\Trendbase\ApacheNMS\ApacheNMS\obj\Debug\ApacheNMS.csprojResolveAssemblyReference.cache

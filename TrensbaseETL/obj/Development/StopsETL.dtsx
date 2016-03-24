@@ -5,14 +5,14 @@
   DTS:CreationName="Microsoft.Package"
   DTS:CreatorComputerName="DESKTOP-5N8OBA5"
   DTS:CreatorName="DESKTOP-5N8OBA5\chunk"
-  DTS:DTSID="{E56AA661-03BC-4FDA-AC6A-3E34E8500B62}"
+  DTS:DTSID="{35C544ED-9D09-437C-956D-8032DE4562D8}"
   DTS:ExecutableType="Microsoft.Package"
   DTS:LastModifiedProductVersion="13.0.900.80"
   DTS:LocaleID="2057"
-  DTS:ObjectName="StopsETL"
+  DTS:ObjectName="stopsETL"
   DTS:PackageType="5"
-  DTS:VersionBuild="17"
-  DTS:VersionGUID="{C9AD8D77-1187-4CDA-9CCF-6F0BE0E37A5C}">
+  DTS:VersionBuild="18"
+  DTS:VersionGUID="{1FBBC7C3-5053-4989-9B60-302D531E4A07}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>

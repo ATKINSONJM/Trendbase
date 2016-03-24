@@ -2,7 +2,7 @@
 <BuildLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ProjectInfo>
     <Name>TrendbaseETL</Name>
-    <LastWriteTime>2016-03-23T23:20:06.7803701Z</LastWriteTime>
+    <LastWriteTime>2016-03-24T19:16:44.0743603Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
@@ -18,7 +18,7 @@
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>linksETL.dtsx</Name>
-      <LastWriteTime>2016-03-23T22:45:46.9801846Z</LastWriteTime>
+      <LastWriteTime>2016-03-24T19:16:44.0423581Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
@@ -27,8 +27,13 @@
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
-      <Name>StopsETL.dtsx</Name>
-      <LastWriteTime>2016-03-23T23:20:06.7280712Z</LastWriteTime>
+      <Name>stopsETL.dtsx</Name>
+      <LastWriteTime>2016-03-23T23:39:53.5018264Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>transfersETL.dtsx</Name>
+      <LastWriteTime>2016-03-24T19:18:13.4634983Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>
