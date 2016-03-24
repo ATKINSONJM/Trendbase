@@ -1,0 +1,1657 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="2/1/2016 3:09:31 AM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="DESKTOP-5N8OBA5"
+  DTS:CreatorName="DESKTOP-5N8OBA5\chunk"
+  DTS:DTSID="{E8BFD934-F079-4C23-96E0-03AFC63B89BF}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="13.0.900.80"
+  DTS:LocaleID="2057"
+  DTS:ObjectName="stops_timesETL"
+  DTS:PackageType="5"
+  DTS:VersionBuild="21"
+  DTS:VersionGUID="{83A960FC-BF74-476B-9F55-30BEC972CC3C}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager]"
+      DTS:CreationName="FLATFILE"
+      DTS:Description="manager for all data files"
+      DTS:DTSID="{C0F87F8C-0829-4F49-9C6D-4CD35E3F94B6}"
+      DTS:ObjectName="Flat File Connection Manager">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="2057"
+          DTS:HeaderRowDelimiter="_x002C_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\chunk\Desktop\uk_ouk_uk_national\stop_times.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="trip_id"
+              DTS:DTSID="{FB107564-37E7-4319-A987-1C13F482D8FF}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="arrival_time"
+              DTS:DTSID="{AA6352A4-8388-4A76-B9C3-63527EBB8A40}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="departure_time"
+              DTS:DTSID="{334D6068-750E-4B01-B139-6B7823B198AF}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="stop_id"
+              DTS:DTSID="{7480D5B6-E102-4C6B-AB5E-00FA0CE0CD97}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="stop_sequence"
+              DTS:DTSID="{91825A76-06F1-4C47-94CD-89682C4010EC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="pickup_type"
+              DTS:DTSID="{7A4C07B8-D303-4C95-A15C-8CA365F279BB}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="drop_off_type"
+              DTS:DTSID="{F3214B5F-8251-4013-89CA-B2C811542CB9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="wtt_arrival_time"
+              DTS:DTSID="{BB1D3FBB-084B-498F-A4FE-BFE9EC99AB12}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="wtt_departure_time"
+              DTS:DTSID="{AE492A23-8F11-461A-B926-57AC365F49A3}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="platform"
+              DTS:DTSID="{A8DD8262-268C-4E55-A4A6-904981190C6C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="line"
+              DTS:DTSID="{313D7E24-36EF-4E0A-A44A-C7EFD98ADA9D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="path"
+              DTS:DTSID="{22820E87-5C7D-413E-9605-380BE7E1CEBA}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="activity"
+              DTS:DTSID="{DBB22C03-B002-4325-994B-93A94D1F6604}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="engineering_allowance"
+              DTS:DTSID="{356BC0BD-303F-4910-8FAE-88693F8A43C1}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="pathing_allowance"
+              DTS:DTSID="{7E46B3A9-9887-4A11-9078-B0B28B42CD9A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="performance_allowance"
+              DTS:DTSID="{BE19576B-62A1-44AC-A94F-62AB032F2212}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Basic ETL into Trendbase Database"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{12D11292-7D81-44B5-AE20-404A600BE8D0}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Basic ETL into Trendbase Database"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Basic ETL into Trendbase Database\Data Conversion"
+              componentClassID="Microsoft.DataConvert"
+              contactInfo="Data Conversion;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Data Conversion"
+              name="Data Conversion"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Basic ETL into Trendbase Database\Data Conversion.Inputs[Data Conversion Input]"
+                  name="Data Conversion Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Basic ETL into Trendbase Database\Data Conversion.Inputs[Data Conversion Input].Columns[trip_id]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="trip_id"
+                      lineageId="Package\Basic ETL into Trendbase Database\Flat File Source.Outputs[Flat File Source Output].Columns[trip_id]" />
+                    <inputColumn
+                      refId="Package\Basic ETL into Trendbase Database\Data Conversion.Inputs[Data Conversion Input].Columns[arrival_time]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="arrival_time"
+                      lineageId="Package\Basic ETL into Trendbase Database\Flat File Source.Outputs[Flat File Source Output].Columns[arrival_time]" />
+                    <inputColumn
+                      refId="Package\Basic ETL into Trendbase Database\Data Conversion.Inputs[Data Conversion Input].Columns[departure_time]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="departure_time"
+                      lineageId="Package\Basic ETL into Trendbase Database\Flat File Source.Outputs[Flat File Source Output].Columns[departure_time]" />
+                    <inputColumn
+                      refId="Package\Basic ETL into Trendbase Database\Data Conversion.Inputs[Data Conversion Input].Columns[stop_id]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="stop_id"
+                      lineageId="Package\Basic ETL into Trendbase Database\Flat File Source.Outputs[Flat File Source Output].Columns[stop_id]" />
+                    <inputColumn
+                      refId="Package\Basic ETL into Trendbase Database\Data Conversion.Inputs[Data Conversion Input].Columns[stop_sequence]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="stop_sequence"
+                      lineageId="Package\Basic ETL into Trendbase Database\Flat File Source.Outputs[Flat File Source Output].Columns[stop_sequence]" />
+                    <inputColumn
+                      refId="Package\Basic ETL into Trendbase Database\Data Conversion.Inputs[Data Conversion Input].Columns[pickup_type]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="pickup_type"
+                      lineageId="Package\Basic ETL into Trendbase Database\Flat File Source.Outputs[Flat File Source Output].Columns[pickup_type]" />
+                    <inputColumn
+                      refId="Package\Basic ETL into Trendbase Database\Data Conversion.Inputs[Data Conversion Input].Columns[drop_off_type]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="drop_off_type"
+                      lineageId="Package\Basic ETL into Trendbase Database\Flat File Source.Outputs[Flat File Source Output].Columns[drop_off_type]" />
+                    <inputColumn
+                      refId="Package\Basic ETL into Trendbase Database\Data Conversion.Inputs[Data Conversion Input].Columns[wtt_arrival_time]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="wtt_arrival_time"
+                      lineageId="Package\Basic ETL into Trendbase Database\Flat File Source.Outputs[Flat File Source Output].Columns[wtt_arrival_time]" />
+                    <inputColumn
+                      refId="Package\Basic ETL into Trendbase Database\Data Conversion.Inputs[Data Conversion Input].Columns[wtt_departure_time]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="wtt_departure_time"
+                      lineageId="Package\Basic ETL into Trendbase Database\Flat File Source.Outputs[Flat File Source Output].Columns[wtt_departure_time]" />
+                    <inputColumn
+                      refId="Package\Basic ETL into Trendbase Database\Data Conversion.Inputs[Data Conversion Input].Columns[platform]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="platform"
+                      lineageId="Package\Basic ETL into Trendbase Database\Flat File Source.Outputs[Flat File Source Output].Columns[platform]" />
+                    <inputColumn
+                      refId="Package\Basic ETL into Trendbase Database\Data Conversion.Inputs[Data Conversion Input].Columns[line]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="line"
+                      lineageId="Package\Basic ETL into Trendbase Database\Flat File Source.Outputs[Flat File Source Output].Columns[line]" />
+                    <inputColumn
+                      refId="Package\Basic ETL into Trendbase Database\Data Conversion.Inputs[Data Conversion Input].Columns[path]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="path"
+                      lineageId="Package\Basic ETL into Trendbase Database\Flat File Source.Outputs[Flat File Source Output].Columns[path]" />
+                    <inputColumn
+                      refId="Package\Basic ETL into Trendbase Database\Data Conversion.Inputs[Data Conversion Input].Columns[activity]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="activity"
+                      lineageId="Package\Basic ETL into Trendbase Database\Flat File Source.Outputs[Flat File Source Output].Columns[activity]" />
+                    <inputColumn
+                      refId="Package\Basic ETL into Trendbase Database\Data Conversion.Inputs[Data Conversion Input].Columns[engineering_allowance]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="engineering_allowance"
+                      lineageId="Package\Basic ETL into Trendbase Database\Flat File Source.Outputs[Flat File Source Output].Columns[engineering_allowance]" />
+                    <inputColumn
+                      refId="Package\Basic ETL into Trendbase Database\Data Conversion.Inputs[Data Conversion Input].Columns[pathing_allowance]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="pathing_allowance"
+                      lineageId="Package\Basic ETL into Trendbase Database\Flat File Source.Outputs[Flat File Source Output].Columns[pathing_allowance]" />
+                    <inputColumn
+                      refId="Package\Basic ETL into Trendbase Database\Data Conversion.Inputs[Data Conversion Input].Columns[performance_allowance]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="performance_allowance"
+                      lineageId="Package\Basic ETL into Trendbase Database\Flat File Source.Outputs[Flat File Source Output].Columns[performance_allowance]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Basic ETL into Trendbase Database\Data Conversion.Outputs[Data Conversion Output]"
+                  exclusionGroup="1"
+                  name="Data Conversion Output"
+                  synchronousInputId="Package\Basic ETL into Trendbase Database\Data Conversion.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Basic ETL into Trendbase Database\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of trip_id]"
+                      dataType="numeric"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Basic ETL into Trendbase Database\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of trip_id]"
+                      name="Copy of trip_id"
+                      precision="18"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Basic ETL into Trendbase Database\Flat File Source.Outputs[Flat File Source Output].Columns[trip_id]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Basic ETL into Trendbase Database\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of arrival_time]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="50"
+                      lineageId="Package\Basic ETL into Trendbase Database\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of arrival_time]"
+                      name="Copy of arrival_time"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Basic ETL into Trendbase Database\Flat File Source.Outputs[Flat File Source Output].Columns[arrival_time]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Basic ETL into Trendbase Database\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of departure_time]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="50"
+                      lineageId="Package\Basic ETL into Trendbase Database\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of departure_time]"
+                      name="Copy of departure_time"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Basic ETL into Trendbase Database\Flat File Source.Outputs[Flat File Source Output].Columns[departure_time]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Basic ETL into Trendbase Database\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of stop_id]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="50"
+                      lineageId="Package\Basic ETL into Trendbase Database\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of stop_id]"
+                      name="Copy of stop_id"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Basic ETL into Trendbase Database\Flat File Source.Outputs[Flat File Source Output].Columns[stop_id]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Basic ETL into Trendbase Database\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of stop_sequence]"
+                      dataType="numeric"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Basic ETL into Trendbase Database\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of stop_sequence]"
+                      name="Copy of stop_sequence"
+                      precision="18"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Basic ETL into Trendbase Database\Flat File Source.Outputs[Flat File Source Output].Columns[stop_sequence]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Basic ETL into Trendbase Database\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of pickup_type]"
+                      dataType="numeric"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Basic ETL into Trendbase Database\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of pickup_type]"
+                      name="Copy of pickup_type"
+                      precision="18"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Basic ETL into Trendbase Database\Flat File Source.Outputs[Flat File Source Output].Columns[pickup_type]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Basic ETL into Trendbase Database\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of drop_off_type]"
+                      dataType="numeric"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Basic ETL into Trendbase Database\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of drop_off_type]"
+                      name="Copy of drop_off_type"
+                      precision="18"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Basic ETL into Trendbase Database\Flat File Source.Outputs[Flat File Source Output].Columns[drop_off_type]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Basic ETL into Trendbase Database\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of wtt_arrival_time]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="50"
+                      lineageId="Package\Basic ETL into Trendbase Database\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of wtt_arrival_time]"
+                      name="Copy of wtt_arrival_time"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Basic ETL into Trendbase Database\Flat File Source.Outputs[Flat File Source Output].Columns[wtt_arrival_time]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Basic ETL into Trendbase Database\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of wtt_departure_time]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="50"
+                      lineageId="Package\Basic ETL into Trendbase Database\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of wtt_departure_time]"
+                      name="Copy of wtt_departure_time"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Basic ETL into Trendbase Database\Flat File Source.Outputs[Flat File Source Output].Columns[wtt_departure_time]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Basic ETL into Trendbase Database\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of platform]"
+                      dataType="numeric"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Basic ETL into Trendbase Database\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of platform]"
+                      name="Copy of platform"
+                      precision="18"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Basic ETL into Trendbase Database\Flat File Source.Outputs[Flat File Source Output].Columns[platform]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Basic ETL into Trendbase Database\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of line]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="5"
+                      lineageId="Package\Basic ETL into Trendbase Database\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of line]"
+                      name="Copy of line"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Basic ETL into Trendbase Database\Flat File Source.Outputs[Flat File Source Output].Columns[line]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Basic ETL into Trendbase Database\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of path]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="5"
+                      lineageId="Package\Basic ETL into Trendbase Database\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of path]"
+                      name="Copy of path"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Basic ETL into Trendbase Database\Flat File Source.Outputs[Flat File Source Output].Columns[path]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Basic ETL into Trendbase Database\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of activity]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="5"
+                      lineageId="Package\Basic ETL into Trendbase Database\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of activity]"
+                      name="Copy of activity"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Basic ETL into Trendbase Database\Flat File Source.Outputs[Flat File Source Output].Columns[activity]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Basic ETL into Trendbase Database\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of engineering_allowance]"
+                      dataType="numeric"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Basic ETL into Trendbase Database\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of engineering_allowance]"
+                      name="Copy of engineering_allowance"
+                      precision="18"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Basic ETL into Trendbase Database\Flat File Source.Outputs[Flat File Source Output].Columns[engineering_allowance]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Basic ETL into Trendbase Database\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of pathing_allowance]"
+                      dataType="numeric"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Basic ETL into Trendbase Database\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of pathing_allowance]"
+                      name="Copy of pathing_allowance"
+                      precision="18"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Basic ETL into Trendbase Database\Flat File Source.Outputs[Flat File Source Output].Columns[pathing_allowance]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Basic ETL into Trendbase Database\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of performance_allowance]"
+                      dataType="numeric"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Basic ETL into Trendbase Database\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of performance_allowance]"
+                      name="Copy of performance_allowance"
+                      precision="18"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Basic ETL into Trendbase Database\Flat File Source.Outputs[Flat File Source Output].Columns[performance_allowance]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Basic ETL into Trendbase Database\Data Conversion.Outputs[Data Conversion Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Data Conversion Error Output"
+                  synchronousInputId="Package\Basic ETL into Trendbase Database\Data Conversion.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Basic ETL into Trendbase Database\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Basic ETL into Trendbase Database\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Basic ETL into Trendbase Database\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Basic ETL into Trendbase Database\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Basic ETL into Trendbase Database\Flat File Source"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Source"
+              localeId="2057"
+              name="Flat File Source"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether zero-length columns are treated as null."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Basic ETL into Trendbase Database\Flat File Source.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager]"
+                  connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Basic ETL into Trendbase Database\Flat File Source.Outputs[Flat File Source Output]"
+                  name="Flat File Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Basic ETL into Trendbase Database\Flat File Source.Outputs[Flat File Source Output].Columns[trip_id]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="IgnoreFailure"
+                      externalMetadataColumnId="Package\Basic ETL into Trendbase Database\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[trip_id]"
+                      length="50"
+                      lineageId="Package\Basic ETL into Trendbase Database\Flat File Source.Outputs[Flat File Source Output].Columns[trip_id]"
+                      name="trip_id"
+                      truncationRowDisposition="IgnoreFailure">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Basic ETL into Trendbase Database\Flat File Source.Outputs[Flat File Source Output].Columns[arrival_time]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="IgnoreFailure"
+                      externalMetadataColumnId="Package\Basic ETL into Trendbase Database\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[arrival_time]"
+                      length="50"
+                      lineageId="Package\Basic ETL into Trendbase Database\Flat File Source.Outputs[Flat File Source Output].Columns[arrival_time]"
+                      name="arrival_time"
+                      truncationRowDisposition="IgnoreFailure">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Basic ETL into Trendbase Database\Flat File Source.Outputs[Flat File Source Output].Columns[departure_time]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="IgnoreFailure"
+                      externalMetadataColumnId="Package\Basic ETL into Trendbase Database\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[departure_time]"
+                      length="50"
+                      lineageId="Package\Basic ETL into Trendbase Database\Flat File Source.Outputs[Flat File Source Output].Columns[departure_time]"
+                      name="departure_time"
+                      truncationRowDisposition="IgnoreFailure">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Basic ETL into Trendbase Database\Flat File Source.Outputs[Flat File Source Output].Columns[stop_id]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="IgnoreFailure"
+                      externalMetadataColumnId="Package\Basic ETL into Trendbase Database\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[stop_id]"
+                      length="50"
+                      lineageId="Package\Basic ETL into Trendbase Database\Flat File Source.Outputs[Flat File Source Output].Columns[stop_id]"
+                      name="stop_id"
+                      truncationRowDisposition="IgnoreFailure">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Basic ETL into Trendbase Database\Flat File Source.Outputs[Flat File Source Output].Columns[stop_sequence]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="IgnoreFailure"
+                      externalMetadataColumnId="Package\Basic ETL into Trendbase Database\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[stop_sequence]"
+                      length="50"
+                      lineageId="Package\Basic ETL into Trendbase Database\Flat File Source.Outputs[Flat File Source Output].Columns[stop_sequence]"
+                      name="stop_sequence"
+                      truncationRowDisposition="IgnoreFailure">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Basic ETL into Trendbase Database\Flat File Source.Outputs[Flat File Source Output].Columns[pickup_type]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="IgnoreFailure"
+                      externalMetadataColumnId="Package\Basic ETL into Trendbase Database\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[pickup_type]"
+                      length="50"
+                      lineageId="Package\Basic ETL into Trendbase Database\Flat File Source.Outputs[Flat File Source Output].Columns[pickup_type]"
+                      name="pickup_type"
+                      truncationRowDisposition="IgnoreFailure">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Basic ETL into Trendbase Database\Flat File Source.Outputs[Flat File Source Output].Columns[drop_off_type]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="IgnoreFailure"
+                      externalMetadataColumnId="Package\Basic ETL into Trendbase Database\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[drop_off_type]"
+                      length="50"
+                      lineageId="Package\Basic ETL into Trendbase Database\Flat File Source.Outputs[Flat File Source Output].Columns[drop_off_type]"
+                      name="drop_off_type"
+                      truncationRowDisposition="IgnoreFailure">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Basic ETL into Trendbase Database\Flat File Source.Outputs[Flat File Source Output].Columns[wtt_arrival_time]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="IgnoreFailure"
+                      externalMetadataColumnId="Package\Basic ETL into Trendbase Database\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[wtt_arrival_time]"
+                      length="50"
+                      lineageId="Package\Basic ETL into Trendbase Database\Flat File Source.Outputs[Flat File Source Output].Columns[wtt_arrival_time]"
+                      name="wtt_arrival_time"
+                      truncationRowDisposition="IgnoreFailure">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Basic ETL into Trendbase Database\Flat File Source.Outputs[Flat File Source Output].Columns[wtt_departure_time]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="IgnoreFailure"
+                      externalMetadataColumnId="Package\Basic ETL into Trendbase Database\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[wtt_departure_time]"
+                      length="50"
+                      lineageId="Package\Basic ETL into Trendbase Database\Flat File Source.Outputs[Flat File Source Output].Columns[wtt_departure_time]"
+                      name="wtt_departure_time"
+                      truncationRowDisposition="IgnoreFailure">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Basic ETL into Trendbase Database\Flat File Source.Outputs[Flat File Source Output].Columns[platform]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="IgnoreFailure"
+                      externalMetadataColumnId="Package\Basic ETL into Trendbase Database\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[platform]"
+                      length="50"
+                      lineageId="Package\Basic ETL into Trendbase Database\Flat File Source.Outputs[Flat File Source Output].Columns[platform]"
+                      name="platform"
+                      truncationRowDisposition="IgnoreFailure">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Basic ETL into Trendbase Database\Flat File Source.Outputs[Flat File Source Output].Columns[line]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="IgnoreFailure"
+                      externalMetadataColumnId="Package\Basic ETL into Trendbase Database\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[line]"
+                      length="50"
+                      lineageId="Package\Basic ETL into Trendbase Database\Flat File Source.Outputs[Flat File Source Output].Columns[line]"
+                      name="line"
+                      truncationRowDisposition="IgnoreFailure">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Basic ETL into Trendbase Database\Flat File Source.Outputs[Flat File Source Output].Columns[path]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="IgnoreFailure"
+                      externalMetadataColumnId="Package\Basic ETL into Trendbase Database\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[path]"
+                      length="50"
+                      lineageId="Package\Basic ETL into Trendbase Database\Flat File Source.Outputs[Flat File Source Output].Columns[path]"
+                      name="path"
+                      truncationRowDisposition="IgnoreFailure">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Basic ETL into Trendbase Database\Flat File Source.Outputs[Flat File Source Output].Columns[activity]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="IgnoreFailure"
+                      externalMetadataColumnId="Package\Basic ETL into Trendbase Database\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[activity]"
+                      length="50"
+                      lineageId="Package\Basic ETL into Trendbase Database\Flat File Source.Outputs[Flat File Source Output].Columns[activity]"
+                      name="activity"
+                      truncationRowDisposition="IgnoreFailure">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Basic ETL into Trendbase Database\Flat File Source.Outputs[Flat File Source Output].Columns[engineering_allowance]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="IgnoreFailure"
+                      externalMetadataColumnId="Package\Basic ETL into Trendbase Database\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[engineering_allowance]"
+                      length="50"
+                      lineageId="Package\Basic ETL into Trendbase Database\Flat File Source.Outputs[Flat File Source Output].Columns[engineering_allowance]"
+                      name="engineering_allowance"
+                      truncationRowDisposition="IgnoreFailure">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Basic ETL into Trendbase Database\Flat File Source.Outputs[Flat File Source Output].Columns[pathing_allowance]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="IgnoreFailure"
+                      externalMetadataColumnId="Package\Basic ETL into Trendbase Database\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[pathing_allowance]"
+                      length="50"
+                      lineageId="Package\Basic ETL into Trendbase Database\Flat File Source.Outputs[Flat File Source Output].Columns[pathing_allowance]"
+                      name="pathing_allowance"
+                      truncationRowDisposition="IgnoreFailure">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Basic ETL into Trendbase Database\Flat File Source.Outputs[Flat File Source Output].Columns[performance_allowance]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="IgnoreFailure"
+                      externalMetadataColumnId="Package\Basic ETL into Trendbase Database\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[performance_allowance]"
+                      length="50"
+                      lineageId="Package\Basic ETL into Trendbase Database\Flat File Source.Outputs[Flat File Source Output].Columns[performance_allowance]"
+                      name="performance_allowance"
+                      truncationRowDisposition="IgnoreFailure">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Basic ETL into Trendbase Database\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[trip_id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="trip_id" />
+                    <externalMetadataColumn
+                      refId="Package\Basic ETL into Trendbase Database\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[arrival_time]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="arrival_time" />
+                    <externalMetadataColumn
+                      refId="Package\Basic ETL into Trendbase Database\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[departure_time]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="departure_time" />
+                    <externalMetadataColumn
+                      refId="Package\Basic ETL into Trendbase Database\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[stop_id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="stop_id" />
+                    <externalMetadataColumn
+                      refId="Package\Basic ETL into Trendbase Database\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[stop_sequence]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="stop_sequence" />
+                    <externalMetadataColumn
+                      refId="Package\Basic ETL into Trendbase Database\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[pickup_type]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="pickup_type" />
+                    <externalMetadataColumn
+                      refId="Package\Basic ETL into Trendbase Database\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[drop_off_type]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="drop_off_type" />
+                    <externalMetadataColumn
+                      refId="Package\Basic ETL into Trendbase Database\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[wtt_arrival_time]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="wtt_arrival_time" />
+                    <externalMetadataColumn
+                      refId="Package\Basic ETL into Trendbase Database\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[wtt_departure_time]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="wtt_departure_time" />
+                    <externalMetadataColumn
+                      refId="Package\Basic ETL into Trendbase Database\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[platform]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="platform" />
+                    <externalMetadataColumn
+                      refId="Package\Basic ETL into Trendbase Database\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[line]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="line" />
+                    <externalMetadataColumn
+                      refId="Package\Basic ETL into Trendbase Database\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[path]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="path" />
+                    <externalMetadataColumn
+                      refId="Package\Basic ETL into Trendbase Database\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[activity]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="activity" />
+                    <externalMetadataColumn
+                      refId="Package\Basic ETL into Trendbase Database\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[engineering_allowance]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="engineering_allowance" />
+                    <externalMetadataColumn
+                      refId="Package\Basic ETL into Trendbase Database\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[pathing_allowance]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="pathing_allowance" />
+                    <externalMetadataColumn
+                      refId="Package\Basic ETL into Trendbase Database\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[performance_allowance]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="performance_allowance" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Basic ETL into Trendbase Database\Flat File Source.Outputs[Flat File Source Error Output]"
+                  isErrorOut="true"
+                  name="Flat File Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Basic ETL into Trendbase Database\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      codePage="1252"
+                      dataType="text"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\Basic ETL into Trendbase Database\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column" />
+                    <outputColumn
+                      refId="Package\Basic ETL into Trendbase Database\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Basic ETL into Trendbase Database\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Basic ETL into Trendbase Database\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Basic ETL into Trendbase Database\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Basic ETL into Trendbase Database\Trendbase Database"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="Trendbase Database"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[stop_times]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Basic ETL into Trendbase Database\Trendbase Database.Connections[OleDbConnection]"
+                  connectionManagerID="{F7331879-F2FA-4509-B5F9-8269FD762383}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[DESKTOP-5N8OBA5.Trendbase]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Basic ETL into Trendbase Database\Trendbase Database.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="IgnoreFailure"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Basic ETL into Trendbase Database\Trendbase Database.Inputs[OLE DB Destination Input].Columns[Copy of trip_id]"
+                      cachedDataType="numeric"
+                      cachedName="Copy of trip_id"
+                      cachedPrecision="18"
+                      externalMetadataColumnId="Package\Basic ETL into Trendbase Database\Trendbase Database.Inputs[OLE DB Destination Input].ExternalColumns[trip_id]"
+                      lineageId="Package\Basic ETL into Trendbase Database\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of trip_id]" />
+                    <inputColumn
+                      refId="Package\Basic ETL into Trendbase Database\Trendbase Database.Inputs[OLE DB Destination Input].Columns[Copy of arrival_time]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Copy of arrival_time"
+                      externalMetadataColumnId="Package\Basic ETL into Trendbase Database\Trendbase Database.Inputs[OLE DB Destination Input].ExternalColumns[arrival_time]"
+                      lineageId="Package\Basic ETL into Trendbase Database\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of arrival_time]" />
+                    <inputColumn
+                      refId="Package\Basic ETL into Trendbase Database\Trendbase Database.Inputs[OLE DB Destination Input].Columns[Copy of departure_time]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Copy of departure_time"
+                      externalMetadataColumnId="Package\Basic ETL into Trendbase Database\Trendbase Database.Inputs[OLE DB Destination Input].ExternalColumns[departure_time]"
+                      lineageId="Package\Basic ETL into Trendbase Database\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of departure_time]" />
+                    <inputColumn
+                      refId="Package\Basic ETL into Trendbase Database\Trendbase Database.Inputs[OLE DB Destination Input].Columns[Copy of stop_id]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Copy of stop_id"
+                      externalMetadataColumnId="Package\Basic ETL into Trendbase Database\Trendbase Database.Inputs[OLE DB Destination Input].ExternalColumns[stop_id]"
+                      lineageId="Package\Basic ETL into Trendbase Database\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of stop_id]" />
+                    <inputColumn
+                      refId="Package\Basic ETL into Trendbase Database\Trendbase Database.Inputs[OLE DB Destination Input].Columns[Copy of stop_sequence]"
+                      cachedDataType="numeric"
+                      cachedName="Copy of stop_sequence"
+                      cachedPrecision="18"
+                      externalMetadataColumnId="Package\Basic ETL into Trendbase Database\Trendbase Database.Inputs[OLE DB Destination Input].ExternalColumns[stop_sequence]"
+                      lineageId="Package\Basic ETL into Trendbase Database\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of stop_sequence]" />
+                    <inputColumn
+                      refId="Package\Basic ETL into Trendbase Database\Trendbase Database.Inputs[OLE DB Destination Input].Columns[Copy of pickup_type]"
+                      cachedDataType="numeric"
+                      cachedName="Copy of pickup_type"
+                      cachedPrecision="18"
+                      externalMetadataColumnId="Package\Basic ETL into Trendbase Database\Trendbase Database.Inputs[OLE DB Destination Input].ExternalColumns[pickup_type]"
+                      lineageId="Package\Basic ETL into Trendbase Database\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of pickup_type]" />
+                    <inputColumn
+                      refId="Package\Basic ETL into Trendbase Database\Trendbase Database.Inputs[OLE DB Destination Input].Columns[Copy of drop_off_type]"
+                      cachedDataType="numeric"
+                      cachedName="Copy of drop_off_type"
+                      cachedPrecision="18"
+                      externalMetadataColumnId="Package\Basic ETL into Trendbase Database\Trendbase Database.Inputs[OLE DB Destination Input].ExternalColumns[drop_off_type]"
+                      lineageId="Package\Basic ETL into Trendbase Database\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of drop_off_type]" />
+                    <inputColumn
+                      refId="Package\Basic ETL into Trendbase Database\Trendbase Database.Inputs[OLE DB Destination Input].Columns[Copy of wtt_arrival_time]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Copy of wtt_arrival_time"
+                      externalMetadataColumnId="Package\Basic ETL into Trendbase Database\Trendbase Database.Inputs[OLE DB Destination Input].ExternalColumns[wtt_arrival_time]"
+                      lineageId="Package\Basic ETL into Trendbase Database\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of wtt_arrival_time]" />
+                    <inputColumn
+                      refId="Package\Basic ETL into Trendbase Database\Trendbase Database.Inputs[OLE DB Destination Input].Columns[Copy of wtt_departure_time]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Copy of wtt_departure_time"
+                      externalMetadataColumnId="Package\Basic ETL into Trendbase Database\Trendbase Database.Inputs[OLE DB Destination Input].ExternalColumns[wtt_departure_time]"
+                      lineageId="Package\Basic ETL into Trendbase Database\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of wtt_departure_time]" />
+                    <inputColumn
+                      refId="Package\Basic ETL into Trendbase Database\Trendbase Database.Inputs[OLE DB Destination Input].Columns[Copy of platform]"
+                      cachedDataType="numeric"
+                      cachedName="Copy of platform"
+                      cachedPrecision="18"
+                      externalMetadataColumnId="Package\Basic ETL into Trendbase Database\Trendbase Database.Inputs[OLE DB Destination Input].ExternalColumns[platform]"
+                      lineageId="Package\Basic ETL into Trendbase Database\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of platform]" />
+                    <inputColumn
+                      refId="Package\Basic ETL into Trendbase Database\Trendbase Database.Inputs[OLE DB Destination Input].Columns[Copy of line]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="5"
+                      cachedName="Copy of line"
+                      externalMetadataColumnId="Package\Basic ETL into Trendbase Database\Trendbase Database.Inputs[OLE DB Destination Input].ExternalColumns[line]"
+                      lineageId="Package\Basic ETL into Trendbase Database\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of line]" />
+                    <inputColumn
+                      refId="Package\Basic ETL into Trendbase Database\Trendbase Database.Inputs[OLE DB Destination Input].Columns[Copy of path]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="5"
+                      cachedName="Copy of path"
+                      externalMetadataColumnId="Package\Basic ETL into Trendbase Database\Trendbase Database.Inputs[OLE DB Destination Input].ExternalColumns[path]"
+                      lineageId="Package\Basic ETL into Trendbase Database\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of path]" />
+                    <inputColumn
+                      refId="Package\Basic ETL into Trendbase Database\Trendbase Database.Inputs[OLE DB Destination Input].Columns[Copy of activity]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="5"
+                      cachedName="Copy of activity"
+                      externalMetadataColumnId="Package\Basic ETL into Trendbase Database\Trendbase Database.Inputs[OLE DB Destination Input].ExternalColumns[activity]"
+                      lineageId="Package\Basic ETL into Trendbase Database\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of activity]" />
+                    <inputColumn
+                      refId="Package\Basic ETL into Trendbase Database\Trendbase Database.Inputs[OLE DB Destination Input].Columns[Copy of engineering_allowance]"
+                      cachedDataType="numeric"
+                      cachedName="Copy of engineering_allowance"
+                      cachedPrecision="18"
+                      externalMetadataColumnId="Package\Basic ETL into Trendbase Database\Trendbase Database.Inputs[OLE DB Destination Input].ExternalColumns[engineering_allowance]"
+                      lineageId="Package\Basic ETL into Trendbase Database\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of engineering_allowance]" />
+                    <inputColumn
+                      refId="Package\Basic ETL into Trendbase Database\Trendbase Database.Inputs[OLE DB Destination Input].Columns[Copy of pathing_allowance]"
+                      cachedDataType="numeric"
+                      cachedName="Copy of pathing_allowance"
+                      cachedPrecision="18"
+                      externalMetadataColumnId="Package\Basic ETL into Trendbase Database\Trendbase Database.Inputs[OLE DB Destination Input].ExternalColumns[pathing_allowance]"
+                      lineageId="Package\Basic ETL into Trendbase Database\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of pathing_allowance]" />
+                    <inputColumn
+                      refId="Package\Basic ETL into Trendbase Database\Trendbase Database.Inputs[OLE DB Destination Input].Columns[Copy of performance_allowance]"
+                      cachedDataType="numeric"
+                      cachedName="Copy of performance_allowance"
+                      cachedPrecision="18"
+                      externalMetadataColumnId="Package\Basic ETL into Trendbase Database\Trendbase Database.Inputs[OLE DB Destination Input].ExternalColumns[performance_allowance]"
+                      lineageId="Package\Basic ETL into Trendbase Database\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of performance_allowance]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Basic ETL into Trendbase Database\Trendbase Database.Inputs[OLE DB Destination Input].ExternalColumns[trip_id]"
+                      dataType="i4"
+                      name="trip_id" />
+                    <externalMetadataColumn
+                      refId="Package\Basic ETL into Trendbase Database\Trendbase Database.Inputs[OLE DB Destination Input].ExternalColumns[arrival_time]"
+                      dataType="dbTime2"
+                      name="arrival_time"
+                      scale="1" />
+                    <externalMetadataColumn
+                      refId="Package\Basic ETL into Trendbase Database\Trendbase Database.Inputs[OLE DB Destination Input].ExternalColumns[departure_time]"
+                      dataType="dbTime2"
+                      name="departure_time"
+                      scale="1" />
+                    <externalMetadataColumn
+                      refId="Package\Basic ETL into Trendbase Database\Trendbase Database.Inputs[OLE DB Destination Input].ExternalColumns[stop_id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="stop_id" />
+                    <externalMetadataColumn
+                      refId="Package\Basic ETL into Trendbase Database\Trendbase Database.Inputs[OLE DB Destination Input].ExternalColumns[stop_sequence]"
+                      dataType="i4"
+                      name="stop_sequence" />
+                    <externalMetadataColumn
+                      refId="Package\Basic ETL into Trendbase Database\Trendbase Database.Inputs[OLE DB Destination Input].ExternalColumns[pickup_type]"
+                      dataType="i4"
+                      name="pickup_type" />
+                    <externalMetadataColumn
+                      refId="Package\Basic ETL into Trendbase Database\Trendbase Database.Inputs[OLE DB Destination Input].ExternalColumns[drop_off_type]"
+                      dataType="i4"
+                      name="drop_off_type" />
+                    <externalMetadataColumn
+                      refId="Package\Basic ETL into Trendbase Database\Trendbase Database.Inputs[OLE DB Destination Input].ExternalColumns[wtt_arrival_time]"
+                      dataType="dbTime2"
+                      name="wtt_arrival_time"
+                      scale="1" />
+                    <externalMetadataColumn
+                      refId="Package\Basic ETL into Trendbase Database\Trendbase Database.Inputs[OLE DB Destination Input].ExternalColumns[wtt_departure_time]"
+                      dataType="dbTime2"
+                      name="wtt_departure_time"
+                      scale="1" />
+                    <externalMetadataColumn
+                      refId="Package\Basic ETL into Trendbase Database\Trendbase Database.Inputs[OLE DB Destination Input].ExternalColumns[platform]"
+                      dataType="i4"
+                      name="platform" />
+                    <externalMetadataColumn
+                      refId="Package\Basic ETL into Trendbase Database\Trendbase Database.Inputs[OLE DB Destination Input].ExternalColumns[line]"
+                      codePage="1252"
+                      dataType="str"
+                      length="5"
+                      name="line" />
+                    <externalMetadataColumn
+                      refId="Package\Basic ETL into Trendbase Database\Trendbase Database.Inputs[OLE DB Destination Input].ExternalColumns[path]"
+                      codePage="1252"
+                      dataType="str"
+                      length="5"
+                      name="path" />
+                    <externalMetadataColumn
+                      refId="Package\Basic ETL into Trendbase Database\Trendbase Database.Inputs[OLE DB Destination Input].ExternalColumns[activity]"
+                      codePage="1252"
+                      dataType="str"
+                      length="5"
+                      name="activity" />
+                    <externalMetadataColumn
+                      refId="Package\Basic ETL into Trendbase Database\Trendbase Database.Inputs[OLE DB Destination Input].ExternalColumns[engineering_allowance]"
+                      dataType="i4"
+                      name="engineering_allowance" />
+                    <externalMetadataColumn
+                      refId="Package\Basic ETL into Trendbase Database\Trendbase Database.Inputs[OLE DB Destination Input].ExternalColumns[pathing_allowance]"
+                      dataType="i4"
+                      name="pathing_allowance" />
+                    <externalMetadataColumn
+                      refId="Package\Basic ETL into Trendbase Database\Trendbase Database.Inputs[OLE DB Destination Input].ExternalColumns[performance_allowance]"
+                      dataType="i4"
+                      name="performance_allowance" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Basic ETL into Trendbase Database\Trendbase Database.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Basic ETL into Trendbase Database\Trendbase Database.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Basic ETL into Trendbase Database\Trendbase Database.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Basic ETL into Trendbase Database\Trendbase Database.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Basic ETL into Trendbase Database\Trendbase Database.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Basic ETL into Trendbase Database\Trendbase Database.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Basic ETL into Trendbase Database.Paths[Data Conversion Output]"
+              endId="Package\Basic ETL into Trendbase Database\Trendbase Database.Inputs[OLE DB Destination Input]"
+              name="Data Conversion Output"
+              startId="Package\Basic ETL into Trendbase Database\Data Conversion.Outputs[Data Conversion Output]" />
+            <path
+              refId="Package\Basic ETL into Trendbase Database.Paths[Flat File Source Output]"
+              endId="Package\Basic ETL into Trendbase Database\Data Conversion.Inputs[Data Conversion Input]"
+              name="Flat File Source Output"
+              startId="Package\Basic ETL into Trendbase Database\Flat File Source.Outputs[Flat File Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="244,41.6"
+          Id="Package\Basic ETL into Trendbase Database"
+          TopLeft="38.8571435188761,68.5176480197576" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Basic ETL into Trendbase Database">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="150.4,41.6"
+          Id="Package\Basic ETL into Trendbase Database\Flat File Source"
+          TopLeft="65.7142868333933,40.3764711545001" />
+        <NodeLayout
+          Size="155.2,41.6"
+          Id="Package\Basic ETL into Trendbase Database\Data Conversion"
+          TopLeft="254.285718616174,115.011766318879" />
+        <NodeLayout
+          Size="175.2,41.6"
+          Id="Package\Basic ETL into Trendbase Database\Trendbase Database"
+          TopLeft="52.000000885555,179.247061337402" />
+        <EdgeLayout
+          Id="Package\Basic ETL into Trendbase Database.Paths[Flat File Source Output]"
+          TopLeft="140.914286833393,81.9764711545001">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="190.971431782781,33.035295164379"
+              Start="0,0"
+              End="190.971431782781,25.535295164379">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,12.5176475821895" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,12.5176475821895"
+                    Point2="0,16.5176475821895"
+                    Point3="4,16.5176475821895" />
+                  <mssgle:LineSegment
+                    End="186.971431782781,16.5176475821895" />
+                  <mssgle:CubicBezierSegment
+                    Point1="186.971431782781,16.5176475821895"
+                    Point2="190.971431782781,16.5176475821895"
+                    Point3="190.971431782781,20.5176475821895" />
+                  <mssgle:LineSegment
+                    End="190.971431782781,25.535295164379" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Basic ETL into Trendbase Database.Paths[Data Conversion Output]"
+          TopLeft="331.885718616174,156.611766318879">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-192.285717730619,22.6352950185229"
+              Start="0,0"
+              End="-192.285717730619,15.1352950185229">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,7.31764750926143" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,7.31764750926143"
+                    Point2="0,11.3176475092614"
+                    Point3="-4,11.3176475092614" />
+                  <mssgle:LineSegment
+                    End="-188.285717730619,11.3176475092614" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-188.285717730619,11.3176475092614"
+                    Point2="-192.285717730619,11.3176475092614"
+                    Point3="-192.285717730619,15.3176475092614" />
+                  <mssgle:LineSegment
+                    End="-192.285717730619,15.1352950185229" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Basic ETL into Trendbase Database\Trendbase Database">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
