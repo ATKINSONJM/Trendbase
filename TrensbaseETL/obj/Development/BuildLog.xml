@@ -2,7 +2,7 @@
 <BuildLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ProjectInfo>
     <Name>TrendbaseETL</Name>
-    <LastWriteTime>2016-03-24T21:59:54.4507914Z</LastWriteTime>
+    <LastWriteTime>2016-03-24T23:51:51.5770188Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
@@ -38,7 +38,12 @@
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>stops_timesETL.dtsx</Name>
-      <LastWriteTime>2016-03-24T22:01:09.2775269Z</LastWriteTime>
+      <LastWriteTime>2016-03-24T23:10:16.5252086Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>tripsETL.dtsx</Name>
+      <LastWriteTime>2016-03-24T23:51:51.530443Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>

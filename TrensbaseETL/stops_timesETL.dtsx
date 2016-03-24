@@ -11,8 +11,8 @@
   DTS:LocaleID="2057"
   DTS:ObjectName="stops_timesETL"
   DTS:PackageType="5"
-  DTS:VersionBuild="21"
-  DTS:VersionGUID="{83A960FC-BF74-476B-9F55-30BEC972CC3C}">
+  DTS:VersionBuild="23"
+  DTS:VersionGUID="{1320C1E5-776F-4323-90B0-FC88E8632BB9}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -337,11 +337,11 @@
                       refId="Package\Basic ETL into Trendbase Database\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of trip_id]"
                       dataType="numeric"
                       errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
+                      errorRowDisposition="IgnoreFailure"
                       lineageId="Package\Basic ETL into Trendbase Database\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of trip_id]"
                       name="Copy of trip_id"
                       precision="18"
-                      truncationRowDisposition="FailComponent">
+                      truncationRowDisposition="IgnoreFailure">
                       <properties>
                         <property
                           containsID="true"
@@ -359,11 +359,11 @@
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
+                      errorRowDisposition="IgnoreFailure"
                       length="50"
                       lineageId="Package\Basic ETL into Trendbase Database\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of arrival_time]"
                       name="Copy of arrival_time"
-                      truncationRowDisposition="FailComponent">
+                      truncationRowDisposition="IgnoreFailure">
                       <properties>
                         <property
                           containsID="true"
@@ -381,11 +381,11 @@
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
+                      errorRowDisposition="IgnoreFailure"
                       length="50"
                       lineageId="Package\Basic ETL into Trendbase Database\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of departure_time]"
                       name="Copy of departure_time"
-                      truncationRowDisposition="FailComponent">
+                      truncationRowDisposition="IgnoreFailure">
                       <properties>
                         <property
                           containsID="true"
@@ -403,11 +403,11 @@
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
+                      errorRowDisposition="IgnoreFailure"
                       length="50"
                       lineageId="Package\Basic ETL into Trendbase Database\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of stop_id]"
                       name="Copy of stop_id"
-                      truncationRowDisposition="FailComponent">
+                      truncationRowDisposition="IgnoreFailure">
                       <properties>
                         <property
                           containsID="true"
@@ -424,11 +424,11 @@
                       refId="Package\Basic ETL into Trendbase Database\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of stop_sequence]"
                       dataType="numeric"
                       errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
+                      errorRowDisposition="IgnoreFailure"
                       lineageId="Package\Basic ETL into Trendbase Database\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of stop_sequence]"
                       name="Copy of stop_sequence"
                       precision="18"
-                      truncationRowDisposition="FailComponent">
+                      truncationRowDisposition="IgnoreFailure">
                       <properties>
                         <property
                           containsID="true"
@@ -445,11 +445,11 @@
                       refId="Package\Basic ETL into Trendbase Database\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of pickup_type]"
                       dataType="numeric"
                       errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
+                      errorRowDisposition="IgnoreFailure"
                       lineageId="Package\Basic ETL into Trendbase Database\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of pickup_type]"
                       name="Copy of pickup_type"
                       precision="18"
-                      truncationRowDisposition="FailComponent">
+                      truncationRowDisposition="IgnoreFailure">
                       <properties>
                         <property
                           containsID="true"
@@ -466,11 +466,11 @@
                       refId="Package\Basic ETL into Trendbase Database\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of drop_off_type]"
                       dataType="numeric"
                       errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
+                      errorRowDisposition="IgnoreFailure"
                       lineageId="Package\Basic ETL into Trendbase Database\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of drop_off_type]"
                       name="Copy of drop_off_type"
                       precision="18"
-                      truncationRowDisposition="FailComponent">
+                      truncationRowDisposition="IgnoreFailure">
                       <properties>
                         <property
                           containsID="true"
@@ -488,11 +488,11 @@
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
+                      errorRowDisposition="IgnoreFailure"
                       length="50"
                       lineageId="Package\Basic ETL into Trendbase Database\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of wtt_arrival_time]"
                       name="Copy of wtt_arrival_time"
-                      truncationRowDisposition="FailComponent">
+                      truncationRowDisposition="IgnoreFailure">
                       <properties>
                         <property
                           containsID="true"
@@ -510,11 +510,11 @@
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
+                      errorRowDisposition="IgnoreFailure"
                       length="50"
                       lineageId="Package\Basic ETL into Trendbase Database\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of wtt_departure_time]"
                       name="Copy of wtt_departure_time"
-                      truncationRowDisposition="FailComponent">
+                      truncationRowDisposition="IgnoreFailure">
                       <properties>
                         <property
                           containsID="true"
@@ -531,11 +531,11 @@
                       refId="Package\Basic ETL into Trendbase Database\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of platform]"
                       dataType="numeric"
                       errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
+                      errorRowDisposition="IgnoreFailure"
                       lineageId="Package\Basic ETL into Trendbase Database\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of platform]"
                       name="Copy of platform"
                       precision="18"
-                      truncationRowDisposition="FailComponent">
+                      truncationRowDisposition="IgnoreFailure">
                       <properties>
                         <property
                           containsID="true"
@@ -553,11 +553,11 @@
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
+                      errorRowDisposition="IgnoreFailure"
                       length="5"
                       lineageId="Package\Basic ETL into Trendbase Database\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of line]"
                       name="Copy of line"
-                      truncationRowDisposition="FailComponent">
+                      truncationRowDisposition="IgnoreFailure">
                       <properties>
                         <property
                           containsID="true"
@@ -575,11 +575,11 @@
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
+                      errorRowDisposition="IgnoreFailure"
                       length="5"
                       lineageId="Package\Basic ETL into Trendbase Database\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of path]"
                       name="Copy of path"
-                      truncationRowDisposition="FailComponent">
+                      truncationRowDisposition="IgnoreFailure">
                       <properties>
                         <property
                           containsID="true"
@@ -597,11 +597,11 @@
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
+                      errorRowDisposition="IgnoreFailure"
                       length="5"
                       lineageId="Package\Basic ETL into Trendbase Database\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of activity]"
                       name="Copy of activity"
-                      truncationRowDisposition="FailComponent">
+                      truncationRowDisposition="IgnoreFailure">
                       <properties>
                         <property
                           containsID="true"
@@ -618,11 +618,11 @@
                       refId="Package\Basic ETL into Trendbase Database\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of engineering_allowance]"
                       dataType="numeric"
                       errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
+                      errorRowDisposition="IgnoreFailure"
                       lineageId="Package\Basic ETL into Trendbase Database\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of engineering_allowance]"
                       name="Copy of engineering_allowance"
                       precision="18"
-                      truncationRowDisposition="FailComponent">
+                      truncationRowDisposition="IgnoreFailure">
                       <properties>
                         <property
                           containsID="true"
@@ -639,11 +639,11 @@
                       refId="Package\Basic ETL into Trendbase Database\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of pathing_allowance]"
                       dataType="numeric"
                       errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
+                      errorRowDisposition="IgnoreFailure"
                       lineageId="Package\Basic ETL into Trendbase Database\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of pathing_allowance]"
                       name="Copy of pathing_allowance"
                       precision="18"
-                      truncationRowDisposition="FailComponent">
+                      truncationRowDisposition="IgnoreFailure">
                       <properties>
                         <property
                           containsID="true"
@@ -660,11 +660,11 @@
                       refId="Package\Basic ETL into Trendbase Database\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of performance_allowance]"
                       dataType="numeric"
                       errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
+                      errorRowDisposition="IgnoreFailure"
                       lineageId="Package\Basic ETL into Trendbase Database\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of performance_allowance]"
                       name="Copy of performance_allowance"
                       precision="18"
-                      truncationRowDisposition="FailComponent">
+                      truncationRowDisposition="IgnoreFailure">
                       <properties>
                         <property
                           containsID="true"
@@ -1564,7 +1564,7 @@
         <NodeLayout
           Size="155.2,41.6"
           Id="Package\Basic ETL into Trendbase Database\Data Conversion"
-          TopLeft="254.285718616174,115.011766318879" />
+          TopLeft="254.857147197334,115.011766318879" />
         <NodeLayout
           Size="175.2,41.6"
           Id="Package\Basic ETL into Trendbase Database\Trendbase Database"
@@ -1575,9 +1575,9 @@
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="190.971431782781,33.035295164379"
+              EndConnector="191.542860363941,33.035295164379"
               Start="0,0"
-              End="190.971431782781,25.535295164379">
+              End="191.542860363941,25.535295164379">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
@@ -1588,13 +1588,13 @@
                     Point2="0,16.5176475821895"
                     Point3="4,16.5176475821895" />
                   <mssgle:LineSegment
-                    End="186.971431782781,16.5176475821895" />
+                    End="187.542860363941,16.5176475821895" />
                   <mssgle:CubicBezierSegment
-                    Point1="186.971431782781,16.5176475821895"
-                    Point2="190.971431782781,16.5176475821895"
-                    Point3="190.971431782781,20.5176475821895" />
+                    Point1="187.542860363941,16.5176475821895"
+                    Point2="191.542860363941,16.5176475821895"
+                    Point3="191.542860363941,20.5176475821895" />
                   <mssgle:LineSegment
-                    End="190.971431782781,25.535295164379" />
+                    End="191.542860363941,25.535295164379" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -1605,13 +1605,13 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Basic ETL into Trendbase Database.Paths[Data Conversion Output]"
-          TopLeft="331.885718616174,156.611766318879">
+          TopLeft="332.457147197334,156.611766318879">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-192.285717730619,22.6352950185229"
+              EndConnector="-192.857146311779,22.6352950185229"
               Start="0,0"
-              End="-192.285717730619,15.1352950185229">
+              End="-192.857146311779,15.1352950185229">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
@@ -1622,13 +1622,13 @@
                     Point2="0,11.3176475092614"
                     Point3="-4,11.3176475092614" />
                   <mssgle:LineSegment
-                    End="-188.285717730619,11.3176475092614" />
+                    End="-188.857146311779,11.3176475092614" />
                   <mssgle:CubicBezierSegment
-                    Point1="-188.285717730619,11.3176475092614"
-                    Point2="-192.285717730619,11.3176475092614"
-                    Point3="-192.285717730619,15.3176475092614" />
+                    Point1="-188.857146311779,11.3176475092614"
+                    Point2="-192.857146311779,11.3176475092614"
+                    Point3="-192.857146311779,15.3176475092614" />
                   <mssgle:LineSegment
-                    End="-192.285717730619,15.1352950185229" />
+                    End="-192.857146311779,15.1352950185229" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
