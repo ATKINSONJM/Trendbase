@@ -12,7 +12,7 @@
   DTS:ObjectName="linksETL"
   DTS:PackageType="5"
   DTS:VersionBuild="9"
-  DTS:VersionGUID="{98D217A8-91D5-4403-A4CD-D78231AA20A1}">
+  DTS:VersionGUID="{B89FA32E-3BA2-4828-B15C-D8645182F182}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>

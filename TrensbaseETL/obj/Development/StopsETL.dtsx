@@ -12,7 +12,7 @@
   DTS:ObjectName="stopsETL"
   DTS:PackageType="5"
   DTS:VersionBuild="18"
-  DTS:VersionGUID="{1FBBC7C3-5053-4989-9B60-302D531E4A07}">
+  DTS:VersionGUID="{065D8BAB-A890-4A6A-9A52-9D29F77C5283}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>

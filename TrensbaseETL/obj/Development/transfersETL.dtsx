@@ -12,7 +12,7 @@
   DTS:ObjectName="transfersETL"
   DTS:PackageType="5"
   DTS:VersionBuild="18"
-  DTS:VersionGUID="{A971BAA6-8FE7-4382-9D95-8C87FE34ED0A}">
+  DTS:VersionGUID="{B900621C-9A7B-4DAC-A717-367FF9CAFE05}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>

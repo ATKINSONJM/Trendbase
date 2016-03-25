@@ -12,7 +12,7 @@
   DTS:ObjectName="calendarETL"
   DTS:PackageType="5"
   DTS:VersionBuild="2"
-  DTS:VersionGUID="{BE70D02E-2E9C-4503-8944-957F5737597E}">
+  DTS:VersionGUID="{90F72C99-3D18-4C94-AD4B-4968E1B67472}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>

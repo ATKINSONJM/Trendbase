@@ -1,4 +1,4 @@
-﻿<?xml version="1.0"?>
+<?xml version="1.0"?>
 <DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
   DTS:refId="Package"
   DTS:CreationDate="2/1/2016 3:53:58 AM"
@@ -12,7 +12,7 @@
   DTS:ObjectName="linksETL"
   DTS:PackageType="5"
   DTS:VersionBuild="9"
-  DTS:VersionGUID="{98D217A8-91D5-4403-A4CD-D78231AA20A1}">
+  DTS:VersionGUID="{B89FA32E-3BA2-4828-B15C-D8645182F182}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -1268,8 +1268,8 @@
               <connections>
                 <connection
                   refId="Package\Basic ETL into Trendbase Database\OLE DB Destination.Connections[OleDbConnection]"
-                  connectionManagerID="{F7331879-F2FA-4509-B5F9-8269FD762383}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[DESKTOP-5N8OBA5.Trendbase]"
+                  connectionManagerID="{F7331879-F2FA-4509-B5F9-8269FD762383}:invalid"
+                  connectionManagerRefId="{F7331879-F2FA-4509-B5F9-8269FD762383}:invalid"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
