@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RandomDataGenerator
 {
-    class Program
+    class RandomDataGenerator
     {
         static void Main(string[] args)
         {

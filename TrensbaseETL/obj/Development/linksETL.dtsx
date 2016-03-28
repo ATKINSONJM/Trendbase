@@ -11,8 +11,8 @@
   DTS:LocaleID="2057"
   DTS:ObjectName="linksETL"
   DTS:PackageType="5"
-  DTS:VersionBuild="9"
-  DTS:VersionGUID="{B89FA32E-3BA2-4828-B15C-D8645182F182}">
+  DTS:VersionBuild="12"
+  DTS:VersionGUID="{1FAAFFDA-C540-4788-BA08-65D90291E3BA}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -1277,7 +1277,7 @@
                 <input
                   refId="Package\Basic ETL into Trendbase Database\OLE DB Destination.Inputs[OLE DB Destination Input]"
                   errorOrTruncationOperation="Insert"
-                  errorRowDisposition="FailComponent"
+                  errorRowDisposition="IgnoreFailure"
                   hasSideEffects="true"
                   name="OLE DB Destination Input">
                   <inputColumns>
