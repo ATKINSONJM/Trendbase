@@ -15,23 +15,41 @@ namespace DataManager
 
     public partial class DataManager : ServiceBase
     {
-        public int counter = 0;
-        public string path = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
-        public DataManager()
+        private int counter = 0;
+        private string path = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
+        public DataManager(string[] args)
         {
             InitializeComponent();
+            string eventSourceName = "MySource";
+            string logName = "MyNewLog";
+            if (args.Count() > 0)
+                { eventSourceName = args[0]; }
+            if (args.Count() > 1)
+            {
+                logName = args[1]; 
+            }
+            eventLog1 = new System.Diagnostics.EventLog();
+            if (!System.Diagnostics.EventLog.SourceExists(eventSourceName))
+            {
+                System.Diagnostics.EventLog.CreateEventSource(eventSourceName, logName); 
+                    
+            }
+            eventLog1.Source = eventSourceName; eventLog1.Log = logName;
 
             //initialise a timer to run the etl
-            System.Timers.Timer timer = new System.Timers.Timer {Interval = 10000};
+            System.Timers.Timer timer = new System.Timers.Timer { Interval = 10000 };
             // 10 seconds
             timer.Elapsed += new System.Timers.ElapsedEventHandler(this.OnTimer);
             timer.Start();
+
+
         }
 
         public void OnTimer(object sender, System.Timers.ElapsedEventArgs args)
         {
             using (StreamWriter streamWriter = File.AppendText(path + @"\test.txt"))
-                streamWriter.WriteLine("Number: {0}", counter);
+                streamWriter.WriteLine("Number: " + counter);
+            counter++;
         }
 
         protected override void OnStart(string[] args)

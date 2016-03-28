@@ -6,3 +6,4 @@ C:\Users\chunk\Source\Repos\Trendbase\DataManager\bin\Debug\DataManager.exe
 C:\Users\chunk\Source\Repos\Trendbase\DataManager\bin\Debug\DataManager.pdb
 C:\Users\chunk\Source\Repos\Trendbase\DataManager\obj\Debug\DataManager.exe
 C:\Users\chunk\Source\Repos\Trendbase\DataManager\obj\Debug\DataManager.pdb
+C:\Users\chunk\Source\Repos\Trendbase\DataManager\obj\Debug\DataManager.ProjectInstaller.resources
