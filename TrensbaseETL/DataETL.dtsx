@@ -11,8 +11,8 @@
   DTS:LocaleID="2057"
   DTS:ObjectName="DataETL"
   DTS:PackageType="5"
-  DTS:VersionBuild="35"
-  DTS:VersionGUID="{4CFB9458-D57B-49D7-8B66-3F20C46B4704}">
+  DTS:VersionBuild="36"
+  DTS:VersionGUID="{651002DA-364D-45E1-ABA8-BD98C3D8D930}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -9422,6 +9422,14 @@
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 5"
       DTS:To="Package\Basic ETL into Trendbase Database - Calendar Table" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 6]"
+      DTS:CreationName=""
+      DTS:DTSID="{D8C35E7C-9C3C-4E29-90B2-B8997727F229}"
+      DTS:From="Package\Basic ETL into Trendbase Database - Calendar Table"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 6"
+      DTS:To="Package\Basic ETL into Trendbase Database - Agency Table" />
   </DTS:PrecedenceConstraints>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
 <!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
@@ -9436,13 +9444,37 @@
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="300,41.6"
-          Id="Package\Basic ETL into Trendbase Database Trips Table"
-          TopLeft="33.5714291431466,17.7411767194015" />
+          Size="318.4,41.6"
+          Id="Package\Basic ETL into Trendbase Database - Agency Table"
+          TopLeft="17.2857145800881,534.388232477809" />
+        <NodeLayout
+          Size="325.6,41.6"
+          Id="Package\Basic ETL into Trendbase Database - Calendar Table"
+          TopLeft="9.4285715891389,455.729409270138" />
+        <NodeLayout
+          Size="308,41.6"
+          Id="Package\Basic ETL into Trendbase Database - Links Table"
+          TopLeft="15.8571431271883,378.30588053403" />
+        <NodeLayout
+          Size="316,41.6"
+          Id="Package\Basic ETL into Trendbase Database - Routes Table"
+          TopLeft="18.714286032988,301.176469112515" />
+        <NodeLayout
+          Size="309.6,41.6"
+          Id="Package\Basic ETL into Trendbase Database - Stops Table"
+          TopLeft="26.1428575880673,228.635293049466" />
+        <NodeLayout
+          Size="328,41.6"
+          Id="Package\Basic ETL into Trendbase Database - Transfers Table"
+          TopLeft="24.4285718445875,157.929411129803" />
         <NodeLayout
           Size="332,41.6"
           Id="Package\Basic ETL into Trendbase Database Stop_Times Table"
           TopLeft="18.7142860329881,83.2470585661363" />
+        <NodeLayout
+          Size="300,41.6"
+          Id="Package\Basic ETL into Trendbase Database Trips Table"
+          TopLeft="33.5714291431466,17.7411767194015" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
           TopLeft="184.142857588067,59.3411767194015">
@@ -9465,10 +9497,6 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="328,41.6"
-          Id="Package\Basic ETL into Trendbase Database - Transfers Table"
-          TopLeft="24.4285718445875,157.929411129803" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 1]"
           TopLeft="186.571428938788,124.847058566136">
@@ -9491,10 +9519,6 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="309.6,41.6"
-          Id="Package\Basic ETL into Trendbase Database - Stops Table"
-          TopLeft="26.1428575880673,228.635293049466" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 2]"
           TopLeft="184.685714716327,199.529411129803">
@@ -9517,10 +9541,6 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="316,41.6"
-          Id="Package\Basic ETL into Trendbase Database - Routes Table"
-          TopLeft="18.714286032988,301.176469112515" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 3]"
           TopLeft="178.828571810528,270.235293049466">
@@ -9543,10 +9563,6 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="308,41.6"
-          Id="Package\Basic ETL into Trendbase Database - Links Table"
-          TopLeft="15.8571431271883,378.30588053403" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 4]"
           TopLeft="173.285714580088,342.776469112515">
@@ -9569,10 +9585,6 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="325.6,41.6"
-          Id="Package\Basic ETL into Trendbase Database - Calendar Table"
-          TopLeft="9.4285715891389,455.729409270138" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 5]"
           TopLeft="171.042857358164,419.90588053403">
@@ -9595,191 +9607,108 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="318.4,41.6"
-          Id="Package\Basic ETL into Trendbase Database - Agency Table"
-          TopLeft="17.2857145800881,534.388232477809" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 6]"
+          TopLeft="174.357143084613,497.329409270138">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,37.058823207671"
+              Start="0,0"
+              End="0,29.558823207671">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,29.558823207671" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </Package>
   <TaskHost
-    design-time-name="Package\Basic ETL into Trendbase Database Trips Table">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="150.4,41.6"
-          Id="Package\Basic ETL into Trendbase Database Trips Table\Flat File Source"
-          TopLeft="70.2857154826729,33.6470592954168" />
-        <NodeLayout
-          Size="155.2,41.6"
-          Id="Package\Basic ETL into Trendbase Database Trips Table\Data Conversion"
-          TopLeft="254.857147197334,115.011766318879" />
-        <NodeLayout
-          Size="175.2,41.6"
-          Id="Package\Basic ETL into Trendbase Database Trips Table\Trendbase Database"
-          TopLeft="52.000000885555,179.247061337402" />
-        <EdgeLayout
-          Id="Package\Basic ETL into Trendbase Database Trips Table.Paths[Flat File Source Output]"
-          TopLeft="145.485715482673,75.2470592954168">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="186.971431714661,39.7647070234622"
-              Start="0,0"
-              End="186.971431714661,32.2647070234622">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,15.8823535117311" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,15.8823535117311"
-                    Point2="0,19.8823535117311"
-                    Point3="4,19.8823535117311" />
-                  <mssgle:LineSegment
-                    End="182.971431714661,19.8823535117311" />
-                  <mssgle:CubicBezierSegment
-                    Point1="182.971431714661,19.8823535117311"
-                    Point2="186.971431714661,19.8823535117311"
-                    Point3="186.971431714661,23.8823535117311" />
-                  <mssgle:LineSegment
-                    End="186.971431714661,32.2647070234622" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Basic ETL into Trendbase Database Trips Table.Paths[Data Conversion Output]"
-          TopLeft="332.457147197334,156.611766318879">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-192.857146311779,22.6352950185229"
-              Start="0,0"
-              End="-192.857146311779,15.1352950185229">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,7.31764750926143" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,7.31764750926143"
-                    Point2="0,11.3176475092614"
-                    Point3="-4,11.3176475092614" />
-                  <mssgle:LineSegment
-                    End="-188.857146311779,11.3176475092614" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-188.857146311779,11.3176475092614"
-                    Point2="-192.857146311779,11.3176475092614"
-                    Point3="-192.857146311779,15.3176475092614" />
-                  <mssgle:LineSegment
-                    End="-192.857146311779,15.1352950185229" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\Basic ETL into Trendbase Database Trips Table\Trendbase Database">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <TaskHost
-    design-time-name="Package\Basic ETL into Trendbase Database Stop_Times Table">
+    design-time-name="Package\Basic ETL into Trendbase Database - Agency Table">
     <LayoutInfo>
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="175.2,41.6"
-          Id="Package\Basic ETL into Trendbase Database Stop_Times Table\Trendbase Database"
+          Id="Package\Basic ETL into Trendbase Database - Agency Table\Trendbase Database"
           TopLeft="52.000000885555,179.247061337402" />
         <NodeLayout
-          Size="150.4,41.6"
-          Id="Package\Basic ETL into Trendbase Database Stop_Times Table\Flat File Source"
-          TopLeft="65.7142868333933,40.3764711545001" />
+          Size="130.4,41.6"
+          Id="Package\Basic ETL into Trendbase Database - Agency Table\AgencyETL"
+          TopLeft="62.8571439275936,50.164706585894" />
         <NodeLayout
           Size="155.2,41.6"
-          Id="Package\Basic ETL into Trendbase Database Stop_Times Table\Data Conversion"
-          TopLeft="254.857147197334,115.011766318879" />
+          Id="Package\Basic ETL into Trendbase Database - Agency Table\Data Conversion"
+          TopLeft="253.714290035014,115.011766318879" />
         <EdgeLayout
-          Id="Package\Basic ETL into Trendbase Database Stop_Times Table.Paths[Data Conversion Output]"
-          TopLeft="332.457147197334,156.611766318879">
+          Id="Package\Basic ETL into Trendbase Database - Agency Table.Paths[Flat File Source Output]"
+          TopLeft="128.057143927594,91.764706585894">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-192.857146311779,22.6352950185229"
+              EndConnector="203.257146107421,23.2470597329849"
               Start="0,0"
-              End="-192.857146311779,15.1352950185229">
+              End="203.257146107421,15.7470597329849">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,7.31764750926143" />
+                    End="0,7.62352986649247" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,7.31764750926143"
+                    Point1="0,7.62352986649247"
+                    Point2="0,11.6235298664925"
+                    Point3="4,11.6235298664925" />
+                  <mssgle:LineSegment
+                    End="199.257146107421,11.6235298664925" />
+                  <mssgle:CubicBezierSegment
+                    Point1="199.257146107421,11.6235298664925"
+                    Point2="203.257146107421,11.6235298664925"
+                    Point3="203.257146107421,15.6235298664925" />
+                  <mssgle:LineSegment
+                    End="203.257146107421,15.7470597329849" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Basic ETL into Trendbase Database - Agency Table.Paths[Data Conversion Output]"
+          TopLeft="331.314290035014,156.611766318879">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-191.714289149459,22.6352950185228"
+              Start="0,0"
+              End="-191.714289149459,15.1352950185228">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,7.31764750926142" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,7.31764750926142"
                     Point2="0,11.3176475092614"
                     Point3="-4,11.3176475092614" />
                   <mssgle:LineSegment
-                    End="-188.857146311779,11.3176475092614" />
+                    End="-187.714289149459,11.3176475092614" />
                   <mssgle:CubicBezierSegment
-                    Point1="-188.857146311779,11.3176475092614"
-                    Point2="-192.857146311779,11.3176475092614"
-                    Point3="-192.857146311779,15.3176475092614" />
+                    Point1="-187.714289149459,11.3176475092614"
+                    Point2="-191.714289149459,11.3176475092614"
+                    Point3="-191.714289149459,15.3176475092614" />
                   <mssgle:LineSegment
-                    End="-192.857146311779,15.1352950185229" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Basic ETL into Trendbase Database Stop_Times Table.Paths[Flat File Source Output]"
-          TopLeft="140.914286833393,81.9764711545001">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="191.542860363941,33.035295164379"
-              Start="0,0"
-              End="191.542860363941,25.535295164379">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,12.5176475821895" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,12.5176475821895"
-                    Point2="0,16.5176475821895"
-                    Point3="4,16.5176475821895" />
-                  <mssgle:LineSegment
-                    End="187.542860363941,16.5176475821895" />
-                  <mssgle:CubicBezierSegment
-                    Point1="187.542860363941,16.5176475821895"
-                    Point2="191.542860363941,16.5176475821895"
-                    Point3="191.542860363941,20.5176475821895" />
-                  <mssgle:LineSegment
-                    End="191.542860363941,25.535295164379" />
+                    End="-191.714289149459,15.1352950185228" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -9792,48 +9721,48 @@
     </LayoutInfo>
   </TaskHost>
   <TaskHost
-    design-time-name="Package\Basic ETL into Trendbase Database - Transfers Table">
+    design-time-name="Package\Basic ETL into Trendbase Database - Calendar Table">
     <LayoutInfo>
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="150.4,41.6"
-          Id="Package\Basic ETL into Trendbase Database - Transfers Table\Flat File Source"
-          TopLeft="65.1428582522334,40.9882358689622" />
+          Id="Package\Basic ETL into Trendbase Database - Calendar Table\Flat File Source"
+          TopLeft="125.142859274027,50.7764713003561" />
+        <NodeLayout
+          Size="170.4,41.6"
+          Id="Package\Basic ETL into Trendbase Database - Calendar Table\OLE DB Destination"
+          TopLeft="129.714287923307,171.905884763856" />
         <NodeLayout
           Size="155.2,41.6"
-          Id="Package\Basic ETL into Trendbase Database - Transfers Table\Data Conversion"
-          TopLeft="254.285718616174,114.400001604417" />
-        <NodeLayout
-          Size="175.2,41.6"
-          Id="Package\Basic ETL into Trendbase Database - Transfers Table\Trendbase Database"
-          TopLeft="52.000000885555,179.247061337402" />
+          Id="Package\Basic ETL into Trendbase Database - Calendar Table\Data Conversion"
+          TopLeft="332.000005653926,101.223530595773" />
         <EdgeLayout
-          Id="Package\Basic ETL into Trendbase Database - Transfers Table.Paths[Data Conversion Output]"
-          TopLeft="331.885718616174,156.000001604417">
+          Id="Package\Basic ETL into Trendbase Database - Calendar Table.Paths[Data Conversion Output]"
+          TopLeft="409.600005653926,142.823530595773">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-192.285717730619,23.2470597329851"
+              EndConnector="-194.685717730619,29.0823541680835"
               Start="0,0"
-              End="-192.285717730619,15.7470597329851">
+              End="-194.685717730619,21.5823541680835">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,7.62352986649256" />
+                    End="0,10.5411770840417" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,7.62352986649256"
-                    Point2="0,11.6235298664926"
-                    Point3="-4,11.6235298664926" />
+                    Point1="0,10.5411770840417"
+                    Point2="0,14.5411770840417"
+                    Point3="-4,14.5411770840417" />
                   <mssgle:LineSegment
-                    End="-188.285717730619,11.6235298664926" />
+                    End="-190.685717730619,14.5411770840417" />
                   <mssgle:CubicBezierSegment
-                    Point1="-188.285717730619,11.6235298664926"
-                    Point2="-192.285717730619,11.6235298664926"
-                    Point3="-192.285717730619,15.6235298664926" />
+                    Point1="-190.685717730619,14.5411770840417"
+                    Point2="-194.685717730619,14.5411770840417"
+                    Point3="-194.685717730619,18.5411770840417" />
                   <mssgle:LineSegment
-                    End="-192.285717730619,15.7470597329851" />
+                    End="-194.685717730619,21.5823541680835" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -9845,215 +9774,31 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Basic ETL into Trendbase Database - Transfers Table.Paths[Flat File Source Output]"
-          TopLeft="140.342858252233,82.5882358689622">
+          Id="Package\Basic ETL into Trendbase Database - Calendar Table.Paths[Flat File Source Output]"
+          TopLeft="275.542859274027,71.5764713003561">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="191.542860363941,31.8117657354546"
+              EndConnector="56.457146379899,50.4470592954167"
               Start="0,0"
-              End="191.542860363941,24.3117657354546">
+              End="48.957146379899,50.4470592954167">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,11.9058828677273" />
+                    End="24.2285731899495,0" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,11.9058828677273"
-                    Point2="0,15.9058828677273"
-                    Point3="4,15.9058828677273" />
+                    Point1="24.2285731899495,0"
+                    Point2="28.2285731899495,0"
+                    Point3="28.2285731899495,4" />
                   <mssgle:LineSegment
-                    End="187.542860363941,15.9058828677273" />
+                    End="28.2285731899495,46.4470592954167" />
                   <mssgle:CubicBezierSegment
-                    Point1="187.542860363941,15.9058828677273"
-                    Point2="191.542860363941,15.9058828677273"
-                    Point3="191.542860363941,19.9058828677273" />
+                    Point1="28.2285731899495,46.4470592954167"
+                    Point2="28.2285731899495,50.4470592954167"
+                    Point3="32.2285731899495,50.4470592954167" />
                   <mssgle:LineSegment
-                    End="191.542860363941,24.3117657354546" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <TaskHost
-    design-time-name="Package\Basic ETL into Trendbase Database - Stops Table">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
-        <NodeLayout
-          Size="150.4,41.6"
-          Id="Package\Basic ETL into Trendbase Database - Stops Table\Flat File Source"
-          TopLeft="64.0000010899135,40.9882358689622" />
-        <NodeLayout
-          Size="155.2,41.6"
-          Id="Package\Basic ETL into Trendbase Database - Stops Table\Data Conversion"
-          TopLeft="254.285718616174,115.011766318879" />
-        <NodeLayout
-          Size="175.2,41.6"
-          Id="Package\Basic ETL into Trendbase Database - Stops Table\Trendbase Database"
-          TopLeft="52.571429466715,178.63529662294" />
-        <EdgeLayout
-          Id="Package\Basic ETL into Trendbase Database - Stops Table.Paths[Flat File Source Output]"
-          TopLeft="139.200001089913,82.5882358689622">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="192.685717526261,32.4235304499168"
-              Start="0,0"
-              End="192.685717526261,24.9235304499168">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,12.2117652249584" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,12.2117652249584"
-                    Point2="0,16.2117652249584"
-                    Point3="4,16.2117652249584" />
-                  <mssgle:LineSegment
-                    End="188.685717526261,16.2117652249584" />
-                  <mssgle:CubicBezierSegment
-                    Point1="188.685717526261,16.2117652249584"
-                    Point2="192.685717526261,16.2117652249584"
-                    Point3="192.685717526261,20.2117652249584" />
-                  <mssgle:LineSegment
-                    End="192.685717526261,24.9235304499168" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Basic ETL into Trendbase Database - Stops Table.Paths[Data Conversion Output]"
-          TopLeft="254.285718616174,135.811766318879">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-26.5142891494591,63.6235303040609"
-              Start="0,0"
-              End="-19.0142891494591,63.6235303040609">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="-9.25714457472954,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-9.25714457472954,0"
-                    Point2="-13.2571445747295,0"
-                    Point3="-13.2571445747295,4" />
-                  <mssgle:LineSegment
-                    End="-13.2571445747295,59.6235303040609" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-13.2571445747295,59.6235303040609"
-                    Point2="-13.2571445747295,63.6235303040609"
-                    Point3="-17.2571445747295,63.6235303040609" />
-                  <mssgle:LineSegment
-                    End="-19.0142891494591,63.6235303040609" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <TaskHost
-    design-time-name="Package\Basic ETL into Trendbase Database - Routes Table">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
-        <NodeLayout
-          Size="155.2,41.6"
-          Id="Package\Basic ETL into Trendbase Database - Routes Table\Data Conversion"
-          TopLeft="254.285718616174,115.011766318879" />
-        <NodeLayout
-          Size="175.2,41.6"
-          Id="Package\Basic ETL into Trendbase Database - Routes Table\Trendbase Database"
-          TopLeft="52.000000885555,179.247061337402" />
-        <NodeLayout
-          Size="150.4,41.6"
-          Id="Package\Basic ETL into Trendbase Database - Routes Table\Flat File Source"
-          TopLeft="64.0000010899135,40.9882358689622" />
-        <EdgeLayout
-          Id="Package\Basic ETL into Trendbase Database - Routes Table.Paths[Flat File Source Output]"
-          TopLeft="139.200001089913,82.5882358689622">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="192.685717526261,32.4235304499168"
-              Start="0,0"
-              End="192.685717526261,24.9235304499168">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,12.2117652249584" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,12.2117652249584"
-                    Point2="0,16.2117652249584"
-                    Point3="4,16.2117652249584" />
-                  <mssgle:LineSegment
-                    End="188.685717526261,16.2117652249584" />
-                  <mssgle:CubicBezierSegment
-                    Point1="188.685717526261,16.2117652249584"
-                    Point2="192.685717526261,16.2117652249584"
-                    Point3="192.685717526261,20.2117652249584" />
-                  <mssgle:LineSegment
-                    End="192.685717526261,24.9235304499168" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Basic ETL into Trendbase Database - Routes Table.Paths[Data Conversion Output]"
-          TopLeft="331.885718616174,156.611766318879">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-192.285717730619,22.635295018523"
-              Start="0,0"
-              End="-192.285717730619,15.135295018523">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,7.31764750926149" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,7.31764750926149"
-                    Point2="0,11.3176475092615"
-                    Point3="-4,11.3176475092615" />
-                  <mssgle:LineSegment
-                    End="-188.285717730619,11.3176475092615" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-188.285717730619,11.3176475092615"
-                    Point2="-192.285717730619,11.3176475092615"
-                    Point3="-192.285717730619,15.3176475092615" />
-                  <mssgle:LineSegment
-                    End="-192.285717730619,15.135295018523" />
+                    End="48.957146379899,50.4470592954167" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -10160,48 +9905,48 @@
     </LayoutInfo>
   </TaskHost>
   <TaskHost
-    design-time-name="Package\Basic ETL into Trendbase Database - Calendar Table">
+    design-time-name="Package\Basic ETL into Trendbase Database - Routes Table">
     <LayoutInfo>
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="150.4,41.6"
-          Id="Package\Basic ETL into Trendbase Database - Calendar Table\Flat File Source"
-          TopLeft="125.142859274027,50.7764713003561" />
-        <NodeLayout
-          Size="170.4,41.6"
-          Id="Package\Basic ETL into Trendbase Database - Calendar Table\OLE DB Destination"
-          TopLeft="129.714287923307,171.905884763856" />
-        <NodeLayout
           Size="155.2,41.6"
-          Id="Package\Basic ETL into Trendbase Database - Calendar Table\Data Conversion"
-          TopLeft="332.000005653926,101.223530595773" />
+          Id="Package\Basic ETL into Trendbase Database - Routes Table\Data Conversion"
+          TopLeft="254.285718616174,115.011766318879" />
+        <NodeLayout
+          Size="175.2,41.6"
+          Id="Package\Basic ETL into Trendbase Database - Routes Table\Trendbase Database"
+          TopLeft="52.000000885555,179.247061337402" />
+        <NodeLayout
+          Size="150.4,41.6"
+          Id="Package\Basic ETL into Trendbase Database - Routes Table\Flat File Source"
+          TopLeft="64.0000010899135,40.9882358689622" />
         <EdgeLayout
-          Id="Package\Basic ETL into Trendbase Database - Calendar Table.Paths[Data Conversion Output]"
-          TopLeft="409.600005653926,142.823530595773">
+          Id="Package\Basic ETL into Trendbase Database - Routes Table.Paths[Flat File Source Output]"
+          TopLeft="139.200001089913,82.5882358689622">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-194.685717730619,29.0823541680835"
+              EndConnector="192.685717526261,32.4235304499168"
               Start="0,0"
-              End="-194.685717730619,21.5823541680835">
+              End="192.685717526261,24.9235304499168">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,10.5411770840417" />
+                    End="0,12.2117652249584" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,10.5411770840417"
-                    Point2="0,14.5411770840417"
-                    Point3="-4,14.5411770840417" />
+                    Point1="0,12.2117652249584"
+                    Point2="0,16.2117652249584"
+                    Point3="4,16.2117652249584" />
                   <mssgle:LineSegment
-                    End="-190.685717730619,14.5411770840417" />
+                    End="188.685717526261,16.2117652249584" />
                   <mssgle:CubicBezierSegment
-                    Point1="-190.685717730619,14.5411770840417"
-                    Point2="-194.685717730619,14.5411770840417"
-                    Point3="-194.685717730619,18.5411770840417" />
+                    Point1="188.685717526261,16.2117652249584"
+                    Point2="192.685717526261,16.2117652249584"
+                    Point3="192.685717526261,20.2117652249584" />
                   <mssgle:LineSegment
-                    End="-194.685717730619,21.5823541680835" />
+                    End="192.685717526261,24.9235304499168" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -10213,31 +9958,31 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Basic ETL into Trendbase Database - Calendar Table.Paths[Flat File Source Output]"
-          TopLeft="275.542859274027,71.5764713003561">
+          Id="Package\Basic ETL into Trendbase Database - Routes Table.Paths[Data Conversion Output]"
+          TopLeft="331.885718616174,156.611766318879">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="56.457146379899,50.4470592954167"
+              EndConnector="-192.285717730619,22.635295018523"
               Start="0,0"
-              End="48.957146379899,50.4470592954167">
+              End="-192.285717730619,15.135295018523">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="24.2285731899495,0" />
+                    End="0,7.31764750926149" />
                   <mssgle:CubicBezierSegment
-                    Point1="24.2285731899495,0"
-                    Point2="28.2285731899495,0"
-                    Point3="28.2285731899495,4" />
+                    Point1="0,7.31764750926149"
+                    Point2="0,11.3176475092615"
+                    Point3="-4,11.3176475092615" />
                   <mssgle:LineSegment
-                    End="28.2285731899495,46.4470592954167" />
+                    End="-188.285717730619,11.3176475092615" />
                   <mssgle:CubicBezierSegment
-                    Point1="28.2285731899495,46.4470592954167"
-                    Point2="28.2285731899495,50.4470592954167"
-                    Point3="32.2285731899495,50.4470592954167" />
+                    Point1="-188.285717730619,11.3176475092615"
+                    Point2="-192.285717730619,11.3176475092615"
+                    Point3="-192.285717730619,15.3176475092615" />
                   <mssgle:LineSegment
-                    End="48.957146379899,50.4470592954167" />
+                    End="-192.285717730619,15.135295018523" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -10252,48 +9997,232 @@
     </LayoutInfo>
   </TaskHost>
   <TaskHost
-    design-time-name="Package\Basic ETL into Trendbase Database - Agency Table">
+    design-time-name="Package\Basic ETL into Trendbase Database - Stops Table">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="150.4,41.6"
+          Id="Package\Basic ETL into Trendbase Database - Stops Table\Flat File Source"
+          TopLeft="64.0000010899135,40.9882358689622" />
+        <NodeLayout
+          Size="155.2,41.6"
+          Id="Package\Basic ETL into Trendbase Database - Stops Table\Data Conversion"
+          TopLeft="254.285718616174,115.011766318879" />
+        <NodeLayout
+          Size="175.2,41.6"
+          Id="Package\Basic ETL into Trendbase Database - Stops Table\Trendbase Database"
+          TopLeft="52.571429466715,178.63529662294" />
+        <EdgeLayout
+          Id="Package\Basic ETL into Trendbase Database - Stops Table.Paths[Flat File Source Output]"
+          TopLeft="139.200001089913,82.5882358689622">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="192.685717526261,32.4235304499168"
+              Start="0,0"
+              End="192.685717526261,24.9235304499168">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,12.2117652249584" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,12.2117652249584"
+                    Point2="0,16.2117652249584"
+                    Point3="4,16.2117652249584" />
+                  <mssgle:LineSegment
+                    End="188.685717526261,16.2117652249584" />
+                  <mssgle:CubicBezierSegment
+                    Point1="188.685717526261,16.2117652249584"
+                    Point2="192.685717526261,16.2117652249584"
+                    Point3="192.685717526261,20.2117652249584" />
+                  <mssgle:LineSegment
+                    End="192.685717526261,24.9235304499168" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Basic ETL into Trendbase Database - Stops Table.Paths[Data Conversion Output]"
+          TopLeft="254.285718616174,135.811766318879">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-26.5142891494591,63.6235303040609"
+              Start="0,0"
+              End="-19.0142891494591,63.6235303040609">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="-9.25714457472954,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-9.25714457472954,0"
+                    Point2="-13.2571445747295,0"
+                    Point3="-13.2571445747295,4" />
+                  <mssgle:LineSegment
+                    End="-13.2571445747295,59.6235303040609" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-13.2571445747295,59.6235303040609"
+                    Point2="-13.2571445747295,63.6235303040609"
+                    Point3="-17.2571445747295,63.6235303040609" />
+                  <mssgle:LineSegment
+                    End="-19.0142891494591,63.6235303040609" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <TaskHost
+    design-time-name="Package\Basic ETL into Trendbase Database - Transfers Table">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="150.4,41.6"
+          Id="Package\Basic ETL into Trendbase Database - Transfers Table\Flat File Source"
+          TopLeft="65.1428582522334,40.9882358689622" />
+        <NodeLayout
+          Size="155.2,41.6"
+          Id="Package\Basic ETL into Trendbase Database - Transfers Table\Data Conversion"
+          TopLeft="254.285718616174,114.400001604417" />
+        <NodeLayout
+          Size="175.2,41.6"
+          Id="Package\Basic ETL into Trendbase Database - Transfers Table\Trendbase Database"
+          TopLeft="52.000000885555,179.247061337402" />
+        <EdgeLayout
+          Id="Package\Basic ETL into Trendbase Database - Transfers Table.Paths[Data Conversion Output]"
+          TopLeft="331.885718616174,156.000001604417">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-192.285717730619,23.2470597329851"
+              Start="0,0"
+              End="-192.285717730619,15.7470597329851">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,7.62352986649256" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,7.62352986649256"
+                    Point2="0,11.6235298664926"
+                    Point3="-4,11.6235298664926" />
+                  <mssgle:LineSegment
+                    End="-188.285717730619,11.6235298664926" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-188.285717730619,11.6235298664926"
+                    Point2="-192.285717730619,11.6235298664926"
+                    Point3="-192.285717730619,15.6235298664926" />
+                  <mssgle:LineSegment
+                    End="-192.285717730619,15.7470597329851" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Basic ETL into Trendbase Database - Transfers Table.Paths[Flat File Source Output]"
+          TopLeft="140.342858252233,82.5882358689622">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="191.542860363941,31.8117657354546"
+              Start="0,0"
+              End="191.542860363941,24.3117657354546">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,11.9058828677273" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,11.9058828677273"
+                    Point2="0,15.9058828677273"
+                    Point3="4,15.9058828677273" />
+                  <mssgle:LineSegment
+                    End="187.542860363941,15.9058828677273" />
+                  <mssgle:CubicBezierSegment
+                    Point1="187.542860363941,15.9058828677273"
+                    Point2="191.542860363941,15.9058828677273"
+                    Point3="191.542860363941,19.9058828677273" />
+                  <mssgle:LineSegment
+                    End="191.542860363941,24.3117657354546" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <TaskHost
+    design-time-name="Package\Basic ETL into Trendbase Database Stop_Times Table">
     <LayoutInfo>
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="175.2,41.6"
-          Id="Package\Basic ETL into Trendbase Database - Agency Table\Trendbase Database"
+          Id="Package\Basic ETL into Trendbase Database Stop_Times Table\Trendbase Database"
           TopLeft="52.000000885555,179.247061337402" />
         <NodeLayout
-          Size="130.4,41.6"
-          Id="Package\Basic ETL into Trendbase Database - Agency Table\AgencyETL"
-          TopLeft="62.8571439275936,50.164706585894" />
+          Size="150.4,41.6"
+          Id="Package\Basic ETL into Trendbase Database Stop_Times Table\Flat File Source"
+          TopLeft="65.7142868333933,40.3764711545001" />
         <NodeLayout
           Size="155.2,41.6"
-          Id="Package\Basic ETL into Trendbase Database - Agency Table\Data Conversion"
-          TopLeft="253.714290035014,115.011766318879" />
+          Id="Package\Basic ETL into Trendbase Database Stop_Times Table\Data Conversion"
+          TopLeft="254.857147197334,115.011766318879" />
         <EdgeLayout
-          Id="Package\Basic ETL into Trendbase Database - Agency Table.Paths[Flat File Source Output]"
-          TopLeft="128.057143927594,91.764706585894">
+          Id="Package\Basic ETL into Trendbase Database Stop_Times Table.Paths[Data Conversion Output]"
+          TopLeft="332.457147197334,156.611766318879">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="203.257146107421,23.2470597329849"
+              EndConnector="-192.857146311779,22.6352950185229"
               Start="0,0"
-              End="203.257146107421,15.7470597329849">
+              End="-192.857146311779,15.1352950185229">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,7.62352986649247" />
+                    End="0,7.31764750926143" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,7.62352986649247"
-                    Point2="0,11.6235298664925"
-                    Point3="4,11.6235298664925" />
+                    Point1="0,7.31764750926143"
+                    Point2="0,11.3176475092614"
+                    Point3="-4,11.3176475092614" />
                   <mssgle:LineSegment
-                    End="199.257146107421,11.6235298664925" />
+                    End="-188.857146311779,11.3176475092614" />
                   <mssgle:CubicBezierSegment
-                    Point1="199.257146107421,11.6235298664925"
-                    Point2="203.257146107421,11.6235298664925"
-                    Point3="203.257146107421,15.6235298664925" />
+                    Point1="-188.857146311779,11.3176475092614"
+                    Point2="-192.857146311779,11.3176475092614"
+                    Point3="-192.857146311779,15.3176475092614" />
                   <mssgle:LineSegment
-                    End="203.257146107421,15.7470597329849" />
+                    End="-192.857146311779,15.1352950185229" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -10303,31 +10232,31 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Basic ETL into Trendbase Database - Agency Table.Paths[Data Conversion Output]"
-          TopLeft="331.314290035014,156.611766318879">
+          Id="Package\Basic ETL into Trendbase Database Stop_Times Table.Paths[Flat File Source Output]"
+          TopLeft="140.914286833393,81.9764711545001">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-191.714289149459,22.6352950185228"
+              EndConnector="191.542860363941,33.035295164379"
               Start="0,0"
-              End="-191.714289149459,15.1352950185228">
+              End="191.542860363941,25.535295164379">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,7.31764750926142" />
+                    End="0,12.5176475821895" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,7.31764750926142"
-                    Point2="0,11.3176475092614"
-                    Point3="-4,11.3176475092614" />
+                    Point1="0,12.5176475821895"
+                    Point2="0,16.5176475821895"
+                    Point3="4,16.5176475821895" />
                   <mssgle:LineSegment
-                    End="-187.714289149459,11.3176475092614" />
+                    End="187.542860363941,16.5176475821895" />
                   <mssgle:CubicBezierSegment
-                    Point1="-187.714289149459,11.3176475092614"
-                    Point2="-191.714289149459,11.3176475092614"
-                    Point3="-191.714289149459,15.3176475092614" />
+                    Point1="187.542860363941,16.5176475821895"
+                    Point2="191.542860363941,16.5176475821895"
+                    Point3="191.542860363941,20.5176475821895" />
                   <mssgle:LineSegment
-                    End="-191.714289149459,15.1352950185228" />
+                    End="191.542860363941,25.535295164379" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -10339,5 +10268,106 @@
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
+  <TaskHost
+    design-time-name="Package\Basic ETL into Trendbase Database Trips Table">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="150.4,41.6"
+          Id="Package\Basic ETL into Trendbase Database Trips Table\Flat File Source"
+          TopLeft="70.2857154826729,33.6470592954168" />
+        <NodeLayout
+          Size="155.2,41.6"
+          Id="Package\Basic ETL into Trendbase Database Trips Table\Data Conversion"
+          TopLeft="254.857147197334,115.011766318879" />
+        <NodeLayout
+          Size="175.2,41.6"
+          Id="Package\Basic ETL into Trendbase Database Trips Table\Trendbase Database"
+          TopLeft="52.000000885555,179.247061337402" />
+        <EdgeLayout
+          Id="Package\Basic ETL into Trendbase Database Trips Table.Paths[Flat File Source Output]"
+          TopLeft="145.485715482673,75.2470592954168">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="186.971431714661,39.7647070234622"
+              Start="0,0"
+              End="186.971431714661,32.2647070234622">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,15.8823535117311" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,15.8823535117311"
+                    Point2="0,19.8823535117311"
+                    Point3="4,19.8823535117311" />
+                  <mssgle:LineSegment
+                    End="182.971431714661,19.8823535117311" />
+                  <mssgle:CubicBezierSegment
+                    Point1="182.971431714661,19.8823535117311"
+                    Point2="186.971431714661,19.8823535117311"
+                    Point3="186.971431714661,23.8823535117311" />
+                  <mssgle:LineSegment
+                    End="186.971431714661,32.2647070234622" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Basic ETL into Trendbase Database Trips Table.Paths[Data Conversion Output]"
+          TopLeft="332.457147197334,156.611766318879">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-192.857146311779,22.6352950185229"
+              Start="0,0"
+              End="-192.857146311779,15.1352950185229">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,7.31764750926143" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,7.31764750926143"
+                    Point2="0,11.3176475092614"
+                    Point3="-4,11.3176475092614" />
+                  <mssgle:LineSegment
+                    End="-188.857146311779,11.3176475092614" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-188.857146311779,11.3176475092614"
+                    Point2="-192.857146311779,11.3176475092614"
+                    Point3="-192.857146311779,15.3176475092614" />
+                  <mssgle:LineSegment
+                    End="-192.857146311779,15.1352950185229" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Basic ETL into Trendbase Database Trips Table\Trendbase Database">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
 </Objects>]]></DTS:DesignTimeProperties>
 </DTS:Executable>
