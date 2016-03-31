@@ -2,48 +2,13 @@
 <BuildLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ProjectInfo>
     <Name>TrendbaseETL</Name>
-    <LastWriteTime>2016-03-28T18:38:04.490915Z</LastWriteTime>
+    <LastWriteTime>2016-03-28T19:29:13.8362369Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
     <ProjectBuildItemInfo>
-      <Name>agencyETL.dtsx</Name>
-      <LastWriteTime>2016-03-25T20:05:13.7991028Z</LastWriteTime>
-      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
-    </ProjectBuildItemInfo>
-    <ProjectBuildItemInfo>
-      <Name>calendarETL.dtsx</Name>
-      <LastWriteTime>2016-03-25T20:05:13.7850897Z</LastWriteTime>
-      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
-    </ProjectBuildItemInfo>
-    <ProjectBuildItemInfo>
-      <Name>linksETL.dtsx</Name>
-      <LastWriteTime>2016-03-28T18:38:04.4103499Z</LastWriteTime>
-      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
-    </ProjectBuildItemInfo>
-    <ProjectBuildItemInfo>
-      <Name>routesETL.dtsx</Name>
-      <LastWriteTime>2016-03-25T20:05:13.7400575Z</LastWriteTime>
-      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
-    </ProjectBuildItemInfo>
-    <ProjectBuildItemInfo>
-      <Name>stopsETL.dtsx</Name>
-      <LastWriteTime>2016-03-25T20:05:13.7160409Z</LastWriteTime>
-      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
-    </ProjectBuildItemInfo>
-    <ProjectBuildItemInfo>
-      <Name>transfersETL.dtsx</Name>
-      <LastWriteTime>2016-03-25T20:05:13.6910154Z</LastWriteTime>
-      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
-    </ProjectBuildItemInfo>
-    <ProjectBuildItemInfo>
-      <Name>stops_timesETL.dtsx</Name>
-      <LastWriteTime>2016-03-25T20:05:13.6750179Z</LastWriteTime>
-      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
-    </ProjectBuildItemInfo>
-    <ProjectBuildItemInfo>
-      <Name>tripsETL.dtsx</Name>
-      <LastWriteTime>2016-03-28T18:35:26.7448989Z</LastWriteTime>
+      <Name>DataETL.dtsx</Name>
+      <LastWriteTime>2016-03-31T16:06:12.1958274Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>
