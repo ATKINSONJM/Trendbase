@@ -11,8 +11,8 @@
   DTS:LocaleID="2057"
   DTS:ObjectName="DataETL"
   DTS:PackageType="5"
-  DTS:VersionBuild="50"
-  DTS:VersionGUID="{79569D4C-8BF9-498C-BD63-C84C8AA88003}">
+  DTS:VersionBuild="81"
+  DTS:VersionGUID="{095B1653-0663-4ECA-8A12-96FFCBFF68FB}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -205,8 +205,7 @@
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[FFCM - Links]"
       DTS:CreationName="FLATFILE"
-      DTS:Description="link-txt-file"
-      DTS:DTSID="{1187E463-6A8D-4D50-A8F6-B1D6F7BC024B}"
+      DTS:DTSID="{BA0CBBA6-4B51-40BA-8BB7-524BD3D23EFB}"
       DTS:ObjectName="FFCM - Links">
       <DTS:ObjectData>
         <DTS:ConnectionManager
@@ -226,7 +225,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="mode"
-              DTS:DTSID="{524D5383-24B5-418C-8B2E-0C01BAAECF0C}"
+              DTS:DTSID="{F05994E4-9819-4C18-89B6-5DA310EBDE34}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -235,7 +234,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="from_stop_id"
-              DTS:DTSID="{C8D41ADB-5388-411A-B851-5B913D31B5B7}"
+              DTS:DTSID="{EBA34A6C-E326-4993-BE5E-9148026E3BEE}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -244,7 +243,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="to_stop_id"
-              DTS:DTSID="{DD85A497-90C1-449D-848B-7373AFD12C18}"
+              DTS:DTSID="{478EC445-F684-4D20-80B9-43F1EB7DAAAE}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -253,7 +252,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="link_secs"
-              DTS:DTSID="{C2A130FC-C0B6-472A-8CBB-383614D93156}"
+              DTS:DTSID="{ECA9E447-DC79-47D9-A0FF-9D8E1BE25B43}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -262,7 +261,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="start_time"
-              DTS:DTSID="{46762B34-08BE-4179-B51D-41096C26891E}"
+              DTS:DTSID="{2D59263D-1987-4514-82E8-73D32E6C63EA}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -271,7 +270,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="end_time"
-              DTS:DTSID="{DF9D5787-99F6-42D4-BA6D-0031F6ACF6F2}"
+              DTS:DTSID="{8F91E25A-4045-4FF0-B67E-0856494B66BE}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -280,7 +279,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="priority"
-              DTS:DTSID="{9A4B1275-5F00-4AB2-8423-93CA23E29FBB}"
+              DTS:DTSID="{C225791A-2429-4ABA-864E-0730BE1BEA34}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -289,7 +288,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="start_date"
-              DTS:DTSID="{2497EF31-A503-4A9D-B509-2AFBCC0B73B7}"
+              DTS:DTSID="{4CF5FDA0-3F0B-475E-BAAB-2FBF7F814B3C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -298,7 +297,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="end_date"
-              DTS:DTSID="{F12A29C5-EDB9-486F-BC21-AC3E6E61A244}"
+              DTS:DTSID="{2BC37DEF-2538-4234-B25F-B7C13B2D56CF}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -307,7 +306,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="monday"
-              DTS:DTSID="{46289F17-B787-434A-A001-28EC8BF7D7B2}"
+              DTS:DTSID="{4FEDDDE0-333A-4033-9212-5BDDC1208EA4}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -316,7 +315,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="tuesday"
-              DTS:DTSID="{5E82AC13-30B0-4E50-BC7F-06EB170884C6}"
+              DTS:DTSID="{0A2BE34C-2889-4F44-AD13-715F4DC0A39B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -325,7 +324,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="wednesday"
-              DTS:DTSID="{8A5426CD-24C6-41A5-8F5C-9D5B6341D425}"
+              DTS:DTSID="{D0D0479E-D84E-4855-967E-A99477FC84E1}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -334,7 +333,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="thursday"
-              DTS:DTSID="{25A36FE5-33F5-4ECA-AABA-F05DD7E37BC5}"
+              DTS:DTSID="{1A72D91F-1852-469E-9E78-E7C5B3FBAA15}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -343,7 +342,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="friday"
-              DTS:DTSID="{CE7968E9-C00A-42CA-99D6-D806DA3934E8}"
+              DTS:DTSID="{1F21DC18-67EF-45C5-8FA6-6BE19755849B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -352,7 +351,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="saturday"
-              DTS:DTSID="{699730C0-6897-4444-AA35-9109F62ABA9A}"
+              DTS:DTSID="{E70F853C-67FF-4999-A8D7-3F4B8C8AE8D0}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -361,7 +360,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="sunday"
-              DTS:DTSID="{2A545DFE-6CCE-4F34-AE01-6D76E05CBFA4}"
+              DTS:DTSID="{B5E24521-FC2C-4924-A558-831A49F8A9A4}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -568,7 +567,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="C:\Users\chunk\Desktop\uk_ouk_uk_national\stop_times.txt">
+          DTS:ConnectionString="C:\Users\chunk\Desktop\uk_ouk_uk_national\stop-times.txt">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -577,7 +576,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="trip_id"
-              DTS:DTSID="{FB107564-37E7-4319-A987-1C13F482D8FF}"
+              DTS:DTSID="{CA07B3D5-7F12-4AD3-A143-B05F95DBD0B6}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -586,7 +585,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="arrival_time"
-              DTS:DTSID="{AA6352A4-8388-4A76-B9C3-63527EBB8A40}"
+              DTS:DTSID="{A607F8ED-4A4B-4ABE-A131-563D13C11CDA}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -595,7 +594,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="departure_time"
-              DTS:DTSID="{334D6068-750E-4B01-B139-6B7823B198AF}"
+              DTS:DTSID="{A77A855C-C8CB-431B-BC6B-74B1D7780EA2}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -604,7 +603,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="stop_id"
-              DTS:DTSID="{7480D5B6-E102-4C6B-AB5E-00FA0CE0CD97}"
+              DTS:DTSID="{48340A27-9E0C-40AA-9FDA-82F4D3B16B31}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -613,7 +612,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="stop_sequence"
-              DTS:DTSID="{91825A76-06F1-4C47-94CD-89682C4010EC}"
+              DTS:DTSID="{024CA6C5-E643-4CFE-841D-591F7DB37081}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -622,7 +621,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="pickup_type"
-              DTS:DTSID="{7A4C07B8-D303-4C95-A15C-8CA365F279BB}"
+              DTS:DTSID="{49FA2E98-AEA3-4277-8793-68C544710EB7}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -631,7 +630,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="drop_off_type"
-              DTS:DTSID="{F3214B5F-8251-4013-89CA-B2C811542CB9}"
+              DTS:DTSID="{DE45C8AA-34CC-4507-9FB0-9F888A44D66A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -640,7 +639,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="wtt_arrival_time"
-              DTS:DTSID="{BB1D3FBB-084B-498F-A4FE-BFE9EC99AB12}"
+              DTS:DTSID="{F494C423-2C6F-474D-9A7D-97E7D93EDA03}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -649,7 +648,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="wtt_departure_time"
-              DTS:DTSID="{AE492A23-8F11-461A-B926-57AC365F49A3}"
+              DTS:DTSID="{C45E6420-6040-4DF4-B32E-BCEFD502ABA7}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -658,7 +657,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="platform"
-              DTS:DTSID="{A8DD8262-268C-4E55-A4A6-904981190C6C}"
+              DTS:DTSID="{C7D9C935-C807-4E36-9E23-00A84C2ADEE4}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -667,7 +666,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="line"
-              DTS:DTSID="{313D7E24-36EF-4E0A-A44A-C7EFD98ADA9D}"
+              DTS:DTSID="{F4D330C6-5A35-4146-9052-A4D4C97AA3D3}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -676,7 +675,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="path"
-              DTS:DTSID="{22820E87-5C7D-413E-9605-380BE7E1CEBA}"
+              DTS:DTSID="{888C021D-8B8A-42D8-8541-CE903A179FA6}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -685,7 +684,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="activity"
-              DTS:DTSID="{DBB22C03-B002-4325-994B-93A94D1F6604}"
+              DTS:DTSID="{B7FDE663-A388-4DCC-926A-9EA2370240D3}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -694,7 +693,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="engineering_allowance"
-              DTS:DTSID="{356BC0BD-303F-4910-8FAE-88693F8A43C1}"
+              DTS:DTSID="{00E66937-E2FD-4B64-A257-CA309595657E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -703,7 +702,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="pathing_allowance"
-              DTS:DTSID="{7E46B3A9-9887-4A11-9078-B0B28B42CD9A}"
+              DTS:DTSID="{F6BF031A-846D-4179-A171-F4D28DE8D42B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -712,7 +711,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="performance_allowance"
-              DTS:DTSID="{BE19576B-62A1-44AC-A94F-62AB032F2212}"
+              DTS:DTSID="{61086E11-45F5-439E-B133-464A97436563}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -2605,7 +2604,7 @@
       DTS:refId="Package\Basic ETL into Trendbase Database - Links Table"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Data Flow Task"
-      DTS:DTSID="{9811997f-5235-4d5f-b5e1-c932265b5bef}"
+      DTS:DTSID="{cd505ff4-2a6d-4e32-95d4-5705a105e473}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
       DTS:ObjectName="Basic ETL into Trendbase Database - Links Table"
@@ -2838,12 +2837,34 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
+                      refId="Package\Basic ETL into Trendbase Database - Links Table\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of start_time]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="IgnoreFailure"
+                      length="50"
+                      lineageId="Package\Basic ETL into Trendbase Database - Links Table\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of start_time]"
+                      name="Copy of start_time"
+                      truncationRowDisposition="IgnoreFailure">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Basic ETL into Trendbase Database - Links Table\Flat File Source.Outputs[Flat File Source Output].Columns[start_time]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
                       refId="Package\Basic ETL into Trendbase Database - Links Table\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of end_time]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="IgnoreFailure"
-                      length="8"
+                      length="50"
                       lineageId="Package\Basic ETL into Trendbase Database - Links Table\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of end_time]"
                       name="Copy of end_time"
                       truncationRowDisposition="IgnoreFailure">
@@ -2866,7 +2887,7 @@
                       errorRowDisposition="IgnoreFailure"
                       lineageId="Package\Basic ETL into Trendbase Database - Links Table\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of priority]"
                       name="Copy of priority"
-                      precision="18"
+                      precision="1"
                       truncationRowDisposition="IgnoreFailure">
                       <properties>
                         <property
@@ -2886,7 +2907,7 @@
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="IgnoreFailure"
-                      length="8"
+                      length="50"
                       lineageId="Package\Basic ETL into Trendbase Database - Links Table\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of start_date]"
                       name="Copy of start_date"
                       truncationRowDisposition="IgnoreFailure">
@@ -2908,7 +2929,7 @@
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="IgnoreFailure"
-                      length="8"
+                      length="50"
                       lineageId="Package\Basic ETL into Trendbase Database - Links Table\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of end_date]"
                       name="Copy of end_date"
                       truncationRowDisposition="IgnoreFailure">
@@ -3064,28 +3085,6 @@
                           name="FastParse">false</property>
                       </properties>
                     </outputColumn>
-                    <outputColumn
-                      refId="Package\Basic ETL into Trendbase Database - Links Table\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of start_time]"
-                      codePage="1252"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="IgnoreFailure"
-                      length="8"
-                      lineageId="Package\Basic ETL into Trendbase Database - Links Table\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of start_time]"
-                      name="Copy of start_time"
-                      truncationRowDisposition="IgnoreFailure">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Specifies the input column used as the source of data for the conversion."
-                          name="SourceInputColumnLineageID">#{Package\Basic ETL into Trendbase Database - Links Table\Flat File Source.Outputs[Flat File Source Output].Columns[start_time]}</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                      </properties>
-                    </outputColumn>
                   </outputColumns>
                   <externalMetadataColumns />
                 </output>
@@ -3126,7 +3125,7 @@
                 <property
                   dataType="System.Boolean"
                   description="Specifies whether zero-length columns are treated as null."
-                  name="RetainNulls">true</property>
+                  name="RetainNulls">false</property>
                 <property
                   dataType="System.String"
                   description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
@@ -3149,12 +3148,12 @@
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
+                      errorRowDisposition="IgnoreFailure"
                       externalMetadataColumnId="Package\Basic ETL into Trendbase Database - Links Table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[mode]"
                       length="50"
                       lineageId="Package\Basic ETL into Trendbase Database - Links Table\Flat File Source.Outputs[Flat File Source Output].Columns[mode]"
                       name="mode"
-                      truncationRowDisposition="FailComponent">
+                      truncationRowDisposition="IgnoreFailure">
                       <properties>
                         <property
                           dataType="System.Boolean"
@@ -3171,12 +3170,12 @@
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
+                      errorRowDisposition="IgnoreFailure"
                       externalMetadataColumnId="Package\Basic ETL into Trendbase Database - Links Table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[from_stop_id]"
                       length="50"
                       lineageId="Package\Basic ETL into Trendbase Database - Links Table\Flat File Source.Outputs[Flat File Source Output].Columns[from_stop_id]"
                       name="from_stop_id"
-                      truncationRowDisposition="FailComponent">
+                      truncationRowDisposition="IgnoreFailure">
                       <properties>
                         <property
                           dataType="System.Boolean"
@@ -3193,12 +3192,12 @@
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
+                      errorRowDisposition="IgnoreFailure"
                       externalMetadataColumnId="Package\Basic ETL into Trendbase Database - Links Table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[to_stop_id]"
                       length="50"
                       lineageId="Package\Basic ETL into Trendbase Database - Links Table\Flat File Source.Outputs[Flat File Source Output].Columns[to_stop_id]"
                       name="to_stop_id"
-                      truncationRowDisposition="FailComponent">
+                      truncationRowDisposition="IgnoreFailure">
                       <properties>
                         <property
                           dataType="System.Boolean"
@@ -3215,12 +3214,12 @@
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
+                      errorRowDisposition="IgnoreFailure"
                       externalMetadataColumnId="Package\Basic ETL into Trendbase Database - Links Table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[link_secs]"
                       length="50"
                       lineageId="Package\Basic ETL into Trendbase Database - Links Table\Flat File Source.Outputs[Flat File Source Output].Columns[link_secs]"
                       name="link_secs"
-                      truncationRowDisposition="FailComponent">
+                      truncationRowDisposition="IgnoreFailure">
                       <properties>
                         <property
                           dataType="System.Boolean"
@@ -3237,12 +3236,12 @@
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
+                      errorRowDisposition="IgnoreFailure"
                       externalMetadataColumnId="Package\Basic ETL into Trendbase Database - Links Table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[start_time]"
                       length="50"
                       lineageId="Package\Basic ETL into Trendbase Database - Links Table\Flat File Source.Outputs[Flat File Source Output].Columns[start_time]"
                       name="start_time"
-                      truncationRowDisposition="FailComponent">
+                      truncationRowDisposition="IgnoreFailure">
                       <properties>
                         <property
                           dataType="System.Boolean"
@@ -3259,12 +3258,12 @@
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
+                      errorRowDisposition="IgnoreFailure"
                       externalMetadataColumnId="Package\Basic ETL into Trendbase Database - Links Table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[end_time]"
                       length="50"
                       lineageId="Package\Basic ETL into Trendbase Database - Links Table\Flat File Source.Outputs[Flat File Source Output].Columns[end_time]"
                       name="end_time"
-                      truncationRowDisposition="FailComponent">
+                      truncationRowDisposition="IgnoreFailure">
                       <properties>
                         <property
                           dataType="System.Boolean"
@@ -3281,12 +3280,12 @@
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
+                      errorRowDisposition="IgnoreFailure"
                       externalMetadataColumnId="Package\Basic ETL into Trendbase Database - Links Table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[priority]"
                       length="50"
                       lineageId="Package\Basic ETL into Trendbase Database - Links Table\Flat File Source.Outputs[Flat File Source Output].Columns[priority]"
                       name="priority"
-                      truncationRowDisposition="FailComponent">
+                      truncationRowDisposition="IgnoreFailure">
                       <properties>
                         <property
                           dataType="System.Boolean"
@@ -3303,12 +3302,12 @@
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
+                      errorRowDisposition="IgnoreFailure"
                       externalMetadataColumnId="Package\Basic ETL into Trendbase Database - Links Table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[start_date]"
                       length="50"
                       lineageId="Package\Basic ETL into Trendbase Database - Links Table\Flat File Source.Outputs[Flat File Source Output].Columns[start_date]"
                       name="start_date"
-                      truncationRowDisposition="FailComponent">
+                      truncationRowDisposition="IgnoreFailure">
                       <properties>
                         <property
                           dataType="System.Boolean"
@@ -3325,12 +3324,12 @@
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
+                      errorRowDisposition="IgnoreFailure"
                       externalMetadataColumnId="Package\Basic ETL into Trendbase Database - Links Table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[end_date]"
                       length="50"
                       lineageId="Package\Basic ETL into Trendbase Database - Links Table\Flat File Source.Outputs[Flat File Source Output].Columns[end_date]"
                       name="end_date"
-                      truncationRowDisposition="FailComponent">
+                      truncationRowDisposition="IgnoreFailure">
                       <properties>
                         <property
                           dataType="System.Boolean"
@@ -3347,12 +3346,12 @@
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
+                      errorRowDisposition="IgnoreFailure"
                       externalMetadataColumnId="Package\Basic ETL into Trendbase Database - Links Table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[monday]"
                       length="50"
                       lineageId="Package\Basic ETL into Trendbase Database - Links Table\Flat File Source.Outputs[Flat File Source Output].Columns[monday]"
                       name="monday"
-                      truncationRowDisposition="FailComponent">
+                      truncationRowDisposition="IgnoreFailure">
                       <properties>
                         <property
                           dataType="System.Boolean"
@@ -3369,12 +3368,12 @@
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
+                      errorRowDisposition="IgnoreFailure"
                       externalMetadataColumnId="Package\Basic ETL into Trendbase Database - Links Table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[tuesday]"
                       length="50"
                       lineageId="Package\Basic ETL into Trendbase Database - Links Table\Flat File Source.Outputs[Flat File Source Output].Columns[tuesday]"
                       name="tuesday"
-                      truncationRowDisposition="FailComponent">
+                      truncationRowDisposition="IgnoreFailure">
                       <properties>
                         <property
                           dataType="System.Boolean"
@@ -3391,12 +3390,12 @@
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
+                      errorRowDisposition="IgnoreFailure"
                       externalMetadataColumnId="Package\Basic ETL into Trendbase Database - Links Table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[wednesday]"
                       length="50"
                       lineageId="Package\Basic ETL into Trendbase Database - Links Table\Flat File Source.Outputs[Flat File Source Output].Columns[wednesday]"
                       name="wednesday"
-                      truncationRowDisposition="FailComponent">
+                      truncationRowDisposition="IgnoreFailure">
                       <properties>
                         <property
                           dataType="System.Boolean"
@@ -3413,12 +3412,12 @@
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
+                      errorRowDisposition="IgnoreFailure"
                       externalMetadataColumnId="Package\Basic ETL into Trendbase Database - Links Table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[thursday]"
                       length="50"
                       lineageId="Package\Basic ETL into Trendbase Database - Links Table\Flat File Source.Outputs[Flat File Source Output].Columns[thursday]"
                       name="thursday"
-                      truncationRowDisposition="FailComponent">
+                      truncationRowDisposition="IgnoreFailure">
                       <properties>
                         <property
                           dataType="System.Boolean"
@@ -3435,12 +3434,12 @@
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
+                      errorRowDisposition="IgnoreFailure"
                       externalMetadataColumnId="Package\Basic ETL into Trendbase Database - Links Table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[friday]"
                       length="50"
                       lineageId="Package\Basic ETL into Trendbase Database - Links Table\Flat File Source.Outputs[Flat File Source Output].Columns[friday]"
                       name="friday"
-                      truncationRowDisposition="FailComponent">
+                      truncationRowDisposition="IgnoreFailure">
                       <properties>
                         <property
                           dataType="System.Boolean"
@@ -3457,12 +3456,12 @@
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
+                      errorRowDisposition="IgnoreFailure"
                       externalMetadataColumnId="Package\Basic ETL into Trendbase Database - Links Table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[saturday]"
                       length="50"
                       lineageId="Package\Basic ETL into Trendbase Database - Links Table\Flat File Source.Outputs[Flat File Source Output].Columns[saturday]"
                       name="saturday"
-                      truncationRowDisposition="FailComponent">
+                      truncationRowDisposition="IgnoreFailure">
                       <properties>
                         <property
                           dataType="System.Boolean"
@@ -3479,12 +3478,12 @@
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
+                      errorRowDisposition="IgnoreFailure"
                       externalMetadataColumnId="Package\Basic ETL into Trendbase Database - Links Table\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[sunday]"
                       length="50"
                       lineageId="Package\Basic ETL into Trendbase Database - Links Table\Flat File Source.Outputs[Flat File Source Output].Columns[sunday]"
                       name="sunday"
-                      truncationRowDisposition="FailComponent">
+                      truncationRowDisposition="IgnoreFailure">
                       <properties>
                         <property
                           dataType="System.Boolean"
@@ -3627,11 +3626,11 @@
               </outputs>
             </component>
             <component
-              refId="Package\Basic ETL into Trendbase Database - Links Table\OLE DB Destination"
+              refId="Package\Basic ETL into Trendbase Database - Links Table\Trendbase Database"
               componentClassID="Microsoft.OLEDBDestination"
               contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
               description="OLE DB Destination"
-              name="OLE DB Destination"
+              name="Trendbase Database"
               usesDispositions="true"
               version="4">
               <properties>
@@ -3668,11 +3667,11 @@
                 <property
                   dataType="System.Boolean"
                   description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
-                  name="FastLoadKeepIdentity">true</property>
+                  name="FastLoadKeepIdentity">false</property>
                 <property
                   dataType="System.Boolean"
                   description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
-                  name="FastLoadKeepNulls">true</property>
+                  name="FastLoadKeepNulls">false</property>
                 <property
                   dataType="System.String"
                   description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
@@ -3684,7 +3683,7 @@
               </properties>
               <connections>
                 <connection
-                  refId="Package\Basic ETL into Trendbase Database - Links Table\OLE DB Destination.Connections[OleDbConnection]"
+                  refId="Package\Basic ETL into Trendbase Database - Links Table\Trendbase Database.Connections[OleDbConnection]"
                   connectionManagerID="{F7331879-F2FA-4509-B5F9-8269FD762383}:external"
                   connectionManagerRefId="Project.ConnectionManagers[DESKTOP-5N8OBA5.Trendbase]"
                   description="The OLE DB runtime connection used to access the database."
@@ -3692,201 +3691,201 @@
               </connections>
               <inputs>
                 <input
-                  refId="Package\Basic ETL into Trendbase Database - Links Table\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  refId="Package\Basic ETL into Trendbase Database - Links Table\Trendbase Database.Inputs[OLE DB Destination Input]"
                   errorOrTruncationOperation="Insert"
                   errorRowDisposition="IgnoreFailure"
                   hasSideEffects="true"
                   name="OLE DB Destination Input">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Basic ETL into Trendbase Database - Links Table\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of mode]"
+                      refId="Package\Basic ETL into Trendbase Database - Links Table\Trendbase Database.Inputs[OLE DB Destination Input].Columns[Copy of mode]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="20"
                       cachedName="Copy of mode"
-                      externalMetadataColumnId="Package\Basic ETL into Trendbase Database - Links Table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[mode]"
+                      externalMetadataColumnId="Package\Basic ETL into Trendbase Database - Links Table\Trendbase Database.Inputs[OLE DB Destination Input].ExternalColumns[mode]"
                       lineageId="Package\Basic ETL into Trendbase Database - Links Table\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of mode]" />
                     <inputColumn
-                      refId="Package\Basic ETL into Trendbase Database - Links Table\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of link_secs]"
-                      cachedDataType="numeric"
-                      cachedName="Copy of link_secs"
-                      cachedPrecision="18"
-                      externalMetadataColumnId="Package\Basic ETL into Trendbase Database - Links Table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[link_secs]"
-                      lineageId="Package\Basic ETL into Trendbase Database - Links Table\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of link_secs]" />
-                    <inputColumn
-                      refId="Package\Basic ETL into Trendbase Database - Links Table\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of start_time]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="8"
-                      cachedName="Copy of start_time"
-                      externalMetadataColumnId="Package\Basic ETL into Trendbase Database - Links Table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[start_time]"
-                      lineageId="Package\Basic ETL into Trendbase Database - Links Table\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of start_time]" />
-                    <inputColumn
-                      refId="Package\Basic ETL into Trendbase Database - Links Table\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of end_time]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="8"
-                      cachedName="Copy of end_time"
-                      externalMetadataColumnId="Package\Basic ETL into Trendbase Database - Links Table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[end_time]"
-                      lineageId="Package\Basic ETL into Trendbase Database - Links Table\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of end_time]" />
-                    <inputColumn
-                      refId="Package\Basic ETL into Trendbase Database - Links Table\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of priority]"
-                      cachedDataType="numeric"
-                      cachedName="Copy of priority"
-                      cachedPrecision="18"
-                      externalMetadataColumnId="Package\Basic ETL into Trendbase Database - Links Table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[priority]"
-                      lineageId="Package\Basic ETL into Trendbase Database - Links Table\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of priority]" />
-                    <inputColumn
-                      refId="Package\Basic ETL into Trendbase Database - Links Table\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of start_date]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="8"
-                      cachedName="Copy of start_date"
-                      externalMetadataColumnId="Package\Basic ETL into Trendbase Database - Links Table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[start_date]"
-                      lineageId="Package\Basic ETL into Trendbase Database - Links Table\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of start_date]" />
-                    <inputColumn
-                      refId="Package\Basic ETL into Trendbase Database - Links Table\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of end_date]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="8"
-                      cachedName="Copy of end_date"
-                      externalMetadataColumnId="Package\Basic ETL into Trendbase Database - Links Table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[end_date]"
-                      lineageId="Package\Basic ETL into Trendbase Database - Links Table\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of end_date]" />
-                    <inputColumn
-                      refId="Package\Basic ETL into Trendbase Database - Links Table\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of monday]"
-                      cachedDataType="bool"
-                      cachedName="Copy of monday"
-                      externalMetadataColumnId="Package\Basic ETL into Trendbase Database - Links Table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[monday]"
-                      lineageId="Package\Basic ETL into Trendbase Database - Links Table\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of monday]" />
-                    <inputColumn
-                      refId="Package\Basic ETL into Trendbase Database - Links Table\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of tuesday]"
-                      cachedDataType="bool"
-                      cachedName="Copy of tuesday"
-                      externalMetadataColumnId="Package\Basic ETL into Trendbase Database - Links Table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[tuesday]"
-                      lineageId="Package\Basic ETL into Trendbase Database - Links Table\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of tuesday]" />
-                    <inputColumn
-                      refId="Package\Basic ETL into Trendbase Database - Links Table\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of wednesday]"
-                      cachedDataType="bool"
-                      cachedName="Copy of wednesday"
-                      externalMetadataColumnId="Package\Basic ETL into Trendbase Database - Links Table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[wednesday]"
-                      lineageId="Package\Basic ETL into Trendbase Database - Links Table\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of wednesday]" />
-                    <inputColumn
-                      refId="Package\Basic ETL into Trendbase Database - Links Table\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of thursday]"
-                      cachedDataType="bool"
-                      cachedName="Copy of thursday"
-                      externalMetadataColumnId="Package\Basic ETL into Trendbase Database - Links Table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[thursday]"
-                      lineageId="Package\Basic ETL into Trendbase Database - Links Table\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of thursday]" />
-                    <inputColumn
-                      refId="Package\Basic ETL into Trendbase Database - Links Table\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of friday]"
-                      cachedDataType="bool"
-                      cachedName="Copy of friday"
-                      externalMetadataColumnId="Package\Basic ETL into Trendbase Database - Links Table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[friday]"
-                      lineageId="Package\Basic ETL into Trendbase Database - Links Table\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of friday]" />
-                    <inputColumn
-                      refId="Package\Basic ETL into Trendbase Database - Links Table\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of saturday]"
-                      cachedDataType="bool"
-                      cachedName="Copy of saturday"
-                      externalMetadataColumnId="Package\Basic ETL into Trendbase Database - Links Table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[saturday]"
-                      lineageId="Package\Basic ETL into Trendbase Database - Links Table\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of saturday]" />
-                    <inputColumn
-                      refId="Package\Basic ETL into Trendbase Database - Links Table\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of sunday]"
-                      cachedDataType="bool"
-                      cachedName="Copy of sunday"
-                      externalMetadataColumnId="Package\Basic ETL into Trendbase Database - Links Table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[sunday]"
-                      lineageId="Package\Basic ETL into Trendbase Database - Links Table\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of sunday]" />
-                    <inputColumn
-                      refId="Package\Basic ETL into Trendbase Database - Links Table\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of from_stop_id]"
+                      refId="Package\Basic ETL into Trendbase Database - Links Table\Trendbase Database.Inputs[OLE DB Destination Input].Columns[Copy of from_stop_id]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="3"
                       cachedName="Copy of from_stop_id"
-                      externalMetadataColumnId="Package\Basic ETL into Trendbase Database - Links Table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[from_stop_id]"
+                      externalMetadataColumnId="Package\Basic ETL into Trendbase Database - Links Table\Trendbase Database.Inputs[OLE DB Destination Input].ExternalColumns[from_stop_id]"
                       lineageId="Package\Basic ETL into Trendbase Database - Links Table\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of from_stop_id]" />
                     <inputColumn
-                      refId="Package\Basic ETL into Trendbase Database - Links Table\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of to_stop_id]"
+                      refId="Package\Basic ETL into Trendbase Database - Links Table\Trendbase Database.Inputs[OLE DB Destination Input].Columns[Copy of to_stop_id]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="3"
                       cachedName="Copy of to_stop_id"
-                      externalMetadataColumnId="Package\Basic ETL into Trendbase Database - Links Table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[to_stop_id]"
+                      externalMetadataColumnId="Package\Basic ETL into Trendbase Database - Links Table\Trendbase Database.Inputs[OLE DB Destination Input].ExternalColumns[to_stop_id]"
                       lineageId="Package\Basic ETL into Trendbase Database - Links Table\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of to_stop_id]" />
+                    <inputColumn
+                      refId="Package\Basic ETL into Trendbase Database - Links Table\Trendbase Database.Inputs[OLE DB Destination Input].Columns[Copy of link_secs]"
+                      cachedDataType="numeric"
+                      cachedName="Copy of link_secs"
+                      cachedPrecision="18"
+                      externalMetadataColumnId="Package\Basic ETL into Trendbase Database - Links Table\Trendbase Database.Inputs[OLE DB Destination Input].ExternalColumns[link_secs]"
+                      lineageId="Package\Basic ETL into Trendbase Database - Links Table\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of link_secs]" />
+                    <inputColumn
+                      refId="Package\Basic ETL into Trendbase Database - Links Table\Trendbase Database.Inputs[OLE DB Destination Input].Columns[Copy of start_time]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Copy of start_time"
+                      externalMetadataColumnId="Package\Basic ETL into Trendbase Database - Links Table\Trendbase Database.Inputs[OLE DB Destination Input].ExternalColumns[start_time]"
+                      lineageId="Package\Basic ETL into Trendbase Database - Links Table\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of start_time]" />
+                    <inputColumn
+                      refId="Package\Basic ETL into Trendbase Database - Links Table\Trendbase Database.Inputs[OLE DB Destination Input].Columns[Copy of end_time]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Copy of end_time"
+                      externalMetadataColumnId="Package\Basic ETL into Trendbase Database - Links Table\Trendbase Database.Inputs[OLE DB Destination Input].ExternalColumns[end_time]"
+                      lineageId="Package\Basic ETL into Trendbase Database - Links Table\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of end_time]" />
+                    <inputColumn
+                      refId="Package\Basic ETL into Trendbase Database - Links Table\Trendbase Database.Inputs[OLE DB Destination Input].Columns[Copy of priority]"
+                      cachedDataType="numeric"
+                      cachedName="Copy of priority"
+                      cachedPrecision="1"
+                      externalMetadataColumnId="Package\Basic ETL into Trendbase Database - Links Table\Trendbase Database.Inputs[OLE DB Destination Input].ExternalColumns[priority]"
+                      lineageId="Package\Basic ETL into Trendbase Database - Links Table\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of priority]" />
+                    <inputColumn
+                      refId="Package\Basic ETL into Trendbase Database - Links Table\Trendbase Database.Inputs[OLE DB Destination Input].Columns[Copy of start_date]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Copy of start_date"
+                      externalMetadataColumnId="Package\Basic ETL into Trendbase Database - Links Table\Trendbase Database.Inputs[OLE DB Destination Input].ExternalColumns[start_date]"
+                      lineageId="Package\Basic ETL into Trendbase Database - Links Table\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of start_date]" />
+                    <inputColumn
+                      refId="Package\Basic ETL into Trendbase Database - Links Table\Trendbase Database.Inputs[OLE DB Destination Input].Columns[Copy of end_date]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Copy of end_date"
+                      externalMetadataColumnId="Package\Basic ETL into Trendbase Database - Links Table\Trendbase Database.Inputs[OLE DB Destination Input].ExternalColumns[end_date]"
+                      lineageId="Package\Basic ETL into Trendbase Database - Links Table\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of end_date]" />
+                    <inputColumn
+                      refId="Package\Basic ETL into Trendbase Database - Links Table\Trendbase Database.Inputs[OLE DB Destination Input].Columns[Copy of monday]"
+                      cachedDataType="bool"
+                      cachedName="Copy of monday"
+                      externalMetadataColumnId="Package\Basic ETL into Trendbase Database - Links Table\Trendbase Database.Inputs[OLE DB Destination Input].ExternalColumns[monday]"
+                      lineageId="Package\Basic ETL into Trendbase Database - Links Table\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of monday]" />
+                    <inputColumn
+                      refId="Package\Basic ETL into Trendbase Database - Links Table\Trendbase Database.Inputs[OLE DB Destination Input].Columns[Copy of tuesday]"
+                      cachedDataType="bool"
+                      cachedName="Copy of tuesday"
+                      externalMetadataColumnId="Package\Basic ETL into Trendbase Database - Links Table\Trendbase Database.Inputs[OLE DB Destination Input].ExternalColumns[tuesday]"
+                      lineageId="Package\Basic ETL into Trendbase Database - Links Table\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of tuesday]" />
+                    <inputColumn
+                      refId="Package\Basic ETL into Trendbase Database - Links Table\Trendbase Database.Inputs[OLE DB Destination Input].Columns[Copy of thursday]"
+                      cachedDataType="bool"
+                      cachedName="Copy of thursday"
+                      externalMetadataColumnId="Package\Basic ETL into Trendbase Database - Links Table\Trendbase Database.Inputs[OLE DB Destination Input].ExternalColumns[thursday]"
+                      lineageId="Package\Basic ETL into Trendbase Database - Links Table\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of thursday]" />
+                    <inputColumn
+                      refId="Package\Basic ETL into Trendbase Database - Links Table\Trendbase Database.Inputs[OLE DB Destination Input].Columns[Copy of wednesday]"
+                      cachedDataType="bool"
+                      cachedName="Copy of wednesday"
+                      externalMetadataColumnId="Package\Basic ETL into Trendbase Database - Links Table\Trendbase Database.Inputs[OLE DB Destination Input].ExternalColumns[wednesday]"
+                      lineageId="Package\Basic ETL into Trendbase Database - Links Table\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of wednesday]" />
+                    <inputColumn
+                      refId="Package\Basic ETL into Trendbase Database - Links Table\Trendbase Database.Inputs[OLE DB Destination Input].Columns[Copy of friday]"
+                      cachedDataType="bool"
+                      cachedName="Copy of friday"
+                      externalMetadataColumnId="Package\Basic ETL into Trendbase Database - Links Table\Trendbase Database.Inputs[OLE DB Destination Input].ExternalColumns[friday]"
+                      lineageId="Package\Basic ETL into Trendbase Database - Links Table\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of friday]" />
+                    <inputColumn
+                      refId="Package\Basic ETL into Trendbase Database - Links Table\Trendbase Database.Inputs[OLE DB Destination Input].Columns[Copy of saturday]"
+                      cachedDataType="bool"
+                      cachedName="Copy of saturday"
+                      externalMetadataColumnId="Package\Basic ETL into Trendbase Database - Links Table\Trendbase Database.Inputs[OLE DB Destination Input].ExternalColumns[saturday]"
+                      lineageId="Package\Basic ETL into Trendbase Database - Links Table\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of saturday]" />
+                    <inputColumn
+                      refId="Package\Basic ETL into Trendbase Database - Links Table\Trendbase Database.Inputs[OLE DB Destination Input].Columns[Copy of sunday]"
+                      cachedDataType="bool"
+                      cachedName="Copy of sunday"
+                      externalMetadataColumnId="Package\Basic ETL into Trendbase Database - Links Table\Trendbase Database.Inputs[OLE DB Destination Input].ExternalColumns[sunday]"
+                      lineageId="Package\Basic ETL into Trendbase Database - Links Table\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of sunday]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Basic ETL into Trendbase Database - Links Table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[mode]"
+                      refId="Package\Basic ETL into Trendbase Database - Links Table\Trendbase Database.Inputs[OLE DB Destination Input].ExternalColumns[mode]"
                       codePage="1252"
                       dataType="str"
                       length="20"
                       name="mode" />
                     <externalMetadataColumn
-                      refId="Package\Basic ETL into Trendbase Database - Links Table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[from_stop_id]"
+                      refId="Package\Basic ETL into Trendbase Database - Links Table\Trendbase Database.Inputs[OLE DB Destination Input].ExternalColumns[from_stop_id]"
                       codePage="1252"
                       dataType="str"
                       length="3"
                       name="from_stop_id" />
                     <externalMetadataColumn
-                      refId="Package\Basic ETL into Trendbase Database - Links Table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[to_stop_id]"
+                      refId="Package\Basic ETL into Trendbase Database - Links Table\Trendbase Database.Inputs[OLE DB Destination Input].ExternalColumns[to_stop_id]"
                       codePage="1252"
                       dataType="str"
                       length="3"
                       name="to_stop_id" />
                     <externalMetadataColumn
-                      refId="Package\Basic ETL into Trendbase Database - Links Table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[link_secs]"
+                      refId="Package\Basic ETL into Trendbase Database - Links Table\Trendbase Database.Inputs[OLE DB Destination Input].ExternalColumns[link_secs]"
                       dataType="i4"
                       name="link_secs" />
                     <externalMetadataColumn
-                      refId="Package\Basic ETL into Trendbase Database - Links Table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[start_time]"
+                      refId="Package\Basic ETL into Trendbase Database - Links Table\Trendbase Database.Inputs[OLE DB Destination Input].ExternalColumns[start_time]"
                       dataType="dbTime2"
                       name="start_time"
                       scale="1" />
                     <externalMetadataColumn
-                      refId="Package\Basic ETL into Trendbase Database - Links Table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[end_time]"
+                      refId="Package\Basic ETL into Trendbase Database - Links Table\Trendbase Database.Inputs[OLE DB Destination Input].ExternalColumns[end_time]"
                       dataType="dbTime2"
                       name="end_time"
                       scale="1" />
                     <externalMetadataColumn
-                      refId="Package\Basic ETL into Trendbase Database - Links Table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[priority]"
+                      refId="Package\Basic ETL into Trendbase Database - Links Table\Trendbase Database.Inputs[OLE DB Destination Input].ExternalColumns[priority]"
                       dataType="i4"
                       name="priority" />
                     <externalMetadataColumn
-                      refId="Package\Basic ETL into Trendbase Database - Links Table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[start_date]"
+                      refId="Package\Basic ETL into Trendbase Database - Links Table\Trendbase Database.Inputs[OLE DB Destination Input].ExternalColumns[start_date]"
                       codePage="1252"
                       dataType="str"
-                      length="8"
+                      length="50"
                       name="start_date" />
                     <externalMetadataColumn
-                      refId="Package\Basic ETL into Trendbase Database - Links Table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[end_date]"
+                      refId="Package\Basic ETL into Trendbase Database - Links Table\Trendbase Database.Inputs[OLE DB Destination Input].ExternalColumns[end_date]"
                       codePage="1252"
                       dataType="str"
-                      length="8"
+                      length="50"
                       name="end_date" />
                     <externalMetadataColumn
-                      refId="Package\Basic ETL into Trendbase Database - Links Table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[monday]"
+                      refId="Package\Basic ETL into Trendbase Database - Links Table\Trendbase Database.Inputs[OLE DB Destination Input].ExternalColumns[monday]"
                       dataType="bool"
                       name="monday" />
                     <externalMetadataColumn
-                      refId="Package\Basic ETL into Trendbase Database - Links Table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[tuesday]"
+                      refId="Package\Basic ETL into Trendbase Database - Links Table\Trendbase Database.Inputs[OLE DB Destination Input].ExternalColumns[tuesday]"
                       dataType="bool"
                       name="tuesday" />
                     <externalMetadataColumn
-                      refId="Package\Basic ETL into Trendbase Database - Links Table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[wednesday]"
+                      refId="Package\Basic ETL into Trendbase Database - Links Table\Trendbase Database.Inputs[OLE DB Destination Input].ExternalColumns[wednesday]"
                       dataType="bool"
                       name="wednesday" />
                     <externalMetadataColumn
-                      refId="Package\Basic ETL into Trendbase Database - Links Table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[thursday]"
+                      refId="Package\Basic ETL into Trendbase Database - Links Table\Trendbase Database.Inputs[OLE DB Destination Input].ExternalColumns[thursday]"
                       dataType="bool"
                       name="thursday" />
                     <externalMetadataColumn
-                      refId="Package\Basic ETL into Trendbase Database - Links Table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[friday]"
+                      refId="Package\Basic ETL into Trendbase Database - Links Table\Trendbase Database.Inputs[OLE DB Destination Input].ExternalColumns[friday]"
                       dataType="bool"
                       name="friday" />
                     <externalMetadataColumn
-                      refId="Package\Basic ETL into Trendbase Database - Links Table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[saturday]"
+                      refId="Package\Basic ETL into Trendbase Database - Links Table\Trendbase Database.Inputs[OLE DB Destination Input].ExternalColumns[saturday]"
                       dataType="bool"
                       name="saturday" />
                     <externalMetadataColumn
-                      refId="Package\Basic ETL into Trendbase Database - Links Table\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[sunday]"
+                      refId="Package\Basic ETL into Trendbase Database - Links Table\Trendbase Database.Inputs[OLE DB Destination Input].ExternalColumns[sunday]"
                       dataType="bool"
                       name="sunday" />
                   </externalMetadataColumns>
@@ -3894,22 +3893,22 @@
               </inputs>
               <outputs>
                 <output
-                  refId="Package\Basic ETL into Trendbase Database - Links Table\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  refId="Package\Basic ETL into Trendbase Database - Links Table\Trendbase Database.Outputs[OLE DB Destination Error Output]"
                   exclusionGroup="1"
                   isErrorOut="true"
                   name="OLE DB Destination Error Output"
-                  synchronousInputId="Package\Basic ETL into Trendbase Database - Links Table\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  synchronousInputId="Package\Basic ETL into Trendbase Database - Links Table\Trendbase Database.Inputs[OLE DB Destination Input]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Basic ETL into Trendbase Database - Links Table\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      refId="Package\Basic ETL into Trendbase Database - Links Table\Trendbase Database.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\Basic ETL into Trendbase Database - Links Table\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      lineageId="Package\Basic ETL into Trendbase Database - Links Table\Trendbase Database.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\Basic ETL into Trendbase Database - Links Table\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      refId="Package\Basic ETL into Trendbase Database - Links Table\Trendbase Database.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\Basic ETL into Trendbase Database - Links Table\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      lineageId="Package\Basic ETL into Trendbase Database - Links Table\Trendbase Database.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -3921,7 +3920,7 @@
           <paths>
             <path
               refId="Package\Basic ETL into Trendbase Database - Links Table.Paths[Data Conversion Output]"
-              endId="Package\Basic ETL into Trendbase Database - Links Table\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              endId="Package\Basic ETL into Trendbase Database - Links Table\Trendbase Database.Inputs[OLE DB Destination Input]"
               name="Data Conversion Output"
               startId="Package\Basic ETL into Trendbase Database - Links Table\Data Conversion.Outputs[Data Conversion Output]" />
             <path
@@ -7134,7 +7133,7 @@
                 <property
                   dataType="System.Boolean"
                   description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
-                  name="FastLoadKeepNulls">false</property>
+                  name="FastLoadKeepNulls">true</property>
                 <property
                   dataType="System.String"
                   description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
@@ -9409,7 +9408,7 @@
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 4]"
       DTS:CreationName=""
-      DTS:DTSID="{DF48409B-774A-4DD7-AC3A-3DDDCA79208F}"
+      DTS:DTSID="{EA73FF27-B4AE-4F16-AB55-26C1B69DB854}"
       DTS:From="Package\Basic ETL into Trendbase Database - Routes Table"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 4"
@@ -9417,7 +9416,7 @@
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 5]"
       DTS:CreationName=""
-      DTS:DTSID="{338C2A07-43D9-400C-9F52-A1DB0D570900}"
+      DTS:DTSID="{2CC10A44-23B4-4C53-8753-C91A24399EA7}"
       DTS:From="Package\Basic ETL into Trendbase Database - Links Table"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 5"
@@ -9446,38 +9445,38 @@
         <NodeLayout
           Size="318.4,41.6"
           Id="Package\Basic ETL into Trendbase Database - Agency Table"
-          TopLeft="17.2857145800881,534.388232477809" />
+          TopLeft="30.2214290963143,536.223526621195" />
         <NodeLayout
           Size="325.6,41.6"
           Id="Package\Basic ETL into Trendbase Database - Calendar Table"
-          TopLeft="9.4285715891389,455.729409270138" />
+          TopLeft="26.6214290963143,456.952938699062" />
         <NodeLayout
           Size="308,41.6"
           Id="Package\Basic ETL into Trendbase Database - Links Table"
-          TopLeft="15.8571431271883,378.30588053403" />
+          TopLeft="35.4214290963143,373.458826635288" />
         <NodeLayout
           Size="316,41.6"
           Id="Package\Basic ETL into Trendbase Database - Routes Table"
-          TopLeft="18.714286032988,301.176469112515" />
+          TopLeft="31.4214290963143,304.235292684826" />
         <NodeLayout
           Size="309.6,41.6"
           Id="Package\Basic ETL into Trendbase Database - Stops Table"
-          TopLeft="26.1428575880673,228.635293049466" />
+          TopLeft="34.6214290963143,228.635293049466" />
         <NodeLayout
           Size="328,41.6"
           Id="Package\Basic ETL into Trendbase Database - Transfers Table"
-          TopLeft="26.1428575880673,157.929411129803" />
+          TopLeft="25.4214290963143,157.929411129803" />
         <NodeLayout
           Size="332,41.6"
           Id="Package\Basic ETL into Trendbase Database Stop_Times Table"
-          TopLeft="18.7142860329881,83.2470585661363" />
+          TopLeft="23.4214290963143,83.2470585661363" />
         <NodeLayout
           Size="300,41.6"
           Id="Package\Basic ETL into Trendbase Database Trips Table"
-          TopLeft="34.7142863054665,17.7411767194015" />
+          TopLeft="39.4214290963143,17.7411767194015" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="184.714286169227,59.3411767194015">
+          TopLeft="189.421429096314,59.3411767194015">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -9499,7 +9498,7 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 1]"
-          TopLeft="187.428571810528,124.847058566136">
+          TopLeft="189.421429096314,124.847058566136">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -9521,30 +9520,18 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 2]"
-          TopLeft="190.142857588067,199.529411129803">
+          TopLeft="189.421429096314,199.529411129803">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-9.20000000000002,29.105881919663"
+              EndConnector="0,29.105881919663"
               Start="0,0"
-              End="-9.20000000000002,21.605881919663">
+              End="0,21.605881919663">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,10.5529409598315" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,10.5529409598315"
-                    Point2="0,14.5529409598315"
-                    Point3="-4,14.5529409598315" />
-                  <mssgle:LineSegment
-                    End="-5.20000000000002,14.5529409598315" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-5.20000000000002,14.5529409598315"
-                    Point2="-9.20000000000002,14.5529409598315"
-                    Point3="-9.20000000000002,18.5529409598315" />
-                  <mssgle:LineSegment
-                    End="-9.20000000000002,21.605881919663" />
+                    End="0,21.605881919663" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -9555,62 +9542,18 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 3]"
-          TopLeft="178.828571810528,270.235293049466">
+          TopLeft="189.421429096314,270.235293049466">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,30.941176063049"
+              EndConnector="0,33.9999996353596"
               Start="0,0"
-              End="0,23.441176063049">
+              End="0,26.4999996353596">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,23.441176063049" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 4]"
-          TopLeft="173.285714580088,342.776469112515">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,35.529411421515"
-              Start="0,0"
-              End="0,28.029411421515">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,28.029411421515" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 5]"
-          TopLeft="171.042857358164,419.90588053403">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,35.8235287361079"
-              Start="0,0"
-              End="0,28.3235287361079">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,28.3235287361079" />
+                    End="0,26.4999996353596" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -9621,18 +9564,62 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 6]"
-          TopLeft="174.357143084613,497.329409270138">
+          TopLeft="189.421429096314,498.552938699062">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,37.058823207671"
+              EndConnector="0,37.6705879221331"
               Start="0,0"
-              End="0,29.558823207671">
+              End="0,30.1705879221331">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,29.558823207671" />
+                    End="0,30.1705879221331" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 4]"
+          TopLeft="189.421429096314,345.835292684826">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,27.6235339504625"
+              Start="0,0"
+              End="0,20.1235339504625">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,20.1235339504625" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 5]"
+          TopLeft="189.421429096314,415.058826635288">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,41.8941120637741"
+              Start="0,0"
+              End="0,34.3941120637741">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,34.3941120637741" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -9648,7 +9635,7 @@
     design-time-name="Package\Basic ETL into Trendbase Database - Agency Table">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="175.2,41.6"
           Id="Package\Basic ETL into Trendbase Database - Agency Table\Trendbase Database"
@@ -9692,7 +9679,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -9726,7 +9715,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -9854,96 +9845,92 @@
     design-time-name="Package\Basic ETL into Trendbase Database - Links Table">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="170.4,41.6"
-          Id="Package\Basic ETL into Trendbase Database - Links Table\OLE DB Destination"
-          TopLeft="142.285716708826,189.647061483258" />
+          Size="175.2,41.6"
+          Id="Package\Basic ETL into Trendbase Database - Links Table\Trendbase Database"
+          TopLeft="52.000000885555,179.247061337402" />
         <NodeLayout
           Size="150.4,41.6"
           Id="Package\Basic ETL into Trendbase Database - Links Table\Flat File Source"
-          TopLeft="156.000002656664,72.6117652978864" />
+          TopLeft="64.0000010899135,40.9882358689622" />
         <NodeLayout
           Size="155.2,41.6"
           Id="Package\Basic ETL into Trendbase Database - Links Table\Data Conversion"
-          TopLeft="344.571434439445,127.858825322584" />
+          TopLeft="254.285718616174,115.011766318879" />
         <EdgeLayout
           Id="Package\Basic ETL into Trendbase Database - Links Table.Paths[Flat File Source Output]"
-          TopLeft="306.400002656664,93.4117652978864">
+          TopLeft="139.200001089913,82.5882358689622">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="38.1714317827809,49.6470600246975"
+              EndConnector="192.685717526261,32.4235304499168"
               Start="0,0"
-              End="30.6714317827809,49.6470600246975">
+              End="192.685717526261,24.9235304499168">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="18.0546050300512,0" />
+                    End="0,12.2117652249584" />
                   <mssgle:CubicBezierSegment
-                    Point1="18.0546050300512,0"
-                    Point2="22.0546050300512,0"
-                    Point3="22.0546050300512,4" />
+                    Point1="0,12.2117652249584"
+                    Point2="0,16.2117652249584"
+                    Point3="4,16.2117652249584" />
                   <mssgle:LineSegment
-                    End="22.0546050300512,45.6470600246975" />
+                    End="188.685717526261,16.2117652249584" />
                   <mssgle:CubicBezierSegment
-                    Point1="22.0546050300512,45.6470600246975"
-                    Point2="22.0546050300512,49.6470600246975"
-                    Point3="26.0546050300512,49.6470600246975" />
+                    Point1="188.685717526261,16.2117652249584"
+                    Point2="192.685717526261,16.2117652249584"
+                    Point3="192.685717526261,20.2117652249584" />
                   <mssgle:LineSegment
-                    End="30.6714317827809,49.6470600246975" />
+                    End="192.685717526261,24.9235304499168" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Basic ETL into Trendbase Database - Links Table.Paths[Data Conversion Output]"
-          TopLeft="344.571434439445,154.258825322584">
+          TopLeft="331.885718616174,156.611766318879">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-31.8857177306193,56.1882361606743"
+              EndConnector="-192.285717730619,22.635295018523"
               Start="0,0"
-              End="-24.3857177306193,56.1882361606743">
+              End="-192.285717730619,15.135295018523">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="-9.46285859737258,0" />
+                    End="0,7.31764750926149" />
                   <mssgle:CubicBezierSegment
-                    Point1="-9.46285859737258,0"
-                    Point2="-13.4628585973726,0"
-                    Point3="-13.4628585973726,4" />
+                    Point1="0,7.31764750926149"
+                    Point2="0,11.3176475092615"
+                    Point3="-4,11.3176475092615" />
                   <mssgle:LineSegment
-                    End="-13.4628585973726,52.1882361606743" />
+                    End="-188.285717730619,11.3176475092615" />
                   <mssgle:CubicBezierSegment
-                    Point1="-13.4628585973726,52.1882361606743"
-                    Point2="-13.4628585973726,56.1882361606743"
-                    Point3="-17.4628585973726,56.1882361606743" />
+                    Point1="-188.285717730619,11.3176475092615"
+                    Point2="-192.285717730619,11.3176475092615"
+                    Point3="-192.285717730619,15.3176475092615" />
                   <mssgle:LineSegment
-                    End="-24.3857177306193,56.1882361606743" />
+                    End="-192.285717730619,15.135295018523" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Basic ETL into Trendbase Database - Links Table\OLE DB Destination">
+    design-time-name="Package\Basic ETL into Trendbase Database - Links Table\Trendbase Database">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -10280,9 +10267,9 @@
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="191.542860363941,33.035295164379"
+              EndConnector="191.542860363941,33.0352951643789"
               Start="0,0"
-              End="191.542860363941,25.535295164379">
+              End="191.542860363941,25.5352951643789">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
@@ -10299,7 +10286,7 @@
                     Point2="191.542860363941,16.5176475821895"
                     Point3="191.542860363941,20.5176475821895" />
                   <mssgle:LineSegment
-                    End="191.542860363941,25.535295164379" />
+                    End="191.542860363941,25.5352951643789" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -10316,26 +10303,26 @@
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-192.857146311779,22.6352950185229"
+              EndConnector="-192.857146311779,22.635295018523"
               Start="0,0"
-              End="-192.857146311779,15.1352950185229">
+              End="-192.857146311779,15.135295018523">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,7.31764750926143" />
+                    End="0,7.31764750926149" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,7.31764750926143"
-                    Point2="0,11.3176475092614"
-                    Point3="-4,11.3176475092614" />
+                    Point1="0,7.31764750926149"
+                    Point2="0,11.3176475092615"
+                    Point3="-4,11.3176475092615" />
                   <mssgle:LineSegment
-                    End="-188.857146311779,11.3176475092614" />
+                    End="-188.857146311779,11.3176475092615" />
                   <mssgle:CubicBezierSegment
-                    Point1="-188.857146311779,11.3176475092614"
-                    Point2="-192.857146311779,11.3176475092614"
-                    Point3="-192.857146311779,15.3176475092614" />
+                    Point1="-188.857146311779,11.3176475092615"
+                    Point2="-192.857146311779,11.3176475092615"
+                    Point3="-192.857146311779,15.3176475092615" />
                   <mssgle:LineSegment
-                    End="-192.857146311779,15.1352950185229" />
+                    End="-192.857146311779,15.135295018523" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -10349,6 +10336,19 @@
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Basic ETL into Trendbase Database Stop_Times Table\Trendbase Database">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <TaskHost
     design-time-name="Package\Basic ETL into Trendbase Database Trips Table">
     <LayoutInfo>
