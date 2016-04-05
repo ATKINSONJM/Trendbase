@@ -4,3 +4,6 @@ C:\Users\chunk\Source\Repos\Trendbase\RandomDataGenerator\bin\Debug\RandomDataGe
 C:\Users\chunk\Source\Repos\Trendbase\RandomDataGenerator\obj\Debug\RandomDataGenerator.exe
 C:\Users\chunk\Source\Repos\Trendbase\RandomDataGenerator\obj\Debug\RandomDataGenerator.pdb
 C:\Users\chunk\Source\Repos\Trendbase\RandomDataGenerator\obj\Debug\RandomDataGenerator.csprojResolveAssemblyReference.cache
+C:\Users\chunk\Source\Repos\Trendbase\RandomDataGenerator\bin\Debug\FastMember.dll
+C:\Users\chunk\Source\Repos\Trendbase\RandomDataGenerator\bin\Debug\FastMember.pdb
+C:\Users\chunk\Source\Repos\Trendbase\RandomDataGenerator\bin\Debug\FastMember.xml
