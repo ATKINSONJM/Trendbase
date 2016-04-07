@@ -4,10 +4,7 @@ using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
 using System.Diagnostics;
-using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Microsoft.Azure.WebJobs;
 
 namespace DataGeneratorWJ
@@ -63,14 +60,6 @@ namespace DataGeneratorWJ
                     data.ElementAt(dataRow).Price,
                     data.ElementAt(dataRow).DateOfTravel);
             }
-
-            //CustomerId = Rand.Next(1, MaxCustomerId),
-            //RouteId = Rand.Next(1, MaxRouteId),
-            //RailcardUsed = Rand.Next(0,1),
-            //Price = Convert.ToDecimal(Rand.Next(10,600)),
-            //Date = "test",
-            //DateOfPurchase = "test",//RandomDateGenerator(),
-
 
             using (SqlBulkCopy bulkCopy = new SqlBulkCopy(Con.ConnectionString))
             {

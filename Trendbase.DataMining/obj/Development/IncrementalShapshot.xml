@@ -1,0 +1,110 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>Trendbase DataMining</Database>
+    <Server>localhost</Server>
+    <ConnectionString>DataSource=localhost;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>false</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>DoNotProcess</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>WiTj+aH06KncqcePG9LbyHtEnTk=07/04/2016 02:41:3207/04/2016 02:41:32</TimeStamp>
+        <ID>
+          <String>Trendbase</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>moDl1jpGWUH3BBOOz+qg0KM8tx4=07/04/2016 02:48:1907/04/2016 02:42:14</TimeStamp>
+        <ID>
+          <String>Trendbase</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>rE4i3NU5byyqvr5I4n33tNb9860=07/04/2016 03:07:5807/04/2016 03:07:58</TimeStamp>
+        <ID>
+          <String>Trips</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>1f/dQzFdh/aumHIWiTrR9LdeEzE=07/04/2016 03:07:5807/04/2016 03:07:58</TimeStamp>
+        <ID>
+          <String>Ticket</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>lHixqPUAG8CW07FHmcIVMG0uAII=07/04/2016 03:07:5807/04/2016 03:07:58</TimeStamp>
+        <ID>
+          <String>Agency</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>uox0GWFf9MnVUVn+fffP8G+FFNM=07/04/2016 03:07:5807/04/2016 03:07:58</TimeStamp>
+        <ID>
+          <String>Routes</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>pThBHN8jcaQUDO3OrwKVx+2zksg=07/04/2016 03:07:5807/04/2016 03:07:58</TimeStamp>
+        <ID>
+          <String>Calendar</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>4JMWI4yijCBRPjd/9e53SH0Gci0=07/04/2016 03:07:5807/04/2016 03:07:58</TimeStamp>
+        <ID>
+          <String>Address</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>raO0+gBoKLRmauq6SjANiS4NL6o=07/04/2016 03:07:5807/04/2016 03:07:58</TimeStamp>
+        <ID>
+          <String>Railcard</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>i+ETAUGSP1tcJU7jL7w2sQ48plM=07/04/2016 03:07:5807/04/2016 03:07:58</TimeStamp>
+        <ID>
+          <String>Customer</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>8IOoDtb/EtpvjgsZ+PdgM4smzzY=07/04/2016 03:07:5807/04/2016 03:07:58iYEi2gdMEMSg43BerJvwdD5tzzk=07/04/2016 03:07:5807/04/2016 03:07:58</TimeStamp>
+        <ID>
+          <String>Trendbase</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>MGAMi6nfNR+Tr1ZvUrYMFILs0Wo=07/04/2016 00:28:5507/04/2016 00:28:54</TimeStamp>
+      <ID>
+        <String>Trendbase DataMining</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>true</ProcessingComplete>
+  <LastDeployed>2016-04-07T02:09:18.96Z</LastDeployed>
+</DeploymentSnapshot>
