@@ -9,9 +9,11 @@ using System.Data.SqlClient;
 using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using System.Timers;
 using System.Windows.Forms;
 using System.Windows.Forms.DataVisualization.Charting;
 
@@ -22,30 +24,152 @@ namespace Trenbase.Interface
         private static string con = ConfigurationManager.ConnectionStrings["trendbase"].ToString();
         private static List<TicketModel> tickets;
         private static Hashtable averageTicketPrice;
-        private static Hashtable totalTicketsPerDay; 
+        private static Hashtable totalTicketsPerDay;
+        private static Chart SSASChart;
+        private static Chart AMLChart;
+        private static Chart TBChart;
         public form_trendbase()
         {
             InitializeComponent();
-            Thread thread = new Thread(InitialDataFetch);
+
+            //create timer for updating graphs
+            System.Timers.Timer updateDataTimer = new System.Timers.Timer();
+            updateDataTimer.Elapsed += new ElapsedEventHandler(OnTimedEvent);
+            updateDataTimer.Interval = 60000;
+            updateDataTimer.Enabled = true;
+            
+
+            //start thread for retreiving initial data
+            Thread thread = new Thread(DataFetch);
             thread.Start();
-            while (!thread.IsAlive)
+            while(thread.IsAlive)
             {
-                buildSSASGraph(this.chart_SQLServerAnalyticalServices);
+                lbl_status.Text = ("Retrieving Graph Data.");
+                lbl_status.Text = ("Retrieving Graph Data..");
+                lbl_status.Text = ("Retrieving Graph Data...");
             }
+            
+            lbl_status.Text = ("Data Retrieved.");
+            GenerateAllCharts();
+            updateDataTimer.Start();
         }
 
-        public static void buildSSASGraph(Chart myChart)
+        private void OnTimedEvent(object sender, ElapsedEventArgs e)
         {
-            myChart.Series.Add("Price");
-            myChart.Series["Price"].ChartType = SeriesChartType.Line;
-            for (int days = 1; days < 32; days++)
+            UpdateAllGraphs(this);
+        }
+
+        #region ManageCharts
+        private void GenerateAllCharts()
+        {
+            CreateChartsInitial("SSIS");
+            CreateChartsInitial("AML");
+            CreateChartsInitial("TB");
+        }
+
+        private void CreateChartsInitial(string trendMethod)
+        {
+            switch (trendMethod)
             {
-                myChart.Series["Price"].Points.AddY(Convert.ToDouble(days), Convert.ToDouble(averageTicketPrice[days]));
+                case "SSIS":
+
+                    //Chart Settings
+                    SSASChart = new Chart();
+                    ChartArea myChartArea = new ChartArea("ChartArea1");
+                    SSASChart.ChartAreas.Add(myChartArea);
+
+                    // Set title.
+                    SSASChart.Titles.Add("SQL Server Analytical Services");
+
+                    // Add series.
+                    Series seriesPrice = SSASChart.Series.Add("Price");
+                    seriesPrice.ChartArea = "ChartArea1";
+                    seriesPrice.Enabled = true;
+                    seriesPrice.ChartType = SeriesChartType.Line;
+                    seriesPrice.Color = Color.Blue;
+
+                    //add Predicted Series
+                    Series seriesPredicted = SSASChart.Series.Add("Predicted");
+                    seriesPredicted.ChartArea = "ChartArea1";
+                    seriesPredicted.Enabled = true;
+                    seriesPredicted.ChartType = SeriesChartType.Line;
+                    seriesPredicted.Color = Color.Green;
+
+                    for (int i = 1; i < averageTicketPrice.Count-7; i++)
+                    {
+                        // Add point.
+                        seriesPrice.Points.AddXY(i,Convert.ToInt32(averageTicketPrice[i]));
+                    }
+                    for (int i = (averageTicketPrice.Count -8); i < averageTicketPrice.Count; i++)
+                    {
+                        // Add point.
+                        seriesPredicted.Points.AddXY(i, Convert.ToInt32(averageTicketPrice[i]));
+                    }
+                    tp_SSAS.Controls.Add(SSASChart);
+                    SSASChart.Width = SSASChart.Parent.Width;
+                    SSASChart.Width = SSASChart.Parent.Height;
+                    tp_SSAS.Update();
+
+                    break;
+                case "AML":
+                    //DO LOGIC FOR AML GRAPH
+                    Debug.WriteLine("AML");
+                    break;
+                case "TB":
+                    //DO LOGIC FOR AWS GRAPH
+                    Debug.WriteLine("TB");
+                    break;
+            }
+        }
+
+
+        public static void UpdateAllGraphs(form_trendbase thisForm)
+        {
+            Thread dataFetchThread = new Thread(DataFetch);
+            dataFetchThread.Start();
+            while (dataFetchThread.IsAlive)
+            {
+                
+            }
+            thisForm.Invoke((MethodInvoker)delegate {
+                  UpdateSSASGraph(thisForm); // runs on UI thread
+            });
+        }
+
+        public static void UpdateSSASGraph(form_trendbase thisForm)
+        {
+            
+            SSASChart.Series.Clear();
+            Series seriesPrice = SSASChart.Series.Add("Price");
+            seriesPrice.ChartArea = "ChartArea1";
+            seriesPrice.Enabled = true;
+            seriesPrice.ChartType = SeriesChartType.Line;
+            seriesPrice.Color = Color.Blue;
+
+            //add Predicted Series
+            Series seriesPredicted = SSASChart.Series.Add("Predicted");
+            seriesPredicted.ChartArea = "ChartArea1";
+            seriesPredicted.Enabled = true;
+            seriesPredicted.ChartType = SeriesChartType.Line;
+            seriesPredicted.Color = Color.Green;
+
+            for (int i = 1; i < averageTicketPrice.Count - 7; i++)
+            {
+                // Add point.
+                seriesPrice.Points.AddXY(i, Convert.ToInt32(averageTicketPrice[i]));
+            }
+            for (int i = (averageTicketPrice.Count - 8); i < averageTicketPrice.Count; i++)
+            {
+                // Add point.
+                seriesPredicted.Points.AddXY(i, Convert.ToInt32(averageTicketPrice[i]));
             }
 
-            myChart.Series["Price"].ChartArea = "ChartArea1";
+            SSASChart.Invalidate();
+            SSASChart.Update();
+            SSASChart.Refresh();
 
         }
+        #endregion 
 
         #region Button Event Handers
 
@@ -75,7 +199,7 @@ namespace Trenbase.Interface
         }
 
         #endregion 
-        private static void InitialDataFetch()
+        private static void DataFetch()
         {
             Debug.WriteLine("Thread Started");
             averageTicketPrice = new Hashtable();
@@ -125,10 +249,9 @@ namespace Trenbase.Interface
                         averageTicketPrice[i] =
                                 (Convert.ToDecimal(averageTicketPrice[i]) / Convert.ToInt32(totalTicketsPerDay[i]));
                         Debug.WriteLine(averageTicketPrice[i].ToString());
-
                     }
                 }
-               trendbaseDb.Close();
+             trendbaseDb.Close();
             }
         }
     }
