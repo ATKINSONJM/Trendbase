@@ -5,9 +5,9 @@ using System.Reflection;
 using System.Web.Http.Controllers;
 using System.Web.Http.Description;
 using System.Xml.XPath;
-using TrendBase.Web.Areas.HelpPage.ModelDescriptions;
+using Trendbase.Web.Areas.HelpPage.ModelDescriptions;
 
-namespace TrendBase.Web.Areas.HelpPage
+namespace Trendbase.Web.Areas.HelpPage
 {
     /// <summary>
     /// A custom <see cref="IDocumentationProvider"/> that reads the API documentation from an XML documentation file.

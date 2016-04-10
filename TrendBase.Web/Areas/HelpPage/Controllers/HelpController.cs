@@ -1,10 +1,10 @@
 using System;
 using System.Web.Http;
 using System.Web.Mvc;
-using TrendBase.Web.Areas.HelpPage.ModelDescriptions;
-using TrendBase.Web.Areas.HelpPage.Models;
+using Trendbase.Web.Areas.HelpPage.ModelDescriptions;
+using Trendbase.Web.Areas.HelpPage.Models;
 
-namespace TrendBase.Web.Areas.HelpPage.Controllers
+namespace Trendbase.Web.Areas.HelpPage.Controllers
 {
     /// <summary>
     /// The controller that will handle requests for the help page.

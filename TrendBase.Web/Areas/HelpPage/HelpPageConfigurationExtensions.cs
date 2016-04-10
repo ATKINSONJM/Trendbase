@@ -11,10 +11,10 @@ using System.Net.Http.Headers;
 using System.Web.Http;
 using System.Web.Http.Controllers;
 using System.Web.Http.Description;
-using TrendBase.Web.Areas.HelpPage.ModelDescriptions;
-using TrendBase.Web.Areas.HelpPage.Models;
+using Trendbase.Web.Areas.HelpPage.ModelDescriptions;
+using Trendbase.Web.Areas.HelpPage.Models;
 
-namespace TrendBase.Web.Areas.HelpPage
+namespace Trendbase.Web.Areas.HelpPage
 {
     public static class HelpPageConfigurationExtensions
     {

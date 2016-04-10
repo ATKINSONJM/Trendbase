@@ -3,7 +3,7 @@ using System.Globalization;
 using System.Linq;
 using System.Reflection;
 
-namespace TrendBase.Web.Areas.HelpPage.ModelDescriptions
+namespace Trendbase.Web.Areas.HelpPage.ModelDescriptions
 {
     internal static class ModelNameHelper
     {

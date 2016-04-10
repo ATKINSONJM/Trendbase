@@ -9,9 +9,9 @@ using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using Microsoft.Owin.Security.Cookies;
 using Microsoft.Owin.Security.OAuth;
-using TrendBase.Web.Models;
+using Trendbase.Web.Models;
 
-namespace TrendBase.Web.Providers
+namespace Trendbase.Web.Providers
 {
     public class ApplicationOAuthProvider : OAuthAuthorizationServerProvider
     {

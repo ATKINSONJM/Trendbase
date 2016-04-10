@@ -7,7 +7,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Web.Http;
 
-namespace TrendBase.Web.Results
+namespace Trendbase.Web.Results
 {
     public class ChallengeResult : IHttpActionResult
     {

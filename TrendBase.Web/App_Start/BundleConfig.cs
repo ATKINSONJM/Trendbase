@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Optimization;
 
-namespace TrendBase.Web
+namespace Trendbase.Web
 {
     public class BundleConfig
     {

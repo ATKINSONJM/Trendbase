@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 
-namespace TrendBase.Web.Areas.HelpPage.ModelDescriptions
+namespace Trendbase.Web.Areas.HelpPage.ModelDescriptions
 {
     public class ParameterDescription
     {

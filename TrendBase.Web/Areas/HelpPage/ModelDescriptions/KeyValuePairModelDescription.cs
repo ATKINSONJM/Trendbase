@@ -1,4 +1,4 @@
-namespace TrendBase.Web.Areas.HelpPage.ModelDescriptions
+namespace Trendbase.Web.Areas.HelpPage.ModelDescriptions
 {
     public class KeyValuePairModelDescription : ModelDescription
     {

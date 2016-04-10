@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations;
 using Newtonsoft.Json;
 
-namespace TrendBase.Web.Models
+namespace Trendbase.Web.Models
 {
     // Models used as parameters to AccountController actions.
 

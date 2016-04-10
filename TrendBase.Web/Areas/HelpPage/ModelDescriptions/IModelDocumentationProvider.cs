@@ -1,7 +1,7 @@
 using System;
 using System.Reflection;
 
-namespace TrendBase.Web.Areas.HelpPage.ModelDescriptions
+namespace Trendbase.Web.Areas.HelpPage.ModelDescriptions
 {
     public interface IModelDocumentationProvider
     {

@@ -3,7 +3,7 @@ using System.Text;
 using System.Web;
 using System.Web.Http.Description;
 
-namespace TrendBase.Web.Areas.HelpPage
+namespace Trendbase.Web.Areas.HelpPage
 {
     public static class ApiDescriptionExtensions
     {

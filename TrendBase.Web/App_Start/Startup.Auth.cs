@@ -8,10 +8,10 @@ using Microsoft.Owin.Security.Cookies;
 using Microsoft.Owin.Security.Google;
 using Microsoft.Owin.Security.OAuth;
 using Owin;
-using TrendBase.Web.Providers;
-using TrendBase.Web.Models;
+using Trendbase.Web.Providers;
+using Trendbase.Web.Models;
 
-namespace TrendBase.Web
+namespace Trendbase.Web
 {
     public partial class Startup
     {

@@ -2,9 +2,9 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Net.Http.Headers;
 using System.Web.Http.Description;
-using TrendBase.Web.Areas.HelpPage.ModelDescriptions;
+using Trendbase.Web.Areas.HelpPage.ModelDescriptions;
 
-namespace TrendBase.Web.Areas.HelpPage.Models
+namespace Trendbase.Web.Areas.HelpPage.Models
 {
     /// <summary>
     /// The model that represents an API displayed on the help page.

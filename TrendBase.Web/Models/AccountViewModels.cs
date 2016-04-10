@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace TrendBase.Web.Models
+namespace Trendbase.Web.Models
 {
     // Models returned by AccountController actions.
 

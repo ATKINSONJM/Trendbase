@@ -13,11 +13,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RandomDataGenerator", "Rand
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataGeneratorWJ", "DataGeneratorWJ\DataGeneratorWJ.csproj", "{6581CF1A-8763-4CF6-8BEC-AAC52CF0942A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrendBase.Web", "TrendBase.Web\TrendBase.Web.csproj", "{CE35105E-9EDB-4505-BBBC-C1E457B39167}"
-EndProject
 Project("{D2ABAB84-BF74-430A-B69E-9DC6D40DDA17}") = "Trendbase.DataMining", "Trendbase.DataMining\Trendbase.DataMining.dwproj", "{DCFC0ED0-9097-47B6-9A8D-7D3AC0E2B144}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Trenbase.Interface", "Trenbase.Interface\Trenbase.Interface.csproj", "{DA225BF9-2424-4C15-BC01-8E22762EDC13}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Trendbase.Web", "Trendbase.Web\Trendbase.Web.csproj", "{FC61B114-CB30-4470-950B-216DFF68F13C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -56,12 +56,6 @@ Global
 		{6581CF1A-8763-4CF6-8BEC-AAC52CF0942A}.Development|Any CPU.Build.0 = Debug|Any CPU
 		{6581CF1A-8763-4CF6-8BEC-AAC52CF0942A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6581CF1A-8763-4CF6-8BEC-AAC52CF0942A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{CE35105E-9EDB-4505-BBBC-C1E457B39167}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CE35105E-9EDB-4505-BBBC-C1E457B39167}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CE35105E-9EDB-4505-BBBC-C1E457B39167}.Development|Any CPU.ActiveCfg = Debug|Any CPU
-		{CE35105E-9EDB-4505-BBBC-C1E457B39167}.Development|Any CPU.Build.0 = Debug|Any CPU
-		{CE35105E-9EDB-4505-BBBC-C1E457B39167}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CE35105E-9EDB-4505-BBBC-C1E457B39167}.Release|Any CPU.Build.0 = Release|Any CPU
 		{DCFC0ED0-9097-47B6-9A8D-7D3AC0E2B144}.Debug|Any CPU.ActiveCfg = Development
 		{DCFC0ED0-9097-47B6-9A8D-7D3AC0E2B144}.Debug|Any CPU.Build.0 = Development
 		{DCFC0ED0-9097-47B6-9A8D-7D3AC0E2B144}.Debug|Any CPU.Deploy.0 = Development
@@ -77,6 +71,12 @@ Global
 		{DA225BF9-2424-4C15-BC01-8E22762EDC13}.Development|Any CPU.Build.0 = Debug|Any CPU
 		{DA225BF9-2424-4C15-BC01-8E22762EDC13}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DA225BF9-2424-4C15-BC01-8E22762EDC13}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC61B114-CB30-4470-950B-216DFF68F13C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC61B114-CB30-4470-950B-216DFF68F13C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC61B114-CB30-4470-950B-216DFF68F13C}.Development|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC61B114-CB30-4470-950B-216DFF68F13C}.Development|Any CPU.Build.0 = Debug|Any CPU
+		{FC61B114-CB30-4470-950B-216DFF68F13C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC61B114-CB30-4470-950B-216DFF68F13C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

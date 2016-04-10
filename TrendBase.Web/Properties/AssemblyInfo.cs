@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("TrendBase.Web")]
+[assembly: AssemblyTitle("Trendbase.Web")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("TrendBase.Web")]
+[assembly: AssemblyProduct("Trendbase.Web")]
 [assembly: AssemblyCopyright("Copyright ©  2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("7524622d-45db-476c-9f9f-8707197e3b9b")]
+[assembly: Guid("c1e5ebf3-1877-4fa3-b8ae-8340aba964e7")]
 
 // Version information for an assembly consists of the following four values:
 //

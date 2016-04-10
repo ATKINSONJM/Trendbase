@@ -1,7 +1,7 @@
 using System.Web.Http;
 using System.Web.Mvc;
 
-namespace TrendBase.Web.Areas.HelpPage
+namespace Trendbase.Web.Areas.HelpPage
 {
     public class HelpPageAreaRegistration : AreaRegistration
     {

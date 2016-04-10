@@ -13,11 +13,11 @@ using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using Microsoft.Owin.Security.Cookies;
 using Microsoft.Owin.Security.OAuth;
-using TrendBase.Web.Models;
-using TrendBase.Web.Providers;
-using TrendBase.Web.Results;
+using Trendbase.Web.Models;
+using Trendbase.Web.Providers;
+using Trendbase.Web.Results;
 
-namespace TrendBase.Web.Controllers
+namespace Trendbase.Web.Controllers
 {
     [Authorize]
     [RoutePrefix("api/Account")]

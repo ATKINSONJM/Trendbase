@@ -4,9 +4,9 @@ using System.Linq;
 using Microsoft.Owin;
 using Owin;
 
-[assembly: OwinStartup(typeof(TrendBase.Web.Startup))]
+[assembly: OwinStartup(typeof(Trendbase.Web.Startup))]
 
-namespace TrendBase.Web
+namespace Trendbase.Web
 {
     public partial class Startup
     {
