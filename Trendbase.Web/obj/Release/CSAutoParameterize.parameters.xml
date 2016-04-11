@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="trendbase-Web.config Connection String" description="trendbase Connection String used in web.config by the application to access the database." defaultValue="Server=tcp:trendbase.database.windows.net,1433;Database=trendbase;User ID=trendbase@trendbase;Password=ChangeMe1!;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\chunk\\Source\\Repos\\Trendbase\\Trendbase\.Web\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='trendbase']/@connectionString" />
+  </parameter>
+</parameters>

@@ -1,4 +1,9 @@
-﻿
+﻿@{
+    ViewBag.Title = "Trendbase Service";
+}
+<h2>@ViewBag.Title</h2>
+
+
 <div id="trendbaseGraph" ></div>
 <script>
 
@@ -14,22 +19,7 @@
             },
             types: {
                 res: 'line' //Change to a line graph
-            },
-            axis: {
-                y: {
-                    label: {
-                        text: 'Price',
-                        position: 'outer-middle'
-                    }
-                },
-                x: {
-                    show: true,
-                    label: {
-                        text: 'Date in current month',
-                        position: 'outer-middle'
-                    }
-                }
-            },
+            }
         });
 
         (function poll() {
@@ -44,22 +34,6 @@
                         ]
                     });
                 },
-                axis: {
-                    y: {
-                        label: {
-                            text: 'Price',
-                            position: 'outer-middle'
-                        }
-                    },
-                    x: {
-                        show: true,
-                        label: {
-                            text: 'Date in current month',
-                            position: 'outer-middle'
-                        }
-                    }
-                },
-
                 contentType: "application/json; charset=utf-8",
                 complete: setTimeout(function () { poll() }, 60000),
                 timeout: 15000
