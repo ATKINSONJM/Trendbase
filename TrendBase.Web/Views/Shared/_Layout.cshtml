@@ -4,8 +4,14 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <title>@ViewBag.Title</title>
+    <link href="~/Content/c3.min.css" rel="stylesheet" />
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+
+    <script src="~/Scripts/d3.min.js"></script>
+    <script src="~/Scripts/c3.min.js"></script>
 </head>
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
@@ -21,9 +27,9 @@
             <div class="navbar-collapse collapse">
                 <!-- Top Navigation Bar Links -->
                 <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("SQL Server Analytical Services", "SsasService", "Home", new {area = ""}, null)</li>
-                    <li>@Html.ActionLink("Azure Machine Learning", "AzureMachineLearningService", "Home", new {area = ""}, null)</li>
-                    <li>@Html.ActionLink("Trendbase Algorithm", "TrendbaseService", "Home", new { area = "" }, null)</li>
+                    <li>@Html.ActionLink("SQL Server Analytical Services", "SsasService", "Home")</li>
+                    <li>@Html.ActionLink("Azure Machine Learning", "AzureMachineLearningService", "Home")</li>
+                    <li>@Html.ActionLink("Trendbase Algorithm", "TrendbaseService", "Home")</li>
                 </ul>
             </div>
         </div>
@@ -36,8 +42,7 @@
         </footer>
     </div>
 
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
+
     @RenderSection("scripts", required: false)
 </body>
 </html>

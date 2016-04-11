@@ -2,3 +2,21 @@
     ViewBag.Title = "SSAS Service";
 }
 
+<h2>@ViewBag.Title</h2>
+
+<script>
+    $(document).ready(function () {
+
+        // Ajax Call To SSAS Service (API)
+        $.ajax({
+            url: '', // URL To API
+            type: 'GET',
+            success: function (data) {
+
+            },
+            error: function () {
+                
+            }
+        });
+    });
+</script>
