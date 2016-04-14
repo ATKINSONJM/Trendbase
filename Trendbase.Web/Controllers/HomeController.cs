@@ -12,7 +12,15 @@ namespace Trendbase.Web.Controllers
         {
             ViewBag.Title = "Home Page";
 
+            
+
+
             return View();
+        }
+
+        public static void DowloadAndRunDataImport()
+        {
+            //download the files form the Azure File Store to a DIR (this system directory
         }
 
         public ActionResult SsasService()

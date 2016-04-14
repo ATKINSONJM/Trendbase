@@ -13,7 +13,7 @@ using Trendbase.Web.Models;
 
 namespace Trendbase.Web.Controllers
 {
-    public class TrendbaseController : ApiController
+    public class SsasController : ApiController
     {
         public HttpResponseMessage Get()
         {

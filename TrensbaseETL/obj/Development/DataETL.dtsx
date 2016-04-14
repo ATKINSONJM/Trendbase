@@ -11,8 +11,8 @@
   DTS:LocaleID="2057"
   DTS:ObjectName="DataETL"
   DTS:PackageType="5"
-  DTS:VersionBuild="81"
-  DTS:VersionGUID="{095B1653-0663-4ECA-8A12-96FFCBFF68FB}">
+  DTS:VersionBuild="84"
+  DTS:VersionGUID="{8B154E77-3498-442D-A4DA-464E020AEBCB}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -1011,6 +1011,21 @@
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[trendbase.database.windows.net.trendbase.trendbase]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{12953CC0-5ECA-4257-81B0-379CE484C4E4}"
+      DTS:ObjectName="trendbase.database.windows.net.trendbase.trendbase">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=trendbase.database.windows.net;User ID=trendbase;Initial Catalog=trendbase;Provider=SQLNCLI11.1;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAWUaU+W8GyE+yS/77FnaboQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACMH8+6wWCJwMj76a907uPl0SY/ypJhvu4gs3schLln9gAAAAAOgAAAAAIAACAAAACb7H8FMir50bTKQcGLZb9uGvO9JHnlVkvqc0mMd6YSpCAAAAB9FzanRfFV3uxL2BSBVLOJErqJypeEL1bA/IUMbbgTxkAAAACdkO0asMef2hE49smjvxS0xntJd9wTGYUteYpAp2VUYJ2MtshmHkZiwptrn923M0QgJJaBE0ke0VMNy2DMufi9</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
   <DTS:Variables />
   <DTS:Executables>
@@ -1544,8 +1559,8 @@
               <connections>
                 <connection
                   refId="Package\Basic ETL into Trendbase Database - Agency Table\Trendbase Database.Connections[OleDbConnection]"
-                  connectionManagerID="{F7331879-F2FA-4509-B5F9-8269FD762383}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[DESKTOP-5N8OBA5.Trendbase]"
+                  connectionManagerID="Package.ConnectionManagers[trendbase.database.windows.net.trendbase.trendbase]"
+                  connectionManagerRefId="Package.ConnectionManagers[trendbase.database.windows.net.trendbase.trendbase]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -2431,8 +2446,8 @@
               <connections>
                 <connection
                   refId="Package\Basic ETL into Trendbase Database - Calendar Table\OLE DB Destination.Connections[OleDbConnection]"
-                  connectionManagerID="{F7331879-F2FA-4509-B5F9-8269FD762383}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[DESKTOP-5N8OBA5.Trendbase]"
+                  connectionManagerID="Package.ConnectionManagers[trendbase.database.windows.net.trendbase.trendbase]"
+                  connectionManagerRefId="Package.ConnectionManagers[trendbase.database.windows.net.trendbase.trendbase]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -3684,8 +3699,8 @@
               <connections>
                 <connection
                   refId="Package\Basic ETL into Trendbase Database - Links Table\Trendbase Database.Connections[OleDbConnection]"
-                  connectionManagerID="{F7331879-F2FA-4509-B5F9-8269FD762383}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[DESKTOP-5N8OBA5.Trendbase]"
+                  connectionManagerID="Package.ConnectionManagers[trendbase.database.windows.net.trendbase.trendbase]"
+                  connectionManagerRefId="Package.ConnectionManagers[trendbase.database.windows.net.trendbase.trendbase]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -4403,8 +4418,8 @@
               <connections>
                 <connection
                   refId="Package\Basic ETL into Trendbase Database - Routes Table\Trendbase Database.Connections[OleDbConnection]"
-                  connectionManagerID="{F7331879-F2FA-4509-B5F9-8269FD762383}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[DESKTOP-5N8OBA5.Trendbase]"
+                  connectionManagerID="Package.ConnectionManagers[trendbase.database.windows.net.trendbase.trendbase]"
+                  connectionManagerRefId="Package.ConnectionManagers[trendbase.database.windows.net.trendbase.trendbase]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -5334,8 +5349,8 @@
               <connections>
                 <connection
                   refId="Package\Basic ETL into Trendbase Database - Stops Table\Trendbase Database.Connections[OleDbConnection]"
-                  connectionManagerID="{F7331879-F2FA-4509-B5F9-8269FD762383}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[DESKTOP-5N8OBA5.Trendbase]"
+                  connectionManagerID="Package.ConnectionManagers[trendbase.database.windows.net.trendbase.trendbase]"
+                  connectionManagerRefId="Package.ConnectionManagers[trendbase.database.windows.net.trendbase.trendbase]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -5944,8 +5959,8 @@
               <connections>
                 <connection
                   refId="Package\Basic ETL into Trendbase Database - Transfers Table\Trendbase Database.Connections[OleDbConnection]"
-                  connectionManagerID="{F7331879-F2FA-4509-B5F9-8269FD762383}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[DESKTOP-5N8OBA5.Trendbase]"
+                  connectionManagerID="Package.ConnectionManagers[trendbase.database.windows.net.trendbase.trendbase]"
+                  connectionManagerRefId="Package.ConnectionManagers[trendbase.database.windows.net.trendbase.trendbase]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -7146,8 +7161,8 @@
               <connections>
                 <connection
                   refId="Package\Basic ETL into Trendbase Database Stop_Times Table\Trendbase Database.Connections[OleDbConnection]"
-                  connectionManagerID="{F7331879-F2FA-4509-B5F9-8269FD762383}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[DESKTOP-5N8OBA5.Trendbase]"
+                  connectionManagerID="Package.ConnectionManagers[trendbase.database.windows.net.trendbase.trendbase]"
+                  connectionManagerRefId="Package.ConnectionManagers[trendbase.database.windows.net.trendbase.trendbase]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -7159,6 +7174,14 @@
                   hasSideEffects="true"
                   name="OLE DB Destination Input">
                   <inputColumns>
+                    <inputColumn
+                      refId="Package\Basic ETL into Trendbase Database Stop_Times Table\Trendbase Database.Inputs[OLE DB Destination Input].Columns[Copy of stop_id]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Copy of stop_id"
+                      externalMetadataColumnId="Package\Basic ETL into Trendbase Database Stop_Times Table\Trendbase Database.Inputs[OLE DB Destination Input].ExternalColumns[stop_id]"
+                      lineageId="Package\Basic ETL into Trendbase Database Stop_Times Table\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of stop_id]" />
                     <inputColumn
                       refId="Package\Basic ETL into Trendbase Database Stop_Times Table\Trendbase Database.Inputs[OLE DB Destination Input].Columns[Copy of trip_id]"
                       cachedDataType="numeric"
@@ -7182,14 +7205,6 @@
                       cachedName="Copy of departure_time"
                       externalMetadataColumnId="Package\Basic ETL into Trendbase Database Stop_Times Table\Trendbase Database.Inputs[OLE DB Destination Input].ExternalColumns[departure_time]"
                       lineageId="Package\Basic ETL into Trendbase Database Stop_Times Table\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of departure_time]" />
-                    <inputColumn
-                      refId="Package\Basic ETL into Trendbase Database Stop_Times Table\Trendbase Database.Inputs[OLE DB Destination Input].Columns[Copy of stop_id]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="Copy of stop_id"
-                      externalMetadataColumnId="Package\Basic ETL into Trendbase Database Stop_Times Table\Trendbase Database.Inputs[OLE DB Destination Input].ExternalColumns[stop_id]"
-                      lineageId="Package\Basic ETL into Trendbase Database Stop_Times Table\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of stop_id]" />
                     <inputColumn
                       refId="Package\Basic ETL into Trendbase Database Stop_Times Table\Trendbase Database.Inputs[OLE DB Destination Input].Columns[Copy of stop_sequence]"
                       cachedDataType="numeric"
@@ -7283,6 +7298,12 @@
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
+                      refId="Package\Basic ETL into Trendbase Database Stop_Times Table\Trendbase Database.Inputs[OLE DB Destination Input].ExternalColumns[stop_id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="stop_id" />
+                    <externalMetadataColumn
                       refId="Package\Basic ETL into Trendbase Database Stop_Times Table\Trendbase Database.Inputs[OLE DB Destination Input].ExternalColumns[trip_id]"
                       dataType="i4"
                       name="trip_id" />
@@ -7296,12 +7317,6 @@
                       dataType="dbTime2"
                       name="departure_time"
                       scale="1" />
-                    <externalMetadataColumn
-                      refId="Package\Basic ETL into Trendbase Database Stop_Times Table\Trendbase Database.Inputs[OLE DB Destination Input].ExternalColumns[stop_id]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
-                      name="stop_id" />
                     <externalMetadataColumn
                       refId="Package\Basic ETL into Trendbase Database Stop_Times Table\Trendbase Database.Inputs[OLE DB Destination Input].ExternalColumns[stop_sequence]"
                       dataType="i4"
@@ -8999,8 +9014,8 @@
               <connections>
                 <connection
                   refId="Package\Basic ETL into Trendbase Database Trips Table\Trendbase Database.Connections[OleDbConnection]"
-                  connectionManagerID="{F7331879-F2FA-4509-B5F9-8269FD762383}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[DESKTOP-5N8OBA5.Trendbase]"
+                  connectionManagerID="Package.ConnectionManagers[trendbase.database.windows.net.trendbase.trendbase]"
+                  connectionManagerRefId="Package.ConnectionManagers[trendbase.database.windows.net.trendbase.trendbase]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -9563,28 +9578,6 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 6]"
-          TopLeft="189.421429096314,498.552938699062">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,37.6705879221331"
-              Start="0,0"
-              End="0,30.1705879221331">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,30.1705879221331" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 4]"
           TopLeft="189.421429096314,345.835292684826">
           <EdgeLayout.Curve>
@@ -9628,6 +9621,28 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 6]"
+          TopLeft="189.421429096314,498.552938699062">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,37.6705879221331"
+              Start="0,0"
+              End="0,30.1705879221331">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,30.1705879221331" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </Package>
@@ -9635,7 +9650,7 @@
     design-time-name="Package\Basic ETL into Trendbase Database - Agency Table">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="175.2,41.6"
           Id="Package\Basic ETL into Trendbase Database - Agency Table\Trendbase Database"
@@ -9679,9 +9694,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -9715,9 +9728,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -9740,7 +9751,7 @@
     design-time-name="Package\Basic ETL into Trendbase Database - Calendar Table">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="150.4,41.6"
           Id="Package\Basic ETL into Trendbase Database - Calendar Table\Flat File Source"
@@ -9784,9 +9795,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -9820,9 +9829,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -9946,7 +9953,7 @@
     design-time-name="Package\Basic ETL into Trendbase Database - Routes Table">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="155.2,41.6"
           Id="Package\Basic ETL into Trendbase Database - Routes Table\Data Conversion"
@@ -9990,9 +9997,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -10026,9 +10031,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -10051,7 +10054,7 @@
     design-time-name="Package\Basic ETL into Trendbase Database - Stops Table">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="150.4,41.6"
           Id="Package\Basic ETL into Trendbase Database - Stops Table\Flat File Source"
@@ -10095,9 +10098,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -10131,9 +10132,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -10156,7 +10155,7 @@
     design-time-name="Package\Basic ETL into Trendbase Database - Transfers Table">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="150.4,41.6"
           Id="Package\Basic ETL into Trendbase Database - Transfers Table\Flat File Source"
@@ -10200,9 +10199,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -10236,19 +10233,30 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Basic ETL into Trendbase Database - Transfers Table\Trendbase Database">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <TaskHost
     design-time-name="Package\Basic ETL into Trendbase Database Stop_Times Table">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="175.2,41.6"
           Id="Package\Basic ETL into Trendbase Database Stop_Times Table\Trendbase Database"
@@ -10292,9 +10300,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -10328,9 +10334,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -10353,7 +10357,7 @@
     design-time-name="Package\Basic ETL into Trendbase Database Trips Table">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="150.4,41.6"
           Id="Package\Basic ETL into Trendbase Database Trips Table\Flat File Source"
@@ -10397,9 +10401,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -10408,34 +10410,32 @@
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-192.857146311779,22.6352950185229"
+              EndConnector="-192.857146311779,22.635295018523"
               Start="0,0"
-              End="-192.857146311779,15.1352950185229">
+              End="-192.857146311779,15.135295018523">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,7.31764750926143" />
+                    End="0,7.31764750926149" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,7.31764750926143"
-                    Point2="0,11.3176475092614"
-                    Point3="-4,11.3176475092614" />
+                    Point1="0,7.31764750926149"
+                    Point2="0,11.3176475092615"
+                    Point3="-4,11.3176475092615" />
                   <mssgle:LineSegment
-                    End="-188.857146311779,11.3176475092614" />
+                    End="-188.857146311779,11.3176475092615" />
                   <mssgle:CubicBezierSegment
-                    Point1="-188.857146311779,11.3176475092614"
-                    Point2="-192.857146311779,11.3176475092614"
-                    Point3="-192.857146311779,15.3176475092614" />
+                    Point1="-188.857146311779,11.3176475092615"
+                    Point2="-192.857146311779,11.3176475092615"
+                    Point3="-192.857146311779,15.3176475092615" />
                   <mssgle:LineSegment
-                    End="-192.857146311779,15.1352950185229" />
+                    End="-192.857146311779,15.135295018523" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>

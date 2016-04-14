@@ -1,25 +1,69 @@
-﻿@{
-    ViewBag.Title = "Azure Machine Learning Service";
-}
-<h2>@ViewBag.Title</h2>
-
+﻿<div id="AzureMachineLearningGraph"></div>
 <script>
+
+    //# for id, . for class in jQuery
+    //$('.graphArea').
+
     $(document).ready(function () {
 
-        // Ajax Call To SSAS Service (API)
-        $.ajax({
-            url: '', // URL To API
-            type: 'GET',
-            success: function (data) {
-
+        var chart = c3.generate({
+            bindto: '#AzureMachineLearningGraph',
+            data: {
+                columns: []
             },
-            error: function () {
-
-            }
+            types: {
+                res: 'line' //Change to a line graph
+            },
+            axis: {
+                y: {
+                    label: {
+                        text: 'Price',
+                        position: 'outer-middle'
+                    }
+                },
+                x: {
+                    show: true,
+                    label: {
+                        text: 'Date in current month',
+                        position: 'outer-middle'
+                    }
+                }
+            },
         });
+
+        (function poll() {
+            $.ajax({
+                url: "/api/AzureMachineLearning", // URL to API
+                type: "GET",
+                success: function (res) {
+                    // Load Data into graph
+                    chart.load({
+                        columns: [
+                            res
+                        ]
+                    });
+                },
+                axis: {
+                    y: {
+                        label: {
+                            text: 'Price',
+                            position: 'outer-middle'
+                        }
+                    },
+                    x: {
+                        show: true,
+                        label: {
+                            text: 'Date in current month',
+                            position: 'outer-middle'
+                        }
+                    }
+                },
+                contentType: "application/json; charset=utf-8",
+                complete: setTimeout(function () { poll() }, 60000),
+                timeout: 15000
+            });
+        })();
     });
+
+
 </script>
-
-
-
-
