@@ -1,0 +1,83 @@
+﻿<div id="SsasGraph"></div>
+
+<button id="exportData" class="btn btn-lg btn-primary">Export Data</button>
+
+<script>
+
+    $(document).ready(function () {
+        var graphData;
+
+        var chart = c3.generate({
+            bindto: '#SsasGraph',
+            data: {
+                columns: []
+            },
+            types: {
+                res: 'line' //Change to a line graph
+            },
+            axis: {
+                y: {
+                    label: {
+                        text: 'Price',
+                        position: 'outer-middle'
+                    }
+                },
+                x: {
+                    show: true,
+                    label: {
+                        text: 'Date in current month',
+                        position: 'outer-middle'
+                    }
+                }
+            },
+        });
+
+        (function poll() {
+            $.ajax({
+                url: "/api/Ssas", // URL to API
+                type: "GET",
+                success: function (res) {
+                    graphData = res;
+
+                    // Load Data into graph
+                    chart.load({
+                        columns: [
+                            res
+                        ]
+                    });
+                },
+                axis: {
+                    y: {
+                        label: {
+                            text: 'Price',
+                            position: 'outer-middle'
+                        }
+                    },
+                    x: {
+                        show: true,
+                        label: {
+                            text: 'Date in current month',
+                            position: 'outer-middle'
+                        }
+                    }
+                },
+                contentType: "application/json; charset=utf-8",
+                complete: setTimeout(function () { poll() }, 60000),
+                timeout: 15000
+            });
+        })();
+
+        $('#exportData').on('click', function () {
+
+            $.ajax({
+                url: "/api/Home", // URL to API
+                type: "POST",
+                data: graphData,
+                success: function () {
+
+                },
+                contentType: "application/json; charset=utf-8"
+            });
+        });
+    });
+</script>

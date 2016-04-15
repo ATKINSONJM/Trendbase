@@ -1,0 +1,12 @@
+C:\Users\chunk\Source\Repos\Trendbase\ApacheNMS\ApacheNMS\bin\Release\ApacheNMS.exe.config
+C:\Users\chunk\Source\Repos\Trendbase\ApacheNMS\ApacheNMS\bin\Release\ApacheNMS.exe
+C:\Users\chunk\Source\Repos\Trendbase\ApacheNMS\ApacheNMS\bin\Release\ApacheNMS.pdb
+C:\Users\chunk\Source\Repos\Trendbase\ApacheNMS\ApacheNMS\bin\Release\Apache.NMS.dll
+C:\Users\chunk\Source\Repos\Trendbase\ApacheNMS\ApacheNMS\bin\Release\Apache.NMS.Stomp.dll
+C:\Users\chunk\Source\Repos\Trendbase\ApacheNMS\ApacheNMS\bin\Release\Apache.NMS.pdb
+C:\Users\chunk\Source\Repos\Trendbase\ApacheNMS\ApacheNMS\bin\Release\Apache.NMS.xml
+C:\Users\chunk\Source\Repos\Trendbase\ApacheNMS\ApacheNMS\bin\Release\Apache.NMS.Stomp.pdb
+C:\Users\chunk\Source\Repos\Trendbase\ApacheNMS\ApacheNMS\bin\Release\Apache.NMS.Stomp.xml
+C:\Users\chunk\Source\Repos\Trendbase\ApacheNMS\ApacheNMS\obj\Release\ApacheNMS.csprojResolveAssemblyReference.cache
+C:\Users\chunk\Source\Repos\Trendbase\ApacheNMS\ApacheNMS\obj\Release\ApacheNMS.exe
+C:\Users\chunk\Source\Repos\Trendbase\ApacheNMS\ApacheNMS\obj\Release\ApacheNMS.pdb

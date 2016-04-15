@@ -1,0 +1,9 @@
+C:\Users\chunk\Source\Repos\Trendbase\DataManager\bin\Release\DataManager.exe.config
+C:\Users\chunk\Source\Repos\Trendbase\DataManager\bin\Release\DataManager.exe
+C:\Users\chunk\Source\Repos\Trendbase\DataManager\bin\Release\DataManager.pdb
+C:\Users\chunk\Source\Repos\Trendbase\DataManager\obj\Release\DataManager.csprojResolveAssemblyReference.cache
+C:\Users\chunk\Source\Repos\Trendbase\DataManager\obj\Release\DataManager.DataManager.resources
+C:\Users\chunk\Source\Repos\Trendbase\DataManager\obj\Release\DataManager.ProjectInstaller.resources
+C:\Users\chunk\Source\Repos\Trendbase\DataManager\obj\Release\DataManager.csproj.GenerateResource.Cache
+C:\Users\chunk\Source\Repos\Trendbase\DataManager\obj\Release\DataManager.exe
+C:\Users\chunk\Source\Repos\Trendbase\DataManager\obj\Release\DataManager.pdb

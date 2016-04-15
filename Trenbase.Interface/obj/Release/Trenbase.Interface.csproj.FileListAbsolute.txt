@@ -1,0 +1,9 @@
+C:\Users\chunk\Source\Repos\Trendbase\Trenbase.Interface\bin\Release\Trenbase.Interface.exe.config
+C:\Users\chunk\Source\Repos\Trendbase\Trenbase.Interface\bin\Release\Trenbase.Interface.exe
+C:\Users\chunk\Source\Repos\Trendbase\Trenbase.Interface\bin\Release\Trenbase.Interface.pdb
+C:\Users\chunk\Source\Repos\Trendbase\Trenbase.Interface\obj\Release\Trenbase.Interface.csprojResolveAssemblyReference.cache
+C:\Users\chunk\Source\Repos\Trendbase\Trenbase.Interface\obj\Release\Trenbase.Interface.Properties.Resources.resources
+C:\Users\chunk\Source\Repos\Trendbase\Trenbase.Interface\obj\Release\Trenbase.Interface.form_trendbase.resources
+C:\Users\chunk\Source\Repos\Trendbase\Trenbase.Interface\obj\Release\Trenbase.Interface.csproj.GenerateResource.Cache
+C:\Users\chunk\Source\Repos\Trendbase\Trenbase.Interface\obj\Release\Trenbase.Interface.exe
+C:\Users\chunk\Source\Repos\Trendbase\Trenbase.Interface\obj\Release\Trenbase.Interface.pdb
