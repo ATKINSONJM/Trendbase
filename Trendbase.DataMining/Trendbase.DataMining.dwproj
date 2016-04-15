@@ -6,6 +6,48 @@
     <Name>Trendbase DataMining.database</Name>
     <FullPath>Trendbase DataMining.database</FullPath>
   </Database>
+  <Cubes>
+    <ProjectItem>
+      <Name>Trendbase.cube</Name>
+      <FullPath>Trendbase.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>Trendbase.partitions</Name>
+          <FullPath>Trendbase.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
+  </Cubes>
+  <Dimensions>
+    <ProjectItem>
+      <Name>Agency.dim</Name>
+      <FullPath>Agency.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Ticket.dim</Name>
+      <FullPath>Ticket.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Routes.dim</Name>
+      <FullPath>Routes.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Railcard.dim</Name>
+      <FullPath>Railcard.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Address.dim</Name>
+      <FullPath>Address.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Customer.dim</Name>
+      <FullPath>Customer.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Ticket_DMDim.dim</Name>
+      <FullPath>Ticket_DMDim.dim</FullPath>
+    </ProjectItem>
+  </Dimensions>
   <DataSources>
     <ProjectItem>
       <Name>Trendbase.ds</Name>
@@ -17,7 +59,17 @@
       <Name>Trendbase.dsv</Name>
       <FullPath>Trendbase.dsv</FullPath>
     </ProjectItem>
+    <ProjectItem>
+      <Name>Ticket_DMDSV.dsv</Name>
+      <FullPath>Ticket_DMDSV.dsv</FullPath>
+    </ProjectItem>
   </DataSourceViews>
+  <MiningModels>
+    <ProjectItem>
+      <Name>Ticket.dmm</Name>
+      <FullPath>Ticket.dmm</FullPath>
+    </ProjectItem>
+  </MiningModels>
   <Configurations>
     <Configuration>
       <Name>Development</Name>

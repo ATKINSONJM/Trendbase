@@ -8,13 +8,16 @@ using System.Diagnostics;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
+using System.Net.Mime;
 using System.Threading;
 using System.Web;
 using System.Web.Http;
 using System.Web.Mvc;
+using Microsoft.JScript;
 using Trendbase.Web.Models;
 using MongoDB.Bson;
 using MongoDB.Driver;
+//using Microsoft.SqlServer.Dts.Runtime;
 
 
 namespace Trendbase.Web.Controllers
@@ -26,9 +29,12 @@ namespace Trendbase.Web.Controllers
 
         public ActionResult Index()
         {
+            
           ViewBag.Title = "Home Page";
           return View();
         }
+
+
 
         public HttpResponseMessage Post(object[] data)
         {
@@ -93,11 +99,17 @@ namespace Trendbase.Web.Controllers
 
         public static void DataImport()
         {
-            //string ETLPackageFileLocation;
-            //Package ETLpackage;
-            //Microsoft.SqlServer.Dts.Runtime.Application application;
-            //DTSExecResult EltPackageResults;
-        } 
+            //string dataETLdtxLocation;
+            //Package packageManager;
+            //MediaTypeNames.Application app;
+            //DTSExecResult res;
+
+            //dataETLdtxLocation = @"C:\Users\chunk\Source\Repos\Trendbase\TrensbaseETL\DataETL.dtsx"
+
+            //app = new MediaTypeNames.Application();
+            //pkg = app.pkgLocation(dataETLdtxLocation, null);
+            //res = packageManager.Execute();
+        }
 
         public ActionResult SsasService()
         {

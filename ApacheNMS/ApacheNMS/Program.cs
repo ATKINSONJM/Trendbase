@@ -14,7 +14,7 @@ namespace ApacheNMS
         {
             IConnectionFactory factory = new NMSConnectionFactory(new Uri("stomp:tcp://datafeeds.networkrail.co.uk:61618"));
 
-            IConnection connection = factory.CreateConnection("jordan.atkinson3@gmail.com", "Gr2nmbyy1");
+            IConnection connection = factory.CreateConnection("jordan.atkinson3@gmail.com", "password");
             ISession session = connection.CreateSession();
 
             IDestination destination = session.GetDestination("topic://TRAIN_MVT_EM_TOC");

@@ -26,7 +26,6 @@ namespace Trendbase.Web.Controllers
             Object[] ticketsForGraph = new Object[32];
             ticketsForGraph[0] = "Average Price";
 
-
             totalTicketsPerDay = new Hashtable();
 
             using (SqlConnection trendbaseDb = new SqlConnection(con))

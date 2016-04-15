@@ -57,14 +57,6 @@ namespace RandomDataGenerator
                     data.ElementAt(dataRow).DateOfTravel);
             }
 
-            //CustomerId = Rand.Next(1, MaxCustomerId),
-            //RouteId = Rand.Next(1, MaxRouteId),
-            //RailcardUsed = Rand.Next(0,1),
-            //Price = Convert.ToDecimal(Rand.Next(10,600)),
-            //Date = "test",
-            //DateOfPurchase = "test",//RandomDateGenerator(),
-            
-
             using (SqlBulkCopy bulkCopy = new SqlBulkCopy(Con.ConnectionString))
             {
                 bulkCopy.BulkCopyTimeout = 600; // in seconds
@@ -72,7 +64,6 @@ namespace RandomDataGenerator
                 bulkCopy.WriteToServer(table);
             }
             GenerateData();
-
         }
 
         public static void FindMaxRandRanges()
@@ -122,8 +113,7 @@ namespace RandomDataGenerator
                 }
             }
         }
-
-
+        
         public static IEnumerable<TicketModel> TicketData(int count)
         {
             for (int i = 0; i < count; i++)
@@ -158,7 +148,6 @@ namespace RandomDataGenerator
                 int range = (DateTime.Today - start).Days;
                 return start.AddDays(Rand.Next(range)).ToString("yyyy/MM/dd");
             }
-            
         }
     }
 }

@@ -11,7 +11,6 @@ namespace DataGeneratorWJ
 {
     public class Functions
     {
-
         public static SqlConnection Con = new SqlConnection();
         public static int MaxCustomerId = 0;
         public static int MaxRouteId = 0;
