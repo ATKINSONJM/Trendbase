@@ -1,15 +1,8 @@
-﻿@{
-    ViewBag.Title = "Trendbase Service";
-}
-<h2>@ViewBag.Title</h2>
+﻿<div id="trendbaseGraph"></div>
+<button id="exportData" class="btn btn-lg btn-primary">Export Data</button>
 
-
-<div id="trendbaseGraph" ></div>
 <script>
-
-    //# for id, . for class in jQuery
-    //$('.graphArea').
-    
+    var graphData;
     $(document).ready(function () {
 
         var chart = c3.generate({
@@ -19,7 +12,22 @@
             },
             types: {
                 res: 'line' //Change to a line graph
-            }
+            },
+            axis: {
+                y: {
+                    label: {
+                        text: 'Price',
+                        position: 'outer-middle'
+                    }
+                },
+                x: {
+                    show: true,
+                    label: {
+                        text: 'Date in current month',
+                        position: 'outer-middle'
+                    }
+                }
+            },
         });
 
         (function poll() {
@@ -27,6 +35,7 @@
                 url: "/api/Trendbase", // URL to API
                 type: "GET",
                 success: function (res) {
+                    graphData = res;
                     // Load Data into graph
                     chart.load({
                         columns: [
@@ -34,11 +43,39 @@
                         ]
                     });
                 },
+                axis: {
+                    y: {
+                        label: {
+                            text: 'Price',
+                            position: 'outer-middle'
+                        }
+                    },
+                    x: {
+                        show: true,
+                        label: {
+                            text: 'Date in current month',
+                            position: 'outer-middle'
+                        }
+                    }
+                },
                 contentType: "application/json; charset=utf-8",
                 complete: setTimeout(function () { poll() }, 60000),
                 timeout: 15000
             });
         })();
+
+        $('#exportData').on('click', function () {
+
+            $.ajax({
+                url: "/api/Home", // URL to API
+                type: "POST",
+                data: graphData,
+                success: function () {
+
+                },
+                contentType: "application/json; charset=utf-8"
+            });
+        });
     });
 
     

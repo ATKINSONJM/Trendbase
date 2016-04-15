@@ -1,10 +1,17 @@
 ﻿<div id="SsasGraph"></div>
 
+<button id="exportData" class="btn btn-lg btn-primary">Export Data</button>
+
 <script>
+
+    //# for id, . for class in jQuery
+    //$('.graphArea').
+
     $(document).ready(function () {
+        var graphData;
 
         var chart = c3.generate({
-            bindto: '#SsisGraph',
+            bindto: '#SsasGraph',
             data: {
                 columns: []
             },
@@ -33,6 +40,8 @@
                 url: "/api/Ssas", // URL to API
                 type: "GET",
                 success: function (res) {
+                    graphData = res;
+
                     // Load Data into graph
                     chart.load({
                         columns: [
@@ -60,5 +69,21 @@
                 timeout: 15000
             });
         })();
+
+
+        $('#exportData').on('click', function () {
+
+            $.ajax({
+                url: "/api/Home", // URL to API
+                type: "POST",
+                data: graphData,
+                success: function () {
+
+                },
+                contentType: "application/json; charset=utf-8"
+            });
+        });
     });
+
+
 </script>

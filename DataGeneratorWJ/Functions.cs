@@ -125,20 +125,45 @@ namespace DataGeneratorWJ
 
         public static IEnumerable<TicketModel> TicketData(int count)
         {
-            for (int i = 0; i < count; i++)
+            int minute = DateTime.Now.Minute;
+
+            //every 10 minutes, generate a trend
+            if (minute%10 == 0)
             {
-                string newDateOfPurchase = RandomDateGenerator("");
-                var obj = new TicketModel
+                for (int i = 0; i < count; i++)
                 {
-                    CustomerId = Rand.Next(1, MaxCustomerId),
-                    RouteId = Rand.Next(1, MaxRouteId),
-                    RailcardUsed = Rand.Next(0, 2),
-                    Price = Convert.ToDecimal(Rand.Next(10, 600)),
-                    DateOfTravel = RandomDateGenerator(newDateOfPurchase),
-                    DateOfPurchase = newDateOfPurchase,
-                };
-                yield return obj;
+                    string newDateOfPurchase = RandomDateGenerator("");
+                    var obj = new TicketModel
+                    {
+                        CustomerId = 4,
+                        RouteId = 5862,
+                        RailcardUsed = 1,
+                        Price = 29.55m,
+                        DateOfTravel = RandomDateGenerator(newDateOfPurchase),
+                        DateOfPurchase = newDateOfPurchase,
+                    };
+                    yield return obj;
+                }
             }
+            else
+            {
+                for (int i = 0; i < count; i++)
+                {
+                    string newDateOfPurchase = RandomDateGenerator("");
+                    var obj = new TicketModel
+                    {
+                        CustomerId = Rand.Next(1, MaxCustomerId),
+                        RouteId = Rand.Next(1, MaxRouteId),
+                        RailcardUsed = Rand.Next(0, 2),
+                        Price = Convert.ToDecimal(Rand.Next(10, 600)),
+                        DateOfTravel = RandomDateGenerator(newDateOfPurchase),
+                        DateOfPurchase = newDateOfPurchase,
+                    };
+                    yield return obj;
+                }
+            }
+
+            
         }
 
         public static string RandomDateGenerator(string inputDate)

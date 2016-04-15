@@ -1,10 +1,8 @@
-﻿
-<div id="trendbaseGraph" ></div>
-<script>
+﻿<div id="trendbaseGraph"></div>
+<button id="exportData" class="btn btn-lg btn-primary">Export Data</button>
 
-    //# for id, . for class in jQuery
-    //$('.graphArea').
-    
+<script>
+    var graphData;
     $(document).ready(function () {
 
         var chart = c3.generate({
@@ -37,6 +35,7 @@
                 url: "/api/Trendbase", // URL to API
                 type: "GET",
                 success: function (res) {
+                    graphData = res;
                     // Load Data into graph
                     chart.load({
                         columns: [
@@ -64,6 +63,19 @@
                 timeout: 15000
             });
         })();
+
+        $('#exportData').on('click', function () {
+
+            $.ajax({
+                url: "/api/Home", // URL to API
+                type: "POST",
+                data: graphData,
+                success: function () {
+
+                },
+                contentType: "application/json; charset=utf-8"
+            });
+        });
     });
 
     

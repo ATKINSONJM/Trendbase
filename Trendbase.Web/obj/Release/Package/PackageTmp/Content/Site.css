@@ -3,8 +3,13 @@
     padding-bottom: 20px;
 }
 
+#subtitle{
+    font-size: 36px
+}
+
 /* Set padding to keep content from hitting the edges */
 .body-content {
+    padding-top: 250px;
     padding-left: 15px;
     padding-right: 15px;
 }
@@ -14,4 +19,51 @@ input,
 select,
 textarea {
     max-width: 280px;
+}
+
+h1 {
+    font-size: 96px;
+}
+
+
+.home-wrap {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    z-index: 1000;
+    background-color: #FFF;
+}
+
+    .home-wrap .home-content {
+        position: absolute;
+        font-size: 5em;
+        margin-top: -1em;
+        top: 35%;
+        left: 0;
+        right: 0;
+        text-align: center;
+        color: #000;
+    }
+
+        .home-wrap .home-content img {
+            width: 50%; 
+        }
+
+.navbar {
+    background-color: #823A83;
+}
+.nav li a {
+    color: #FFF !important;
+}
+
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
 }
