@@ -51,12 +51,12 @@ namespace Trendbase.Web.Controllers
         public static void InsertDataForExport(object[] data)
         {
             _client = new MongoClient();
-            _database = _client.GetDatabase("trendDatabase");
+            _database = _client.GetDatabase("test");
 
             var document = new BsonDocument
             {
                 {
-                    "trendRecord", new BsonDocument
+                    "test", new BsonDocument
                     {
                         
                         {"1",data[1].ToString()},
@@ -84,7 +84,7 @@ namespace Trendbase.Web.Controllers
                         {"23",data[23].ToString()},
                         {"24",data[24].ToString()},
                         {"25",data[25].ToString()},
-                        {"26",data[126].ToString()},
+                        {"26",data[26].ToString()},
                         {"27",data[27].ToString()},
                         {"28",data[28].ToString()},
                         {"29",data[29].ToString()},
